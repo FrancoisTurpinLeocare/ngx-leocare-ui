@@ -1,6 +1,0 @@
-.base-label {
-    @apply text-xs text-grey-40 pl-2.5 font-steven mb-2;
-}
-.base-input {
-    @apply h-[45px] bg-grey-95 rounded-xl text-sm text-grey-25 font-steven py-3 pl-2.5 pr-5 placeholder:text-grey-80 placeholder:font-steven placeholder:text-sm disabled:bg-grey-90 outline-transparent outline-1 hover:outline-grey-90 invalid:outline-red-70 valid:outline-green-50 focus:outline-purple-55;
-}
