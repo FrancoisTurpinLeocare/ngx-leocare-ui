@@ -1,0 +1,35 @@
+@font-face {
+  font-family: "Paytone One";
+  src        : url("../assets/fonts/PaytoneOne/PaytoneOne-Regular.eot") format("embedded-opentype"),
+    url("../assets/fonts/PaytoneOne/PaytoneOne-Regular.eot?#iefix") format("embedded-opentype"),
+    url("../assets/fonts/PaytoneOne/PaytoneOne-Regular.woff2") format("woff2"),
+    url("../assets/fonts/PaytoneOne/PaytoneOne-Regular.woff") format("woff"),
+    url("../assets/fonts/PaytoneOne/PaytoneOne-Regular.ttf") format("truetype");
+  font-display: swap;
+  font-weight : normal;
+  font-style  : normal;
+}
+
+@font-face {
+  font-family: "Steven";
+  src        : url("../assets/fonts/Satoshi/Steven/Satoshi-Medium.eot") format("embedded-opentype"),
+    url("../assets/fonts/Satoshi/Steven/Satoshi-Medium.eot?#iefix") format("embedded-opentype"),
+    url("../assets/fonts/Satoshi/Steven/Satoshi-Medium.woff2") format("woff2"),
+    url("../assets/fonts/Satoshi/Steven/Satoshi-Medium.woff") format("woff"),
+    url("../assets/fonts/Satoshi/Steven/Satoshi-Medium.ttf") format("truetype");
+  font-display: swap;
+  font-weight : 400;
+  font-style  : normal;
+}
+
+@font-face {
+  font-family: "Hole";
+  src        : url("../assets/fonts/Satoshi/Hole/Satoshi-Black.eot") format("embedded-opentype"),
+    url("../assets/fonts/Satoshi/Hole/Satoshi-Black.eot?#iefix") format("embedded-opentype"),
+    url("../assets/fonts/Satoshi/Hole/Satoshi-Black.woff2") format("woff2"),
+    url("../assets/fonts/Satoshi/Hole/Satoshi-Black.woff") format("woff"),
+    url("../assets/fonts/Satoshi/Hole/Satoshi-Black.ttf") format("truetype");
+  font-display: swap;
+  font-weight : 900;
+  font-style  : normal;
+}

@@ -1,0 +1,26 @@
+<ng-container [ngSwitch]="level">
+  <h1 *ngSwitchCase="eAtomTitleLevel.H1">
+    <ng-container *ngTemplateOutlet="titleContent"></ng-container>
+  </h1>
+  <h2 *ngSwitchCase="eAtomTitleLevel.H2">
+    <ng-container *ngTemplateOutlet="titleContent"></ng-container>
+  </h2>
+  <h3 class="tw-mb-0" *ngSwitchCase="eAtomTitleLevel.H3">
+    <ng-container *ngTemplateOutlet="titleContent"></ng-container>
+  </h3>
+  <h4 *ngSwitchCase="eAtomTitleLevel.H4">
+    <ng-container *ngTemplateOutlet="titleContent"></ng-container>
+  </h4>
+</ng-container>
+<ng-template #titleContent>
+  <div
+    [ngClass]="[
+      eAtomTitleLevel[level],
+      atomTitleAlignConfig[alignConfig],
+      atomTitleDisplayConfig[displayConfig],
+      atomTitleColorConfig[colorConfig]
+    ]"
+  >
+    {{ text }}
+  </div>
+</ng-template>
