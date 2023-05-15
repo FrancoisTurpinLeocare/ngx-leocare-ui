@@ -10,6 +10,10 @@ const meta: Meta<IconComponent> = {
   render: (args: IconComponent) => ({
     props: {
       ...args,
+      description: {
+        component:
+          "Composant d'icone, charge un svg depuis son nom, applique les couleurs du design system depuis son enum de config",
+      },
     },
   }),
 };
