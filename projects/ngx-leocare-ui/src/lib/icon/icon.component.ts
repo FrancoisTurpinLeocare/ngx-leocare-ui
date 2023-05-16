@@ -22,7 +22,7 @@ export class IconComponent implements OnInit {
   @Input() color: EIconColor = EIconColor.GREY_40;
   @Input() isFill = false;
 
-  public baseIconUrl = "/assets/img/icons/";
+  public baseIconUrl = "./assets/img/icons/";
   public iconStyles: string = "";
   public iconSizeClasses: string = "";
 
