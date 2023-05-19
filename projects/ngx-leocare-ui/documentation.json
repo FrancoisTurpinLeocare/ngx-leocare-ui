@@ -187,7 +187,7 @@
         },
         {
             "name": "IconComponent",
-            "id": "component-IconComponent-2444995bc56e074bc1b0071ac124adea985d0e39353117fc8bc157172f60dab1b44d3312d45582675ad9343ba91b923c14c8695a086177cbec9762e0fc57ca8f",
+            "id": "component-IconComponent-79a253a257a73d0e070c2ded217ba892dd2040b80897dda7dfb8b88b52469bb917236275e15220bf0cc976ba3027ef5434edd530bbbeb4f44d77551f1286e3ce",
             "file": "projects/ngx-leocare-ui/src/lib/icon/icon.component.ts",
             "changeDetection": "ChangeDetectionStrategy.OnPush",
             "encapsulation": [],
@@ -244,7 +244,7 @@
             "propertiesClass": [
                 {
                     "name": "baseIconUrl",
-                    "defaultValue": "\"/assets/img/icons/\"",
+                    "defaultValue": "\"./assets/img/icons/\"",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "string",
@@ -301,7 +301,7 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import {\n  ChangeDetectionStrategy,\n  Component,\n  Input,\n  OnInit,\n} from \"@angular/core\";\nimport {\n  EIconColor,\n  EIconSize,\n  ICON_COLOR_CONFIG,\n  ICON_SIZE_CONFIG,\n} from \"./icon.config\";\n\n@Component({\n  selector: \"leo-icon\",\n  templateUrl: \"./icon.component.html\",\n  changeDetection: ChangeDetectionStrategy.OnPush,\n})\nexport class IconComponent implements OnInit {\n  @Input() name: string = \"\";\n  @Input() size: EIconSize = EIconSize.SQUARE_20PX;\n  @Input() color: EIconColor = EIconColor.GREY_40;\n  @Input() isFill = false;\n\n  public baseIconUrl = \"/assets/img/icons/\";\n  public iconStyles: string = \"\";\n  public iconSizeClasses: string = \"\";\n\n  ngOnInit(): void {\n    this.iconStyles = ICON_COLOR_CONFIG[this.color];\n    this.iconSizeClasses = ICON_SIZE_CONFIG[this.size];\n  }\n}\n",
+            "sourceCode": "import {\n  ChangeDetectionStrategy,\n  Component,\n  Input,\n  OnInit,\n} from \"@angular/core\";\nimport {\n  EIconColor,\n  EIconSize,\n  ICON_COLOR_CONFIG,\n  ICON_SIZE_CONFIG,\n} from \"./icon.config\";\n\n@Component({\n  selector: \"leo-icon\",\n  templateUrl: \"./icon.component.html\",\n  changeDetection: ChangeDetectionStrategy.OnPush,\n})\nexport class IconComponent implements OnInit {\n  @Input() name: string = \"\";\n  @Input() size: EIconSize = EIconSize.SQUARE_20PX;\n  @Input() color: EIconColor = EIconColor.GREY_40;\n  @Input() isFill = false;\n\n  public baseIconUrl = \"./assets/img/icons/\";\n  public iconStyles: string = \"\";\n  public iconSizeClasses: string = \"\";\n\n  ngOnInit(): void {\n    this.iconStyles = ICON_COLOR_CONFIG[this.color];\n    this.iconSizeClasses = ICON_SIZE_CONFIG[this.size];\n  }\n}\n",
             "assetsDirs": [],
             "styleUrlsData": "",
             "stylesData": "",
@@ -1086,21 +1086,21 @@
                 "name": "meta",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/ngx-leocare-ui/src/lib/input/input.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Meta<InputComponent>",
-                "defaultValue": "{\n  title: \"UI/Input\",\n  component: InputComponent,\n  tags: [\"autodocs\"],\n  render: (args: InputComponent) => ({\n    props: {\n      ...args,\n    },\n  }),\n}"
-            },
-            {
-                "name": "meta",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "projects/ngx-leocare-ui/src/lib/title/title.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Meta<TitleComponent>",
                 "defaultValue": "{\n  title: \"UI/Title\",\n  component: TitleComponent,\n  tags: [\"autodocs\"],\n  render: (args: TitleComponent) => ({\n    props: {\n      ...args,\n    },\n  }),\n}"
+            },
+            {
+                "name": "meta",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/ngx-leocare-ui/src/lib/input/input.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Meta<InputComponent>",
+                "defaultValue": "{\n  title: \"UI/Input\",\n  component: InputComponent,\n  tags: [\"autodocs\"],\n  render: (args: InputComponent) => ({\n    props: {\n      ...args,\n    },\n  }),\n}"
             },
             {
                 "name": "Normal",
@@ -1302,8 +1302,8 @@
                 "name": "Story",
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
-                "rawtype": "StoryObj<InputComponent>",
-                "file": "projects/ngx-leocare-ui/src/lib/input/input.stories.ts",
+                "rawtype": "StoryObj<TitleComponent>",
+                "file": "projects/ngx-leocare-ui/src/lib/title/title.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -1313,8 +1313,8 @@
                 "name": "Story",
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
-                "rawtype": "StoryObj<TitleComponent>",
-                "file": "projects/ngx-leocare-ui/src/lib/title/title.stories.ts",
+                "rawtype": "StoryObj<InputComponent>",
+                "file": "projects/ngx-leocare-ui/src/lib/input/input.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -2766,19 +2766,6 @@
                     "kind": 177
                 }
             ],
-            "projects/ngx-leocare-ui/src/lib/input/input.stories.ts": [
-                {
-                    "name": "Story",
-                    "ctype": "miscellaneous",
-                    "subtype": "typealias",
-                    "rawtype": "StoryObj<InputComponent>",
-                    "file": "projects/ngx-leocare-ui/src/lib/input/input.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "description": "",
-                    "kind": 177
-                }
-            ],
             "projects/ngx-leocare-ui/src/lib/title/title.stories.ts": [
                 {
                     "name": "Story",
@@ -2786,6 +2773,19 @@
                     "subtype": "typealias",
                     "rawtype": "StoryObj<TitleComponent>",
                     "file": "projects/ngx-leocare-ui/src/lib/title/title.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 177
+                }
+            ],
+            "projects/ngx-leocare-ui/src/lib/input/input.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<InputComponent>",
+                    "file": "projects/ngx-leocare-ui/src/lib/input/input.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
