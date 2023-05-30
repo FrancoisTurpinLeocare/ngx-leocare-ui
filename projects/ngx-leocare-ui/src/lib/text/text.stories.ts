@@ -5,6 +5,12 @@ import { TextComponent } from "./text.component";
 const meta: Meta<TextComponent> = {
   title: "UI/Text",
   component: TextComponent,
+  argTypes: {
+    TEXT_SIZE_CONFIG: { table: { disable: true } },
+    TEXT_ALIGN_CONFIG: { table: { disable: true } },
+    TEXT_FAMILY_CONFIG: { table: { disable: true } },
+    TEXT_COLOR_CONFIG: { table: { disable: true } },
+  },
   tags: ["autodocs"],
   render: (args: TextComponent) => ({
     props: {
@@ -18,5 +24,7 @@ type Story = StoryObj<TextComponent>;
 
 // More on writing stories with args: https://storybook.js.org/docs/angular/writing-stories/args
 export const Default: Story = {
-  args: {},
+  args: {
+    text: "Je suis un text exemple",
+  },
 };

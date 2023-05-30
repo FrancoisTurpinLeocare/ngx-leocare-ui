@@ -6,6 +6,9 @@ import { EInputType } from "./input.config";
 const meta: Meta<InputComponent> = {
   title: "UI/Input",
   component: InputComponent,
+  argTypes: {
+    EInputType: { table: { disable: true } },
+  },
   tags: ["autodocs"],
   render: (args: InputComponent) => ({
     props: {

@@ -9,6 +9,20 @@ import {
 const meta: Meta<TitleComponent> = {
   title: "UI/Title",
   component: TitleComponent,
+  argTypes: {
+    eAtomTitleLevel: { table: { disable: true } },
+    eAtomTitleAlignConfig: { table: { disable: true } },
+    eAtomTitleDisplayConfig: { table: { disable: true } },
+    eAtomTitleColorConfig: { table: { disable: true } },
+    atomTitleAlignConfig: { table: { disable: true } },
+    atomTitleDisplayConfig: { table: { disable: true } },
+    atomTitleColorConfig: { table: { disable: true } },
+    atomTitleDisplayConfigByDefault: { table: { disable: true } },
+    ngOnInit: { table: { disable: true } },
+    setDisplayConfigByDefault: { table: { disable: true } },
+    setAlignConfigByDefault: { table: { disable: true } },
+    setColorConfigByDefault: { table: { disable: true } },
+  },
   tags: ["autodocs"],
   render: (args: TitleComponent) => ({
     props: {

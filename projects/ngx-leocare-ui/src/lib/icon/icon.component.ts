@@ -26,7 +26,7 @@ export class IconComponent implements OnInit {
   public iconStyles: string = "";
   public iconSizeClasses: string = "";
 
-  ngOnInit(): void {
+  public ngOnInit(): void {
     this.iconStyles = ICON_COLOR_CONFIG[this.color];
     this.iconSizeClasses = ICON_SIZE_CONFIG[this.size];
   }

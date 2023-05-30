@@ -6,6 +6,12 @@ import { EIconColor, EIconSize } from "./icon.config";
 const meta: Meta<IconComponent> = {
   title: "UI/Icon",
   component: IconComponent,
+  argTypes: {
+    baseIconUrl: { table: { disable: true } },
+    iconStyles: { table: { disable: true } },
+    iconSizeClasses: { table: { disable: true } },
+    ngOnInit: { table: { disable: true } },
+  },
   tags: ["autodocs"],
   render: (args: IconComponent) => ({
     props: {

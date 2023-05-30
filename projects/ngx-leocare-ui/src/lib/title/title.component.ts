@@ -47,23 +47,23 @@ export class TitleComponent implements OnInit {
   atomTitleColorConfig = ATOM_TITLE_COLOR_CONFIG;
   atomTitleDisplayConfigByDefault = ATOM_TITLE_DISPLAY_CONFIG_BY_DEFAULT;
 
-  ngOnInit() {
+  public ngOnInit() {
     this.setDisplayConfigByDefault();
     this.setAlignConfigByDefault();
     this.setColorConfigByDefault();
   }
 
-  private setDisplayConfigByDefault(): void {
+  public setDisplayConfigByDefault(): void {
     this.displayConfig =
       this.displayConfig ?? ATOM_TITLE_DISPLAY_CONFIG_BY_DEFAULT[this.level];
   }
 
-  private setAlignConfigByDefault(): void {
+  public setAlignConfigByDefault(): void {
     this.alignConfig =
       this.alignConfig ?? this.eAtomTitleAlignConfig.ALIGN_CENTERED;
   }
 
-  private setColorConfigByDefault(): void {
+  public setColorConfigByDefault(): void {
     this.colorConfig = this.colorConfig ?? this.eAtomTitleColorConfig.GREY_25;
   }
 }

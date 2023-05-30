@@ -32,7 +32,7 @@ export class ButtonComponent implements OnInit {
   public buttonIconColorClasses: string = "";
   public EButtonSize = EButtonSize;
 
-  ngOnInit(): void {
+  public ngOnInit(): void {
     this.buttonTypeClasses = BUTTON_TYPE_CONFIG[this.type];
     this.buttonSizeClasses = !this.isIconButton
       ? BUTTON_SIZE_CONFIG[this.size]

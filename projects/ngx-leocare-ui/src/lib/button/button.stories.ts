@@ -6,6 +6,14 @@ import { EButtonSize, EButtonType } from "./button.config";
 const meta: Meta<ButtonComponent> = {
   title: "UI/Button",
   component: ButtonComponent,
+  argTypes: {
+    buttonTypeClasses: { table: { disable: true } },
+    buttonSizeClasses: { table: { disable: true } },
+    buttonIconSizeClasses: { table: { disable: true } },
+    buttonIconColorClasses: { table: { disable: true } },
+    EButtonSize: { table: { disable: true } },
+    ngOnInit: { table: { disable: true } },
+  },
   tags: ["autodocs"],
   parameters: {
     docs: {
