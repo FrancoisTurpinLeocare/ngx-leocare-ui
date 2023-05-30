@@ -1514,16 +1514,6 @@
                 "name": "meta",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/ngx-leocare-ui/src/lib/popup/popup.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Meta<PopupComponent>",
-                "defaultValue": "{\n  title: \"UI/Popup\",\n  component: PopupComponent,\n  tags: [\"autodocs\"],\n  decorators: [\n    componentWrapperDecorator(\n      (story) => `<div style=\"height: 50vh; transform: scale(1)\">${story}</div>`\n    ),\n    moduleMetadata({\n      //👇 Imports both components to allow component composition with Storybook\n      declarations: [PopupComponent],\n      imports: [CommonModule, TextModule, IconModule, ButtonModule],\n    }),\n  ],\n  render: (args: PopupComponent) => ({\n    props: {\n      ...args,\n    },\n  }),\n}"
-            },
-            {
-                "name": "meta",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "projects/ngx-leocare-ui/src/lib/icon/icon.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
@@ -1539,6 +1529,16 @@
                 "deprecationMessage": "",
                 "type": "Meta<InputComponent>",
                 "defaultValue": "{\n  title: \"UI/Input\",\n  component: InputComponent,\n  tags: [\"autodocs\"],\n  render: (args: InputComponent) => ({\n    props: {\n      ...args,\n    },\n  }),\n}"
+            },
+            {
+                "name": "meta",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/ngx-leocare-ui/src/lib/popup/popup.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Meta<PopupComponent>",
+                "defaultValue": "{\n  title: \"UI/Popup\",\n  component: PopupComponent,\n  argTypes: {\n    eIconColor: {\n      control: false,\n    },\n    eTextColor: {\n      control: false,\n    },\n    eTextSize: {\n      control: false,\n    },\n    eTextFamily: {\n      control: false,\n    },\n    eTextAlign: {\n      control: false,\n    },\n    eIconSize: {\n      control: false,\n    },\n    eButtonType: {\n      control: false,\n    },\n    ePopupIconName: {\n      control: false,\n    },\n    ePopupState: {\n      control: false,\n    },\n  },\n  tags: [\"autodocs\"],\n  decorators: [\n    componentWrapperDecorator(\n      (story) => `<div style=\"height: 50vh; transform: scale(1)\">${story}</div>`\n    ),\n    moduleMetadata({\n      //👇 Imports both components to allow component composition with Storybook\n      declarations: [PopupComponent],\n      imports: [CommonModule, TextModule, IconModule, ButtonModule],\n    }),\n  ],\n  render: (args: PopupComponent) => ({\n    props: {\n      ...args,\n    },\n  }),\n}"
             },
             {
                 "name": "meta",
@@ -1789,17 +1789,6 @@
                 "name": "Story",
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
-                "rawtype": "StoryObj<PopupComponent>",
-                "file": "projects/ngx-leocare-ui/src/lib/popup/popup.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "description": "",
-                "kind": 177
-            },
-            {
-                "name": "Story",
-                "ctype": "miscellaneous",
-                "subtype": "typealias",
                 "rawtype": "StoryObj<IconComponent>",
                 "file": "projects/ngx-leocare-ui/src/lib/icon/icon.stories.ts",
                 "deprecated": false,
@@ -1813,6 +1802,17 @@
                 "subtype": "typealias",
                 "rawtype": "StoryObj<InputComponent>",
                 "file": "projects/ngx-leocare-ui/src/lib/input/input.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 177
+            },
+            {
+                "name": "Story",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "rawtype": "StoryObj<PopupComponent>",
+                "file": "projects/ngx-leocare-ui/src/lib/popup/popup.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -2742,7 +2742,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Meta<PopupComponent>",
-                    "defaultValue": "{\n  title: \"UI/Popup\",\n  component: PopupComponent,\n  tags: [\"autodocs\"],\n  decorators: [\n    componentWrapperDecorator(\n      (story) => `<div style=\"height: 50vh; transform: scale(1)\">${story}</div>`\n    ),\n    moduleMetadata({\n      //👇 Imports both components to allow component composition with Storybook\n      declarations: [PopupComponent],\n      imports: [CommonModule, TextModule, IconModule, ButtonModule],\n    }),\n  ],\n  render: (args: PopupComponent) => ({\n    props: {\n      ...args,\n    },\n  }),\n}"
+                    "defaultValue": "{\n  title: \"UI/Popup\",\n  component: PopupComponent,\n  argTypes: {\n    eIconColor: {\n      control: false,\n    },\n    eTextColor: {\n      control: false,\n    },\n    eTextSize: {\n      control: false,\n    },\n    eTextFamily: {\n      control: false,\n    },\n    eTextAlign: {\n      control: false,\n    },\n    eIconSize: {\n      control: false,\n    },\n    eButtonType: {\n      control: false,\n    },\n    ePopupIconName: {\n      control: false,\n    },\n    ePopupState: {\n      control: false,\n    },\n  },\n  tags: [\"autodocs\"],\n  decorators: [\n    componentWrapperDecorator(\n      (story) => `<div style=\"height: 50vh; transform: scale(1)\">${story}</div>`\n    ),\n    moduleMetadata({\n      //👇 Imports both components to allow component composition with Storybook\n      declarations: [PopupComponent],\n      imports: [CommonModule, TextModule, IconModule, ButtonModule],\n    }),\n  ],\n  render: (args: PopupComponent) => ({\n    props: {\n      ...args,\n    },\n  }),\n}"
                 }
             ],
             "projects/ngx-leocare-ui/src/lib/text/text.stories.ts": [
@@ -3999,19 +3999,6 @@
                     "kind": 177
                 }
             ],
-            "projects/ngx-leocare-ui/src/lib/popup/popup.stories.ts": [
-                {
-                    "name": "Story",
-                    "ctype": "miscellaneous",
-                    "subtype": "typealias",
-                    "rawtype": "StoryObj<PopupComponent>",
-                    "file": "projects/ngx-leocare-ui/src/lib/popup/popup.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "description": "",
-                    "kind": 177
-                }
-            ],
             "projects/ngx-leocare-ui/src/lib/icon/icon.stories.ts": [
                 {
                     "name": "Story",
@@ -4032,6 +4019,19 @@
                     "subtype": "typealias",
                     "rawtype": "StoryObj<InputComponent>",
                     "file": "projects/ngx-leocare-ui/src/lib/input/input.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 177
+                }
+            ],
+            "projects/ngx-leocare-ui/src/lib/popup/popup.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<PopupComponent>",
+                    "file": "projects/ngx-leocare-ui/src/lib/popup/popup.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",

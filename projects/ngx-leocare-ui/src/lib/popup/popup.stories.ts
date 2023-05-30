@@ -14,6 +14,19 @@ import { PopupComponent } from "./popup.component";
 const meta: Meta<PopupComponent> = {
   title: "UI/Popup",
   component: PopupComponent,
+  argTypes: {
+    eIconColor: { table: { disable: true } },
+    eTextColor: { table: { disable: true } },
+    eTextSize: { table: { disable: true } },
+    eTextFamily: { table: { disable: true } },
+    eTextAlign: { table: { disable: true } },
+    eIconSize: { table: { disable: true } },
+    eButtonType: { table: { disable: true } },
+    ePopupIconName: { table: { disable: true } },
+    ePopupState: { table: { disable: true } },
+    cancelEvent: { table: { disable: true } },
+    validateEvent: { table: { disable: true } },
+  },
   tags: ["autodocs"],
   decorators: [
     componentWrapperDecorator(
