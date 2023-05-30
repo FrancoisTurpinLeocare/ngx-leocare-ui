@@ -616,6 +616,10 @@ video {
   display: flex !important;
 }
 
+.table {
+  display: table !important;
+}
+
 .h-3 {
   height: 0.75rem !important;
 }
