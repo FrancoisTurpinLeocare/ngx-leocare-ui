@@ -97,6 +97,7 @@ export enum EIconSize {
   SQUARE_16PX = "SQUARE_16PX",
   SQUARE_20PX = "SQUARE_20PX",
   SQUARE_24PX = "SQUARE_24PX",
+  SQUARE_34PX = "SQUARE_34PX",
   SQUARE_50PX = "SQUARE_50PX",
   SQUARE_75PX = "SQUARE_75PX",
 }
@@ -107,6 +108,7 @@ export const ICON_SIZE_CONFIG: Record<EIconSize, string> = {
   [EIconSize.SQUARE_16PX]: "w-[16px] h-[16px]",
   [EIconSize.SQUARE_20PX]: "w-[20px] h-[20px]",
   [EIconSize.SQUARE_24PX]: "w-[24px] h-[24px]",
+  [EIconSize.SQUARE_34PX]: "w-[34px] h-[34px]",
   [EIconSize.SQUARE_50PX]: "w-[50px] h-[50px]",
   [EIconSize.SQUARE_75PX]: "w-[75px] h-[75px]",
 };

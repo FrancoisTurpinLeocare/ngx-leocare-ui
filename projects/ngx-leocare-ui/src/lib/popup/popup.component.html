@@ -1,0 +1,37 @@
+<div
+  class="fixed bottom-0 left-0 right-0 top-0 z-40 flex items-center justify-center backdrop-brightness-50 md:p-8"
+>
+  <div class="relative z-50 m-4 w-[670px] max-w-2xl rounded-2xl bg-grey-100">
+    <div class="border-b border-grey-95">
+      <leo-text
+        class="p-3 pl-12 pr-12"
+        [text]="popupTitle"
+        [color]="eTextColor.GREY_25"
+        [family]="eTextFamily.HOLE"
+        [align]="eTextAlign.CENTER"
+      ></leo-text>
+      <leo-icon
+        class="absolute right-4 top-4 cursor-pointer"
+        (click)="cancel()"
+        [name]="ePopupIconName.CLOSE"
+        [size]="eIconSize.SQUARE_34PX"
+        [color]="eIconColor.TRANSPARENT"
+      ></leo-icon>
+    </div>
+    <div class="p-7 pb-4 pt-4 md:p-12 md:pb-10 md:pt-10">
+      <ng-content></ng-content>
+    </div>
+    <div class="flex justify-center gap-4 border-t border-grey-95 pb-5 pt-5">
+      <leo-button
+        (click)="cancel()"
+        [type]="eButtonType.SECONDARY"
+        [text]="cancelLabel"
+      ></leo-button>
+      <leo-button
+        (click)="validate()"
+        [type]="eButtonType.PRIMARY"
+        [text]="confirmLabel"
+      ></leo-button>
+    </div>
+  </div>
+</div>

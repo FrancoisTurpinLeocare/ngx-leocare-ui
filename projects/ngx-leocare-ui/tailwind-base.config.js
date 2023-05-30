@@ -48,6 +48,12 @@ module.exports = {
       steven: ["Steven", "sans-serif"],
       hole: ["Hole", "sans-serif"],
     },
+    extend: {
+      fontSize: {
+        xxs: "0.625rem",
+        "3.5xl": "2rem",
+      },
+    },
   },
   plugins: [],
 };

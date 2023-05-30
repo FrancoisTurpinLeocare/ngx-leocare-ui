@@ -1,0 +1,10 @@
+<p
+  [ngClass]="[
+    smSize ? TEXT_SIZE_CONFIG[smSize] + ' md:' + TEXT_SIZE_CONFIG[this.size] : TEXT_SIZE_CONFIG[this.size],
+    TEXT_ALIGN_CONFIG[align] || '',
+    TEXT_FAMILY_CONFIG[family] || '',
+    TEXT_COLOR_CONFIG[color] || ''
+  ]"
+>
+  {{ text }}
+</p>

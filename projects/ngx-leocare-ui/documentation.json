@@ -448,6 +448,326 @@
             "templateData": "<ng-container [ngSwitch]=\"type\">\n  <ng-container *ngSwitchCase=\"EInputType.TEXT\">\n    <div class=\"flex flex-col\">\n      <label class=\"base-label\" *ngIf=\"label\" [for]=\"identifier\"\n        >{{ label }} <span *ngIf=\"isRequired\">*</span></label\n      >\n      <input\n        class=\"base-input\"\n        [id]=\"identifier\"\n        [name]=\"name\"\n        type=\"text\"\n        [placeholder]=\"placeholder\"\n        [disabled]=\"isDisabled\"\n        [attr.aria-invalid]=\"isInvalid\"\n        [attr.aria-valid]=\"isValid\"\n      />\n    </div>\n  </ng-container>\n  <ng-container *ngSwitchCase=\"EInputType.PASSWORD\"></ng-container>\n  <ng-container *ngSwitchCase=\"EInputType.SEARCH\"></ng-container>\n  <ng-container *ngSwitchCase=\"EInputType.DROPDOWN\"></ng-container>\n  <ng-container *ngSwitchCase=\"EInputType.DATEPICKER\"></ng-container>\n  <ng-container *ngSwitchCase=\"EInputType.AUTOCOMPLETE\"></ng-container>\n</ng-container>\n"
         },
         {
+            "name": "PopupComponent",
+            "id": "component-PopupComponent-99519da0b5fecf181950205ac6a9b8a965abd04687085497cd5311db94aced8db522364a71c345ed46c9eb12ef35780cac63d018d49480f9a22836f790cc858d",
+            "file": "projects/ngx-leocare-ui/src/lib/popup/popup.component.ts",
+            "changeDetection": "ChangeDetectionStrategy.OnPush",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "leo-popup",
+            "styleUrls": [],
+            "styles": [],
+            "templateUrl": [
+                "./popup.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "cancelLabel",
+                    "defaultValue": "\"Annuler\"",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 25,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "confirmLabel",
+                    "defaultValue": "\"Valider\"",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 26,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "popupTitle",
+                    "defaultValue": "\"Title\"",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 24,
+                    "type": "string",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [
+                {
+                    "name": "cancelEvent",
+                    "defaultValue": "new EventEmitter<EPopupState>()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 27,
+                    "type": "EventEmitter<EPopupState>"
+                },
+                {
+                    "name": "validateEvent",
+                    "defaultValue": "new EventEmitter<boolean>()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 29,
+                    "type": "EventEmitter<boolean>"
+                }
+            ],
+            "propertiesClass": [
+                {
+                    "name": "eButtonType",
+                    "defaultValue": "EButtonType",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 40
+                },
+                {
+                    "name": "eIconColor",
+                    "defaultValue": "EIconColor",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 31
+                },
+                {
+                    "name": "eIconSize",
+                    "defaultValue": "EIconSize",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 38
+                },
+                {
+                    "name": "ePopupIconName",
+                    "defaultValue": "EPopupIconName",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 42
+                },
+                {
+                    "name": "ePopupState",
+                    "defaultValue": "EPopupState",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 43
+                },
+                {
+                    "name": "eTextAlign",
+                    "defaultValue": "ETextAlign",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 36
+                },
+                {
+                    "name": "eTextColor",
+                    "defaultValue": "ETextColor",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 32
+                },
+                {
+                    "name": "eTextFamily",
+                    "defaultValue": "ETextFamily",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 35
+                },
+                {
+                    "name": "eTextSize",
+                    "defaultValue": "ETextSize",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 34
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "cancel",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 45,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "validate",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 49,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import {\n  ChangeDetectionStrategy,\n  Component,\n  EventEmitter,\n  Input,\n  Output,\n} from \"@angular/core\";\nimport { EButtonType } from \"../button/button.config\";\nimport { EIconColor, EIconSize } from \"../icon/icon.config\";\nimport {\n  ETextAlign,\n  ETextColor,\n  ETextFamily,\n  ETextSize,\n} from \"../text/text.config\";\nimport { EPopupIconName, EPopupState } from \"./popup.config\";\n\n@Component({\n  selector: \"leo-popup\",\n  templateUrl: \"./popup.component.html\",\n  changeDetection: ChangeDetectionStrategy.OnPush,\n})\nexport class PopupComponent {\n  @Input() popupTitle: string = \"Title\";\n  @Input() cancelLabel: string = \"Annuler\";\n  @Input() confirmLabel: string = \"Valider\";\n  @Output() cancelEvent: EventEmitter<EPopupState> =\n    new EventEmitter<EPopupState>();\n  @Output() validateEvent: EventEmitter<boolean> = new EventEmitter<boolean>();\n\n  eIconColor = EIconColor;\n  eTextColor = ETextColor;\n\n  eTextSize = ETextSize;\n  eTextFamily = ETextFamily;\n  eTextAlign = ETextAlign;\n\n  eIconSize = EIconSize;\n\n  eButtonType = EButtonType;\n\n  ePopupIconName = EPopupIconName;\n  ePopupState = EPopupState;\n\n  cancel(): void {\n    this.cancelEvent.emit(this.ePopupState.CLOSE);\n  }\n\n  validate(): void {\n    this.validateEvent.emit();\n  }\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "",
+            "templateData": "<div\n  class=\"fixed bottom-0 left-0 right-0 top-0 z-40 flex items-center justify-center backdrop-brightness-50 md:p-8\"\n>\n  <div class=\"relative z-50 m-4 w-[670px] max-w-2xl rounded-2xl bg-grey-100\">\n    <div class=\"border-b border-grey-95\">\n      <leo-text\n        class=\"p-3 pl-12 pr-12\"\n        [text]=\"popupTitle\"\n        [color]=\"eTextColor.GREY_25\"\n        [family]=\"eTextFamily.HOLE\"\n        [align]=\"eTextAlign.CENTER\"\n      ></leo-text>\n      <leo-icon\n        class=\"absolute right-4 top-4 cursor-pointer\"\n        (click)=\"cancel()\"\n        [name]=\"ePopupIconName.CLOSE\"\n        [size]=\"eIconSize.SQUARE_34PX\"\n        [color]=\"eIconColor.TRANSPARENT\"\n      ></leo-icon>\n    </div>\n    <div class=\"p-7 pb-4 pt-4 md:p-12 md:pb-10 md:pt-10\">\n      <ng-content></ng-content>\n    </div>\n    <div class=\"flex justify-center gap-4 border-t border-grey-95 pb-5 pt-5\">\n      <leo-button\n        (click)=\"cancel()\"\n        [type]=\"eButtonType.SECONDARY\"\n        [text]=\"cancelLabel\"\n      ></leo-button>\n      <leo-button\n        (click)=\"validate()\"\n        [type]=\"eButtonType.PRIMARY\"\n        [text]=\"confirmLabel\"\n      ></leo-button>\n    </div>\n  </div>\n</div>\n"
+        },
+        {
+            "name": "TextComponent",
+            "id": "component-TextComponent-ef7d51c772ee38be52a909973329aac9a44dc6375c45da58564c60ed57d69e49f47e19f6719251cc5633a31d586afc6bb2af52644dfdbbeb8123bc65c131c38c",
+            "file": "projects/ngx-leocare-ui/src/lib/text/text.component.ts",
+            "changeDetection": "ChangeDetectionStrategy.OnPush",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "leo-text",
+            "styleUrls": [],
+            "styles": [],
+            "templateUrl": [
+                "./text.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "align",
+                    "defaultValue": "ETextAlign.LEFT",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 23,
+                    "type": "ETextAlign",
+                    "decorators": []
+                },
+                {
+                    "name": "color",
+                    "defaultValue": "ETextColor.GREY_25",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 21,
+                    "type": "ETextColor",
+                    "decorators": []
+                },
+                {
+                    "name": "family",
+                    "defaultValue": "ETextFamily.STEVEN",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 22,
+                    "type": "ETextFamily",
+                    "decorators": []
+                },
+                {
+                    "name": "size",
+                    "defaultValue": "ETextSize.M",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 20,
+                    "type": "ETextSize",
+                    "decorators": []
+                },
+                {
+                    "name": "smSize",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 24,
+                    "type": "ETextSize",
+                    "decorators": []
+                },
+                {
+                    "name": "text",
+                    "defaultValue": "\"\"",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 19,
+                    "type": "string",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "TEXT_ALIGN_CONFIG",
+                    "defaultValue": "TEXT_ALIGN_CONFIG",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 27
+                },
+                {
+                    "name": "TEXT_COLOR_CONFIG",
+                    "defaultValue": "TEXT_COLOR_CONFIG",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 29
+                },
+                {
+                    "name": "TEXT_FAMILY_CONFIG",
+                    "defaultValue": "TEXT_FAMILY_CONFIG",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 28
+                },
+                {
+                    "name": "TEXT_SIZE_CONFIG",
+                    "defaultValue": "TEXT_SIZE_CONFIG",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 26
+                }
+            ],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { ChangeDetectionStrategy, Component, Input } from \"@angular/core\";\nimport {\n  ETextAlign,\n  ETextColor,\n  ETextFamily,\n  ETextSize,\n  TEXT_ALIGN_CONFIG,\n  TEXT_COLOR_CONFIG,\n  TEXT_FAMILY_CONFIG,\n  TEXT_SIZE_CONFIG,\n} from \"./text.config\";\n\n@Component({\n  selector: \"leo-text\",\n  templateUrl: \"./text.component.html\",\n  changeDetection: ChangeDetectionStrategy.OnPush,\n})\nexport class TextComponent {\n  @Input() text: string = \"\";\n  @Input() size: ETextSize = ETextSize.M;\n  @Input() color: ETextColor = ETextColor.GREY_25;\n  @Input() family: ETextFamily = ETextFamily.STEVEN;\n  @Input() align: ETextAlign = ETextAlign.LEFT;\n  @Input() smSize?: ETextSize;\n\n  TEXT_SIZE_CONFIG = TEXT_SIZE_CONFIG;\n  TEXT_ALIGN_CONFIG = TEXT_ALIGN_CONFIG;\n  TEXT_FAMILY_CONFIG = TEXT_FAMILY_CONFIG;\n  TEXT_COLOR_CONFIG = TEXT_COLOR_CONFIG;\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "",
+            "templateData": "<p\n  [ngClass]=\"[\n    smSize ? TEXT_SIZE_CONFIG[smSize] + ' md:' + TEXT_SIZE_CONFIG[this.size] : TEXT_SIZE_CONFIG[this.size],\n    TEXT_ALIGN_CONFIG[align] || '',\n    TEXT_FAMILY_CONFIG[family] || '',\n    TEXT_COLOR_CONFIG[color] || ''\n  ]\"\n>\n  {{ text }}\n</p>\n"
+        },
+        {
             "name": "TitleComponent",
             "id": "component-TitleComponent-c2db794d36117de5ce4f4c4230a680df18baf881b4472c078592d32ba784e33e34313be6b22aa5b74941f47adf647dbed4ea18c0d624d2c016fb0e7dfbb2e2fa",
             "file": "projects/ngx-leocare-ui/src/lib/title/title.component.ts",
@@ -796,6 +1116,104 @@
             ]
         },
         {
+            "name": "PopupModule",
+            "id": "module-PopupModule-a92d9c26e24fc357617ec49233709a248f9d5a130138bdfb5b62276c2317978b5552c3058a41a5db42c0a9459eec504f59337e0490ed095b25a51d5d32a27897",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "projects/ngx-leocare-ui/src/lib/popup/popup.module.ts",
+            "methods": [],
+            "sourceCode": "import { CommonModule } from \"@angular/common\";\nimport { NgModule } from \"@angular/core\";\nimport { ButtonModule } from \"../button/button.module\";\nimport { IconModule } from \"../icon/icon.module\";\nimport { TextModule } from \"../text/text.module\";\nimport { PopupComponent } from \"./popup.component\";\n\n@NgModule({\n  declarations: [PopupComponent],\n  exports: [PopupComponent],\n  imports: [CommonModule, TextModule, IconModule, ButtonModule],\n})\nexport class PopupModule {}\n",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": [
+                        {
+                            "name": "PopupComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "imports",
+                    "elements": [
+                        {
+                            "name": "ButtonModule"
+                        },
+                        {
+                            "name": "IconModule"
+                        },
+                        {
+                            "name": "TextModule"
+                        }
+                    ]
+                },
+                {
+                    "type": "exports",
+                    "elements": [
+                        {
+                            "name": "PopupComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        },
+        {
+            "name": "TextModule",
+            "id": "module-TextModule-1c52e0c90bd3b70ecc26c1f648fcf4d8b5f46a818177d5d7021141f857c81507d0a4cfdde92459e69d5d896261ccfc26d6fd1b20ebd2bc2a6dd01c5bdc2a33f0",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "projects/ngx-leocare-ui/src/lib/text/text.module.ts",
+            "methods": [],
+            "sourceCode": "import { CommonModule } from \"@angular/common\";\nimport { NgModule } from \"@angular/core\";\nimport { TextComponent } from \"./text.component\";\n\n@NgModule({\n  declarations: [TextComponent],\n  exports: [TextComponent],\n  imports: [CommonModule],\n})\nexport class TextModule {}\n",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": [
+                        {
+                            "name": "TextComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "imports",
+                    "elements": []
+                },
+                {
+                    "type": "exports",
+                    "elements": [
+                        {
+                            "name": "TextComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        },
+        {
             "name": "TitleModule",
             "id": "module-TitleModule-21636363389294e143fab310af73ec0a447ea07f64911033beb65702e1ff86a9379a1198cf5c93e5f118ecb5f535c1b408fc8b79ca18f89a33dd2ca5a051f088",
             "description": "",
@@ -923,6 +1341,26 @@
                 "defaultValue": "{\n  [EButtonType.PRIMARY]: \"bg-purple-55 text-grey-100\",\n  [EButtonType.SECONDARY]: \"bg-grey-95 text-grey-25\",\n  [EButtonType.WARNING]: \"bg-red-70 text-grey-100\",\n}"
             },
             {
+                "name": "Default",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/ngx-leocare-ui/src/lib/popup/popup.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  args: {},\n}"
+            },
+            {
+                "name": "Default",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/ngx-leocare-ui/src/lib/text/text.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  args: {},\n}"
+            },
+            {
                 "name": "disable",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -1000,7 +1438,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Record<EIconSize, string>",
-                "defaultValue": "{\n  [EIconSize.SQUARE_10PX]: \"w-[10px] h-[10px]\",\n  [EIconSize.SQUARE_12PX]: \"w-[12px] h-[12px]\",\n  [EIconSize.SQUARE_16PX]: \"w-[16px] h-[16px]\",\n  [EIconSize.SQUARE_20PX]: \"w-[20px] h-[20px]\",\n  [EIconSize.SQUARE_24PX]: \"w-[24px] h-[24px]\",\n  [EIconSize.SQUARE_50PX]: \"w-[50px] h-[50px]\",\n  [EIconSize.SQUARE_75PX]: \"w-[75px] h-[75px]\",\n}"
+                "defaultValue": "{\n  [EIconSize.SQUARE_10PX]: \"w-[10px] h-[10px]\",\n  [EIconSize.SQUARE_12PX]: \"w-[12px] h-[12px]\",\n  [EIconSize.SQUARE_16PX]: \"w-[16px] h-[16px]\",\n  [EIconSize.SQUARE_20PX]: \"w-[20px] h-[20px]\",\n  [EIconSize.SQUARE_24PX]: \"w-[24px] h-[24px]\",\n  [EIconSize.SQUARE_34PX]: \"w-[34px] h-[34px]\",\n  [EIconSize.SQUARE_50PX]: \"w-[50px] h-[50px]\",\n  [EIconSize.SQUARE_75PX]: \"w-[75px] h-[75px]\",\n}"
             },
             {
                 "name": "iconButton",
@@ -1076,6 +1514,16 @@
                 "name": "meta",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
+                "file": "projects/ngx-leocare-ui/src/lib/popup/popup.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Meta<PopupComponent>",
+                "defaultValue": "{\n  title: \"UI/Popup\",\n  component: PopupComponent,\n  tags: [\"autodocs\"],\n  decorators: [\n    componentWrapperDecorator(\n      (story) => `<div style=\"height: 50vh; transform: scale(1)\">${story}</div>`\n    ),\n    moduleMetadata({\n      //👇 Imports both components to allow component composition with Storybook\n      declarations: [PopupComponent],\n      imports: [CommonModule, TextModule, IconModule, ButtonModule],\n    }),\n  ],\n  render: (args: PopupComponent) => ({\n    props: {\n      ...args,\n    },\n  }),\n}"
+            },
+            {
+                "name": "meta",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
                 "file": "projects/ngx-leocare-ui/src/lib/icon/icon.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
@@ -1086,21 +1534,31 @@
                 "name": "meta",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/ngx-leocare-ui/src/lib/title/title.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Meta<TitleComponent>",
-                "defaultValue": "{\n  title: \"UI/Title\",\n  component: TitleComponent,\n  tags: [\"autodocs\"],\n  render: (args: TitleComponent) => ({\n    props: {\n      ...args,\n    },\n  }),\n}"
-            },
-            {
-                "name": "meta",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "projects/ngx-leocare-ui/src/lib/input/input.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Meta<InputComponent>",
                 "defaultValue": "{\n  title: \"UI/Input\",\n  component: InputComponent,\n  tags: [\"autodocs\"],\n  render: (args: InputComponent) => ({\n    props: {\n      ...args,\n    },\n  }),\n}"
+            },
+            {
+                "name": "meta",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/ngx-leocare-ui/src/lib/text/text.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Meta<TextComponent>",
+                "defaultValue": "{\n  title: \"UI/Text\",\n  component: TextComponent,\n  tags: [\"autodocs\"],\n  render: (args: TextComponent) => ({\n    props: {\n      ...args,\n    },\n  }),\n}"
+            },
+            {
+                "name": "meta",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/ngx-leocare-ui/src/lib/title/title.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Meta<TitleComponent>",
+                "defaultValue": "{\n  title: \"UI/Title\",\n  component: TitleComponent,\n  tags: [\"autodocs\"],\n  render: (args: TitleComponent) => ({\n    props: {\n      ...args,\n    },\n  }),\n}"
             },
             {
                 "name": "Normal",
@@ -1233,6 +1691,46 @@
                 "defaultValue": "{\n  args: {\n    name: \"cross\",\n    size: EIconSize.SQUARE_10PX,\n    color: EIconColor.GREY_0,\n  },\n}"
             },
             {
+                "name": "TEXT_ALIGN_CONFIG",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/ngx-leocare-ui/src/lib/text/text.config.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Record<ETextAlign, string>",
+                "defaultValue": "{\n  [ETextAlign.LEFT]: \"text-left\",\n  [ETextAlign.CENTER]: \"text-center\",\n  [ETextAlign.RIGHT]: \"text-right\",\n}"
+            },
+            {
+                "name": "TEXT_COLOR_CONFIG",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/ngx-leocare-ui/src/lib/text/text.config.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Partial<Record<ETextColor, string>>",
+                "defaultValue": "{\n  [ETextColor.PURPLE_55]: \"text-purple-55\",\n  [ETextColor.CYAN_70]: \"text-cyan-70\",\n  [ETextColor.YELLOW_55]: \"text-yellow-55\",\n\n  [ETextColor.GREY_100]: \"text-grey-100\",\n  [ETextColor.GREY_95]: \"text-grey-90\",\n  [ETextColor.GREY_90]: \"text-grey-90\",\n  [ETextColor.GREY_80]: \"text-grey-80\",\n  [ETextColor.GREY_40]: \"text-grey-40\",\n  [ETextColor.GREY_25]: \"text-grey-25\",\n  [ETextColor.GREY_0]: \"text-grey-0\",\n\n  [ETextColor.PURPLE_95]: \"text-purple-95\",\n  [ETextColor.CYAN_90]: \"text-cyan-90\",\n  [ETextColor.YELLOW_90]: \"text-yellow-90\",\n\n  [ETextColor.PURPLE_25]: \"text-purple-25\",\n  [ETextColor.YELLOW_25]: \"text-yellow-25\",\n\n  [ETextColor.GREEN_50]: \"text-green-50\",\n  [ETextColor.RED_70]: \"text-red-70\",\n  [ETextColor.ORANGE_65]: \"text-orange-65\",\n\n  [ETextColor.GREEN_95]: \"text-green-95\",\n  [ETextColor.RED_95]: \"text-red-95\",\n  [ETextColor.ORANGE_90]: \"text-orange-90\",\n\n  [ETextColor.GREEN_30]: \"text-green-30\",\n  [ETextColor.RED_40]: \"text-red-40\",\n  [ETextColor.ORANGE_30]: \"text-orange-30\",\n}"
+            },
+            {
+                "name": "TEXT_FAMILY_CONFIG",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/ngx-leocare-ui/src/lib/text/text.config.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Record<ETextFamily, string>",
+                "defaultValue": "{\n  [ETextFamily.HOLE]: \"font-hole\",\n  [ETextFamily.STEVEN]: \"font-steven\",\n}"
+            },
+            {
+                "name": "TEXT_SIZE_CONFIG",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/ngx-leocare-ui/src/lib/text/text.config.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Record<ETextSize, string>",
+                "defaultValue": "{\n  [ETextSize.XXS]: \"text-xxs\",\n  [ETextSize.XS]: \"text-xs\",\n  [ETextSize.S]: \"text-sm\",\n  [ETextSize.M]: \"text-base\",\n  [ETextSize.L]: \"text-lg\",\n  [ETextSize.XL]: \"text-xl\",\n  [ETextSize.XXL]: \"text-3.5xl\",\n}"
+            },
+            {
                 "name": "Valid",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -1291,6 +1789,17 @@
                 "name": "Story",
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
+                "rawtype": "StoryObj<PopupComponent>",
+                "file": "projects/ngx-leocare-ui/src/lib/popup/popup.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 177
+            },
+            {
+                "name": "Story",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
                 "rawtype": "StoryObj<IconComponent>",
                 "file": "projects/ngx-leocare-ui/src/lib/icon/icon.stories.ts",
                 "deprecated": false,
@@ -1302,8 +1811,8 @@
                 "name": "Story",
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
-                "rawtype": "StoryObj<TitleComponent>",
-                "file": "projects/ngx-leocare-ui/src/lib/title/title.stories.ts",
+                "rawtype": "StoryObj<InputComponent>",
+                "file": "projects/ngx-leocare-ui/src/lib/input/input.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -1313,8 +1822,19 @@
                 "name": "Story",
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
-                "rawtype": "StoryObj<InputComponent>",
-                "file": "projects/ngx-leocare-ui/src/lib/input/input.stories.ts",
+                "rawtype": "StoryObj<TextComponent>",
+                "file": "projects/ngx-leocare-ui/src/lib/text/text.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 177
+            },
+            {
+                "name": "Story",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "rawtype": "StoryObj<TitleComponent>",
+                "file": "projects/ngx-leocare-ui/src/lib/title/title.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -1721,6 +2241,12 @@
                         "value": "SQUARE_24PX"
                     },
                     {
+                        "name": "SQUARE_34PX",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "value": "SQUARE_34PX"
+                    },
+                    {
                         "name": "SQUARE_50PX",
                         "deprecated": false,
                         "deprecationMessage": "",
@@ -1798,6 +2324,318 @@
                 "deprecationMessage": "",
                 "description": "",
                 "file": "projects/ngx-leocare-ui/src/lib/input/input.config.ts"
+            },
+            {
+                "name": "EPopupIconName",
+                "childs": [
+                    {
+                        "name": "CLOSE",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "value": "close"
+                    },
+                    {
+                        "name": "CROSS",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "value": "cross"
+                    }
+                ],
+                "ctype": "miscellaneous",
+                "subtype": "enum",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "file": "projects/ngx-leocare-ui/src/lib/popup/popup.config.ts"
+            },
+            {
+                "name": "EPopupState",
+                "childs": [
+                    {
+                        "name": "CLOSE",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "value": 0
+                    },
+                    {
+                        "name": "OPEN",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "value": 1
+                    }
+                ],
+                "ctype": "miscellaneous",
+                "subtype": "enum",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "file": "projects/ngx-leocare-ui/src/lib/popup/popup.config.ts"
+            },
+            {
+                "name": "ETextAlign",
+                "childs": [
+                    {
+                        "name": "LEFT",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "value": "LEFT"
+                    },
+                    {
+                        "name": "CENTER",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "value": "CENTER"
+                    },
+                    {
+                        "name": "RIGHT",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "value": "RIGHT"
+                    }
+                ],
+                "ctype": "miscellaneous",
+                "subtype": "enum",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "file": "projects/ngx-leocare-ui/src/lib/text/text.config.ts"
+            },
+            {
+                "name": "ETextColor",
+                "childs": [
+                    {
+                        "name": "TRANSPARENT",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "value": "TRANSPARENT"
+                    },
+                    {
+                        "name": "PURPLE_55",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "value": "PURPLE_55"
+                    },
+                    {
+                        "name": "CYAN_70",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "value": "CYAN_70"
+                    },
+                    {
+                        "name": "YELLOW_55",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "value": "YELLOW_55"
+                    },
+                    {
+                        "name": "GREY_100",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "value": "GREY_100"
+                    },
+                    {
+                        "name": "GREY_95",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "value": "GREY_95"
+                    },
+                    {
+                        "name": "GREY_90",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "value": "GREY_90"
+                    },
+                    {
+                        "name": "GREY_80",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "value": "GREY_80"
+                    },
+                    {
+                        "name": "GREY_40",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "value": "GREY_40"
+                    },
+                    {
+                        "name": "GREY_25",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "value": "GREY_25"
+                    },
+                    {
+                        "name": "GREY_0",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "value": "GREY_0"
+                    },
+                    {
+                        "name": "PURPLE_95",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "value": "PURPLE_95"
+                    },
+                    {
+                        "name": "CYAN_90",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "value": "CYAN_90"
+                    },
+                    {
+                        "name": "YELLOW_90",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "value": "YELLOW_90"
+                    },
+                    {
+                        "name": "PURPLE_25",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "value": "PURPLE_25"
+                    },
+                    {
+                        "name": "YELLOW_25",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "value": "YELLOW_25"
+                    },
+                    {
+                        "name": "GREEN_50",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "value": "GREEN_50"
+                    },
+                    {
+                        "name": "RED_70",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "value": "RED_70"
+                    },
+                    {
+                        "name": "ORANGE_65",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "value": "ORANGE_65"
+                    },
+                    {
+                        "name": "GREEN_95",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "value": "GREEN_95"
+                    },
+                    {
+                        "name": "RED_95",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "value": "RED_95"
+                    },
+                    {
+                        "name": "ORANGE_90",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "value": "ORANGE_90"
+                    },
+                    {
+                        "name": "GREEN_30",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "value": "GREEN_30"
+                    },
+                    {
+                        "name": "RED_40",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "value": "RED_40"
+                    },
+                    {
+                        "name": "ORANGE_30",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "value": "ORANGE_30"
+                    }
+                ],
+                "ctype": "miscellaneous",
+                "subtype": "enum",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "file": "projects/ngx-leocare-ui/src/lib/text/text.config.ts"
+            },
+            {
+                "name": "ETextFamily",
+                "childs": [
+                    {
+                        "name": "HOLE",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "value": "HOLE"
+                    },
+                    {
+                        "name": "STEVEN",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "value": "STEVEN"
+                    }
+                ],
+                "ctype": "miscellaneous",
+                "subtype": "enum",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "file": "projects/ngx-leocare-ui/src/lib/text/text.config.ts"
+            },
+            {
+                "name": "ETextSize",
+                "childs": [
+                    {
+                        "name": "XXS",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "value": "XXS"
+                    },
+                    {
+                        "name": "XS",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "value": "XS"
+                    },
+                    {
+                        "name": "S",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "value": "S"
+                    },
+                    {
+                        "name": "M",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "value": "M"
+                    },
+                    {
+                        "name": "L",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "value": "L"
+                    },
+                    {
+                        "name": "XL",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "value": "XL"
+                    },
+                    {
+                        "name": "XXL",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "value": "XXL"
+                    }
+                ],
+                "ctype": "miscellaneous",
+                "subtype": "enum",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "file": "projects/ngx-leocare-ui/src/lib/text/text.config.ts"
             }
         ],
         "groupedVariables": {
@@ -1883,6 +2721,50 @@
                     "deprecationMessage": "",
                     "type": "Record<EButtonType, string>",
                     "defaultValue": "{\n  [EButtonType.PRIMARY]: \"bg-purple-55 text-grey-100\",\n  [EButtonType.SECONDARY]: \"bg-grey-95 text-grey-25\",\n  [EButtonType.WARNING]: \"bg-red-70 text-grey-100\",\n}"
+                }
+            ],
+            "projects/ngx-leocare-ui/src/lib/popup/popup.stories.ts": [
+                {
+                    "name": "Default",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/ngx-leocare-ui/src/lib/popup/popup.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {},\n}"
+                },
+                {
+                    "name": "meta",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/ngx-leocare-ui/src/lib/popup/popup.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Meta<PopupComponent>",
+                    "defaultValue": "{\n  title: \"UI/Popup\",\n  component: PopupComponent,\n  tags: [\"autodocs\"],\n  decorators: [\n    componentWrapperDecorator(\n      (story) => `<div style=\"height: 50vh; transform: scale(1)\">${story}</div>`\n    ),\n    moduleMetadata({\n      //👇 Imports both components to allow component composition with Storybook\n      declarations: [PopupComponent],\n      imports: [CommonModule, TextModule, IconModule, ButtonModule],\n    }),\n  ],\n  render: (args: PopupComponent) => ({\n    props: {\n      ...args,\n    },\n  }),\n}"
+                }
+            ],
+            "projects/ngx-leocare-ui/src/lib/text/text.stories.ts": [
+                {
+                    "name": "Default",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/ngx-leocare-ui/src/lib/text/text.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {},\n}"
+                },
+                {
+                    "name": "meta",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/ngx-leocare-ui/src/lib/text/text.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Meta<TextComponent>",
+                    "defaultValue": "{\n  title: \"UI/Text\",\n  component: TextComponent,\n  tags: [\"autodocs\"],\n  render: (args: TextComponent) => ({\n    props: {\n      ...args,\n    },\n  }),\n}"
                 }
             ],
             "projects/ngx-leocare-ui/src/lib/button/button.stories.ts": [
@@ -2140,7 +3022,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Record<EIconSize, string>",
-                    "defaultValue": "{\n  [EIconSize.SQUARE_10PX]: \"w-[10px] h-[10px]\",\n  [EIconSize.SQUARE_12PX]: \"w-[12px] h-[12px]\",\n  [EIconSize.SQUARE_16PX]: \"w-[16px] h-[16px]\",\n  [EIconSize.SQUARE_20PX]: \"w-[20px] h-[20px]\",\n  [EIconSize.SQUARE_24PX]: \"w-[24px] h-[24px]\",\n  [EIconSize.SQUARE_50PX]: \"w-[50px] h-[50px]\",\n  [EIconSize.SQUARE_75PX]: \"w-[75px] h-[75px]\",\n}"
+                    "defaultValue": "{\n  [EIconSize.SQUARE_10PX]: \"w-[10px] h-[10px]\",\n  [EIconSize.SQUARE_12PX]: \"w-[12px] h-[12px]\",\n  [EIconSize.SQUARE_16PX]: \"w-[16px] h-[16px]\",\n  [EIconSize.SQUARE_20PX]: \"w-[20px] h-[20px]\",\n  [EIconSize.SQUARE_24PX]: \"w-[24px] h-[24px]\",\n  [EIconSize.SQUARE_34PX]: \"w-[34px] h-[34px]\",\n  [EIconSize.SQUARE_50PX]: \"w-[50px] h-[50px]\",\n  [EIconSize.SQUARE_75PX]: \"w-[75px] h-[75px]\",\n}"
                 }
             ],
             "projects/ngx-leocare-ui/src/lib/icon/icon.stories.ts": [
@@ -2235,6 +3117,48 @@
                     "deprecationMessage": "",
                     "type": "Preview",
                     "defaultValue": "{\n  parameters: {\n    docs: {\n      theme: leocareTheme,\n    },\n    actions: { argTypesRegex: \"^on[A-Z].*\" },\n    controls: {\n      matchers: {\n        color: /(background|color)$/i,\n        date: /Date$/,\n      },\n    },\n  },\n}"
+                }
+            ],
+            "projects/ngx-leocare-ui/src/lib/text/text.config.ts": [
+                {
+                    "name": "TEXT_ALIGN_CONFIG",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/ngx-leocare-ui/src/lib/text/text.config.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Record<ETextAlign, string>",
+                    "defaultValue": "{\n  [ETextAlign.LEFT]: \"text-left\",\n  [ETextAlign.CENTER]: \"text-center\",\n  [ETextAlign.RIGHT]: \"text-right\",\n}"
+                },
+                {
+                    "name": "TEXT_COLOR_CONFIG",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/ngx-leocare-ui/src/lib/text/text.config.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Partial<Record<ETextColor, string>>",
+                    "defaultValue": "{\n  [ETextColor.PURPLE_55]: \"text-purple-55\",\n  [ETextColor.CYAN_70]: \"text-cyan-70\",\n  [ETextColor.YELLOW_55]: \"text-yellow-55\",\n\n  [ETextColor.GREY_100]: \"text-grey-100\",\n  [ETextColor.GREY_95]: \"text-grey-90\",\n  [ETextColor.GREY_90]: \"text-grey-90\",\n  [ETextColor.GREY_80]: \"text-grey-80\",\n  [ETextColor.GREY_40]: \"text-grey-40\",\n  [ETextColor.GREY_25]: \"text-grey-25\",\n  [ETextColor.GREY_0]: \"text-grey-0\",\n\n  [ETextColor.PURPLE_95]: \"text-purple-95\",\n  [ETextColor.CYAN_90]: \"text-cyan-90\",\n  [ETextColor.YELLOW_90]: \"text-yellow-90\",\n\n  [ETextColor.PURPLE_25]: \"text-purple-25\",\n  [ETextColor.YELLOW_25]: \"text-yellow-25\",\n\n  [ETextColor.GREEN_50]: \"text-green-50\",\n  [ETextColor.RED_70]: \"text-red-70\",\n  [ETextColor.ORANGE_65]: \"text-orange-65\",\n\n  [ETextColor.GREEN_95]: \"text-green-95\",\n  [ETextColor.RED_95]: \"text-red-95\",\n  [ETextColor.ORANGE_90]: \"text-orange-90\",\n\n  [ETextColor.GREEN_30]: \"text-green-30\",\n  [ETextColor.RED_40]: \"text-red-40\",\n  [ETextColor.ORANGE_30]: \"text-orange-30\",\n}"
+                },
+                {
+                    "name": "TEXT_FAMILY_CONFIG",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/ngx-leocare-ui/src/lib/text/text.config.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Record<ETextFamily, string>",
+                    "defaultValue": "{\n  [ETextFamily.HOLE]: \"font-hole\",\n  [ETextFamily.STEVEN]: \"font-steven\",\n}"
+                },
+                {
+                    "name": "TEXT_SIZE_CONFIG",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/ngx-leocare-ui/src/lib/text/text.config.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Record<ETextSize, string>",
+                    "defaultValue": "{\n  [ETextSize.XXS]: \"text-xxs\",\n  [ETextSize.XS]: \"text-xs\",\n  [ETextSize.S]: \"text-sm\",\n  [ETextSize.M]: \"text-base\",\n  [ETextSize.L]: \"text-lg\",\n  [ETextSize.XL]: \"text-xl\",\n  [ETextSize.XXL]: \"text-3.5xl\",\n}"
                 }
             ]
         },
@@ -2644,6 +3568,12 @@
                             "value": "SQUARE_24PX"
                         },
                         {
+                            "name": "SQUARE_34PX",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "value": "SQUARE_34PX"
+                        },
+                        {
                             "name": "SQUARE_50PX",
                             "deprecated": false,
                             "deprecationMessage": "",
@@ -2724,6 +3654,322 @@
                     "description": "",
                     "file": "projects/ngx-leocare-ui/src/lib/input/input.config.ts"
                 }
+            ],
+            "projects/ngx-leocare-ui/src/lib/popup/popup.config.ts": [
+                {
+                    "name": "EPopupIconName",
+                    "childs": [
+                        {
+                            "name": "CLOSE",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "value": "close"
+                        },
+                        {
+                            "name": "CROSS",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "value": "cross"
+                        }
+                    ],
+                    "ctype": "miscellaneous",
+                    "subtype": "enum",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "file": "projects/ngx-leocare-ui/src/lib/popup/popup.config.ts"
+                },
+                {
+                    "name": "EPopupState",
+                    "childs": [
+                        {
+                            "name": "CLOSE",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "value": 0
+                        },
+                        {
+                            "name": "OPEN",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "value": 1
+                        }
+                    ],
+                    "ctype": "miscellaneous",
+                    "subtype": "enum",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "file": "projects/ngx-leocare-ui/src/lib/popup/popup.config.ts"
+                }
+            ],
+            "projects/ngx-leocare-ui/src/lib/text/text.config.ts": [
+                {
+                    "name": "ETextAlign",
+                    "childs": [
+                        {
+                            "name": "LEFT",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "value": "LEFT"
+                        },
+                        {
+                            "name": "CENTER",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "value": "CENTER"
+                        },
+                        {
+                            "name": "RIGHT",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "value": "RIGHT"
+                        }
+                    ],
+                    "ctype": "miscellaneous",
+                    "subtype": "enum",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "file": "projects/ngx-leocare-ui/src/lib/text/text.config.ts"
+                },
+                {
+                    "name": "ETextColor",
+                    "childs": [
+                        {
+                            "name": "TRANSPARENT",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "value": "TRANSPARENT"
+                        },
+                        {
+                            "name": "PURPLE_55",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "value": "PURPLE_55"
+                        },
+                        {
+                            "name": "CYAN_70",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "value": "CYAN_70"
+                        },
+                        {
+                            "name": "YELLOW_55",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "value": "YELLOW_55"
+                        },
+                        {
+                            "name": "GREY_100",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "value": "GREY_100"
+                        },
+                        {
+                            "name": "GREY_95",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "value": "GREY_95"
+                        },
+                        {
+                            "name": "GREY_90",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "value": "GREY_90"
+                        },
+                        {
+                            "name": "GREY_80",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "value": "GREY_80"
+                        },
+                        {
+                            "name": "GREY_40",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "value": "GREY_40"
+                        },
+                        {
+                            "name": "GREY_25",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "value": "GREY_25"
+                        },
+                        {
+                            "name": "GREY_0",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "value": "GREY_0"
+                        },
+                        {
+                            "name": "PURPLE_95",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "value": "PURPLE_95"
+                        },
+                        {
+                            "name": "CYAN_90",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "value": "CYAN_90"
+                        },
+                        {
+                            "name": "YELLOW_90",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "value": "YELLOW_90"
+                        },
+                        {
+                            "name": "PURPLE_25",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "value": "PURPLE_25"
+                        },
+                        {
+                            "name": "YELLOW_25",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "value": "YELLOW_25"
+                        },
+                        {
+                            "name": "GREEN_50",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "value": "GREEN_50"
+                        },
+                        {
+                            "name": "RED_70",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "value": "RED_70"
+                        },
+                        {
+                            "name": "ORANGE_65",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "value": "ORANGE_65"
+                        },
+                        {
+                            "name": "GREEN_95",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "value": "GREEN_95"
+                        },
+                        {
+                            "name": "RED_95",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "value": "RED_95"
+                        },
+                        {
+                            "name": "ORANGE_90",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "value": "ORANGE_90"
+                        },
+                        {
+                            "name": "GREEN_30",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "value": "GREEN_30"
+                        },
+                        {
+                            "name": "RED_40",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "value": "RED_40"
+                        },
+                        {
+                            "name": "ORANGE_30",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "value": "ORANGE_30"
+                        }
+                    ],
+                    "ctype": "miscellaneous",
+                    "subtype": "enum",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "file": "projects/ngx-leocare-ui/src/lib/text/text.config.ts"
+                },
+                {
+                    "name": "ETextFamily",
+                    "childs": [
+                        {
+                            "name": "HOLE",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "value": "HOLE"
+                        },
+                        {
+                            "name": "STEVEN",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "value": "STEVEN"
+                        }
+                    ],
+                    "ctype": "miscellaneous",
+                    "subtype": "enum",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "file": "projects/ngx-leocare-ui/src/lib/text/text.config.ts"
+                },
+                {
+                    "name": "ETextSize",
+                    "childs": [
+                        {
+                            "name": "XXS",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "value": "XXS"
+                        },
+                        {
+                            "name": "XS",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "value": "XS"
+                        },
+                        {
+                            "name": "S",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "value": "S"
+                        },
+                        {
+                            "name": "M",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "value": "M"
+                        },
+                        {
+                            "name": "L",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "value": "L"
+                        },
+                        {
+                            "name": "XL",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "value": "XL"
+                        },
+                        {
+                            "name": "XXL",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "value": "XXL"
+                        }
+                    ],
+                    "ctype": "miscellaneous",
+                    "subtype": "enum",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "file": "projects/ngx-leocare-ui/src/lib/text/text.config.ts"
+                }
             ]
         },
         "groupedTypeAliases": {
@@ -2753,6 +3999,19 @@
                     "kind": 177
                 }
             ],
+            "projects/ngx-leocare-ui/src/lib/popup/popup.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<PopupComponent>",
+                    "file": "projects/ngx-leocare-ui/src/lib/popup/popup.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 177
+                }
+            ],
             "projects/ngx-leocare-ui/src/lib/icon/icon.stories.ts": [
                 {
                     "name": "Story",
@@ -2766,19 +4025,6 @@
                     "kind": 177
                 }
             ],
-            "projects/ngx-leocare-ui/src/lib/title/title.stories.ts": [
-                {
-                    "name": "Story",
-                    "ctype": "miscellaneous",
-                    "subtype": "typealias",
-                    "rawtype": "StoryObj<TitleComponent>",
-                    "file": "projects/ngx-leocare-ui/src/lib/title/title.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "description": "",
-                    "kind": 177
-                }
-            ],
             "projects/ngx-leocare-ui/src/lib/input/input.stories.ts": [
                 {
                     "name": "Story",
@@ -2786,6 +4032,32 @@
                     "subtype": "typealias",
                     "rawtype": "StoryObj<InputComponent>",
                     "file": "projects/ngx-leocare-ui/src/lib/input/input.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 177
+                }
+            ],
+            "projects/ngx-leocare-ui/src/lib/text/text.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<TextComponent>",
+                    "file": "projects/ngx-leocare-ui/src/lib/text/text.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 177
+                }
+            ],
+            "projects/ngx-leocare-ui/src/lib/title/title.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<TitleComponent>",
+                    "file": "projects/ngx-leocare-ui/src/lib/title/title.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
@@ -3152,6 +4424,104 @@
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
                 "name": "Valid",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/ngx-leocare-ui/src/lib/popup/popup.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "PopupComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/17",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/ngx-leocare-ui/src/lib/popup/popup.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Default",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/ngx-leocare-ui/src/lib/popup/popup.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "meta",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/ngx-leocare-ui/src/lib/text/text.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "TextComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/11",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/ngx-leocare-ui/src/lib/text/text.config.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "TEXT_ALIGN_CONFIG",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/ngx-leocare-ui/src/lib/text/text.config.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "TEXT_COLOR_CONFIG",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/ngx-leocare-ui/src/lib/text/text.config.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "TEXT_FAMILY_CONFIG",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/ngx-leocare-ui/src/lib/text/text.config.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "TEXT_SIZE_CONFIG",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/ngx-leocare-ui/src/lib/text/text.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Default",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/ngx-leocare-ui/src/lib/text/text.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "meta",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"
