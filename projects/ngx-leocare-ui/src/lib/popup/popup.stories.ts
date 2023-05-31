@@ -52,3 +52,13 @@ type Story = StoryObj<PopupComponent>;
 export const Default: Story = {
   args: {},
 };
+
+export const Toggle: Story = {
+  render: (args) => ({
+    props: args,
+    template: `
+    <leo-button text="Afficher / Masquer" (click)="isDisplayed = !isDisplayed"></leo-button>
+    <leo-popup *ngIf="isDisplayed" (cancelEvent)="isDisplayed = !isDisplayed" (validateEvent)="isDisplayed = !isDisplayed"></leo-popup>
+    `,
+  }),
+};
