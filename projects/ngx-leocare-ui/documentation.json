@@ -186,7 +186,7 @@
                     }
                 }
             },
-            "templateData": "<button\n  [disabled]=\"isDisable\"\n  class=\"hover:shadow-md flex items-center justify-center disabled:bg-grey-95 disabled:text-grey-80 rounded-[50px]\"\n  [ngClass]=\"[buttonTypeClasses, buttonSizeClasses]\"\n  [class.hover:shadow-none]=\"isIconButton || size === EButtonSize.XS\"\n  [class.hover:shadow-md]=\"!(isIconButton || size === EButtonSize.XS)\"\n>\n  <ng-container *ngIf=\"!isLoading; else loader\">\n    <img\n      *ngIf=\"iconPath\"\n      [ngClass]=\"buttonIconSizeClasses\"\n      [class.mr-2]=\"!isIconButton\"\n      [src]=\"iconPath\"\n    />\n    <span *ngIf=\"text\" [class.hover:underline]=\"size === EButtonSize.XS\">{{\n      text\n    }}</span>\n  </ng-container>\n</button>\n\n<ng-template #loader>\n  <svg\n    class=\"animate-spin\"\n    [ngClass]=\"[buttonIconColorClasses, buttonIconSizeClasses]\"\n    fill=\"none\"\n    viewBox=\"0 0 22 22\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n  >\n    <path\n      d=\"M18.6581 17.4961C17.1109 19.3069 14.9681 20.506 12.6155 20.8775C10.2629 21.2491 7.85489 20.7687 5.8249 19.5229C3.79492 18.2771 2.27626 16.3476 1.54225 14.0817C0.808241 11.8159 0.907079 9.36243 1.82098 7.16296C2.73488 4.96348 4.40382 3.16242 6.52744 2.08393C8.65106 1.00543 11.0899 0.720327 13.405 1.27992\"\n      stroke-width=\"1.5\"\n    />\n  </svg>\n</ng-template>\n"
+            "templateData": "<button\n  [disabled]=\"isDisable\"\n  class=\"hover:shadow-md flex items-center justify-center disabled:bg-grey-95 disabled:text-grey-80 rounded-[50px]\"\n  [ngClass]=\"[buttonTypeClasses, buttonSizeClasses]\"\n  [class.hover:shadow-none]=\"isIconButton || size === EButtonSize.XS\"\n  [class.hover:shadow-md]=\"!(isIconButton || size === EButtonSize.XS)\"\n>\n  <ng-container *ngIf=\"!isLoading; else loader\">\n    <img *ngIf=\"iconPath\" [ngClass]=\"buttonIconSizeClasses\" [src]=\"iconPath\" />\n  </ng-container>\n  <span\n    *ngIf=\"text\"\n    [class.ml-2]=\"isLoading || iconPath\"\n    [class.hover:underline]=\"size === EButtonSize.XS\"\n    >{{ text }}</span\n  >\n</button>\n\n<ng-template #loader>\n  <svg\n    class=\"animate-spin\"\n    [ngClass]=\"[buttonIconColorClasses, buttonIconSizeClasses]\"\n    fill=\"none\"\n    viewBox=\"0 0 22 22\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n  >\n    <path\n      d=\"M18.6581 17.4961C17.1109 19.3069 14.9681 20.506 12.6155 20.8775C10.2629 21.2491 7.85489 20.7687 5.8249 19.5229C3.79492 18.2771 2.27626 16.3476 1.54225 14.0817C0.808241 11.8159 0.907079 9.36243 1.82098 7.16296C2.73488 4.96348 4.40382 3.16242 6.52744 2.08393C8.65106 1.00543 11.0899 0.720327 13.405 1.27992\"\n      stroke-width=\"1.5\"\n    />\n  </svg>\n</ng-template>\n"
         },
         {
             "name": "IconComponent",
@@ -1457,7 +1457,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: {\n    iconPath: \"./assets/img/icons/cross.svg\",\n  },\n}"
+                "defaultValue": "{\n  args: {\n    iconPath: \"./assets/img/icons/cross-grey-100.svg\",\n  },\n}"
             },
             {
                 "name": "iconLabel",
@@ -1467,7 +1467,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: {\n    text: \"Texte\",\n    iconPath: \"./assets/img/icons/cross.svg\",\n  },\n}"
+                "defaultValue": "{\n  args: {\n    text: \"Texte\",\n    iconPath: \"./assets/img/icons/cross-grey-100.svg\",\n  },\n}"
             },
             {
                 "name": "Invalid",
@@ -1497,7 +1497,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: {\n    isLoading: true,\n  },\n}"
+                "defaultValue": "{\n  render: (args) => ({\n    props: args,\n    template: `\n      <leo-button class=\"block mb-5\" [isLoading]=\"true\"></leo-button>\n      <leo-button [isLoading]=\"true\" text=\"With label\"></leo-button>\n    `,\n  }),\n}"
             },
             {
                 "name": "medium",
@@ -1533,16 +1533,6 @@
                 "name": "meta",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/ngx-leocare-ui/src/lib/input/input.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Meta<InputComponent>",
-                "defaultValue": "{\n  title: \"UI/Input\",\n  component: InputComponent,\n  argTypes: {\n    EInputType: { table: { disable: true } },\n  },\n  tags: [\"autodocs\"],\n  render: (args: InputComponent) => ({\n    props: {\n      ...args,\n    },\n  }),\n}"
-            },
-            {
-                "name": "meta",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "projects/ngx-leocare-ui/src/lib/popup/popup.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
@@ -1568,6 +1558,16 @@
                 "deprecationMessage": "",
                 "type": "Meta<TitleComponent>",
                 "defaultValue": "{\n  title: \"UI/Title\",\n  component: TitleComponent,\n  argTypes: {\n    eAtomTitleLevel: { table: { disable: true } },\n    eAtomTitleAlignConfig: { table: { disable: true } },\n    eAtomTitleDisplayConfig: { table: { disable: true } },\n    eAtomTitleColorConfig: { table: { disable: true } },\n    atomTitleAlignConfig: { table: { disable: true } },\n    atomTitleDisplayConfig: { table: { disable: true } },\n    atomTitleColorConfig: { table: { disable: true } },\n    atomTitleDisplayConfigByDefault: { table: { disable: true } },\n    ngOnInit: { table: { disable: true } },\n    setDisplayConfigByDefault: { table: { disable: true } },\n    setAlignConfigByDefault: { table: { disable: true } },\n    setColorConfigByDefault: { table: { disable: true } },\n  },\n  tags: [\"autodocs\"],\n  render: (args: TitleComponent) => ({\n    props: {\n      ...args,\n    },\n  }),\n}"
+            },
+            {
+                "name": "meta",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/ngx-leocare-ui/src/lib/input/input.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Meta<InputComponent>",
+                "defaultValue": "{\n  title: \"UI/Input\",\n  component: InputComponent,\n  argTypes: {\n    EInputType: { table: { disable: true } },\n  },\n  tags: [\"autodocs\"],\n  render: (args: InputComponent) => ({\n    props: {\n      ...args,\n    },\n  }),\n}"
             },
             {
                 "name": "Normal",
@@ -1809,17 +1809,6 @@
                 "name": "Story",
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
-                "rawtype": "StoryObj<InputComponent>",
-                "file": "projects/ngx-leocare-ui/src/lib/input/input.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "description": "",
-                "kind": 177
-            },
-            {
-                "name": "Story",
-                "ctype": "miscellaneous",
-                "subtype": "typealias",
                 "rawtype": "StoryObj<PopupComponent>",
                 "file": "projects/ngx-leocare-ui/src/lib/popup/popup.stories.ts",
                 "deprecated": false,
@@ -1844,6 +1833,17 @@
                 "subtype": "typealias",
                 "rawtype": "StoryObj<TitleComponent>",
                 "file": "projects/ngx-leocare-ui/src/lib/title/title.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 177
+            },
+            {
+                "name": "Story",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "rawtype": "StoryObj<InputComponent>",
+                "file": "projects/ngx-leocare-ui/src/lib/input/input.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -2795,7 +2795,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  args: {\n    iconPath: \"./assets/img/icons/cross.svg\",\n  },\n}"
+                    "defaultValue": "{\n  args: {\n    iconPath: \"./assets/img/icons/cross-grey-100.svg\",\n  },\n}"
                 },
                 {
                     "name": "iconLabel",
@@ -2805,7 +2805,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  args: {\n    text: \"Texte\",\n    iconPath: \"./assets/img/icons/cross.svg\",\n  },\n}"
+                    "defaultValue": "{\n  args: {\n    text: \"Texte\",\n    iconPath: \"./assets/img/icons/cross-grey-100.svg\",\n  },\n}"
                 },
                 {
                     "name": "large",
@@ -2825,7 +2825,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  args: {\n    isLoading: true,\n  },\n}"
+                    "defaultValue": "{\n  render: (args) => ({\n    props: args,\n    template: `\n      <leo-button class=\"block mb-5\" [isLoading]=\"true\"></leo-button>\n      <leo-button [isLoading]=\"true\" text=\"With label\"></leo-button>\n    `,\n  }),\n}"
                 },
                 {
                     "name": "medium",
@@ -4021,19 +4021,6 @@
                     "kind": 177
                 }
             ],
-            "projects/ngx-leocare-ui/src/lib/input/input.stories.ts": [
-                {
-                    "name": "Story",
-                    "ctype": "miscellaneous",
-                    "subtype": "typealias",
-                    "rawtype": "StoryObj<InputComponent>",
-                    "file": "projects/ngx-leocare-ui/src/lib/input/input.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "description": "",
-                    "kind": 177
-                }
-            ],
             "projects/ngx-leocare-ui/src/lib/popup/popup.stories.ts": [
                 {
                     "name": "Story",
@@ -4067,6 +4054,19 @@
                     "subtype": "typealias",
                     "rawtype": "StoryObj<TitleComponent>",
                     "file": "projects/ngx-leocare-ui/src/lib/title/title.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 177
+                }
+            ],
+            "projects/ngx-leocare-ui/src/lib/input/input.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<InputComponent>",
+                    "file": "projects/ngx-leocare-ui/src/lib/input/input.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",

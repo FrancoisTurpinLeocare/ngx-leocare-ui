@@ -35,49 +35,49 @@ type Story = StoryObj<ButtonComponent>;
 // More on writing stories with args: https://storybook.js.org/docs/angular/writing-stories/args
 export const Primary: Story = {
   args: {
-    text: "Texte",
+    text: "Valider",
     type: EButtonType.PRIMARY,
   },
 };
 export const Secondary: Story = {
   args: {
-    text: "Texte",
+    text: "Suivant",
     type: EButtonType.SECONDARY,
   },
 };
 export const Warning: Story = {
   args: {
-    text: "Texte",
+    text: "Refuser",
     type: EButtonType.WARNING,
   },
 };
 export const xs: Story = {
   args: {
-    text: "Texte",
+    text: "Action",
     size: EButtonSize.XS,
   },
 };
 export const small: Story = {
   args: {
-    text: "Texte",
+    text: "Action",
     size: EButtonSize.SMALL,
   },
 };
 export const medium: Story = {
   args: {
-    text: "Texte",
+    text: "Action",
     size: EButtonSize.MEDIUM,
   },
 };
 export const large: Story = {
   args: {
-    text: "Texte",
+    text: "Action",
     size: EButtonSize.LARGE,
   },
 };
 export const iconLabel: Story = {
   args: {
-    text: "Texte",
+    text: "Action",
     iconPath: "./assets/img/icons/cross-grey-100.svg",
   },
 };
@@ -87,9 +87,15 @@ export const iconButton: Story = {
   },
 };
 export const loading: Story = {
-  args: {
-    isLoading: true,
-  },
+  render: (args) => ({
+    props: args,
+    template: `
+      <h2>Icon only</h2>
+      <leo-button class="block mb-5" [isLoading]="true"></leo-button>
+      <h2>With label</h2>
+      <leo-button [isLoading]="true" text="Action"></leo-button>
+    `,
+  }),
 };
 export const disable: Story = {
   args: {

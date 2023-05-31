@@ -6,16 +6,14 @@
   [class.hover:shadow-md]="!(isIconButton || size === EButtonSize.XS)"
 >
   <ng-container *ngIf="!isLoading; else loader">
-    <img
-      *ngIf="iconPath"
-      [ngClass]="buttonIconSizeClasses"
-      [class.mr-2]="!isIconButton"
-      [src]="iconPath"
-    />
-    <span *ngIf="text" [class.hover:underline]="size === EButtonSize.XS">{{
-      text
-    }}</span>
+    <img *ngIf="iconPath" [ngClass]="buttonIconSizeClasses" [src]="iconPath" />
   </ng-container>
+  <span
+    *ngIf="text"
+    [class.ml-2]="isLoading || iconPath"
+    [class.hover:underline]="size === EButtonSize.XS"
+    >{{ text }}</span
+  >
 </button>
 
 <ng-template #loader>
