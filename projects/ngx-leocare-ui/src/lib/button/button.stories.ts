@@ -78,12 +78,12 @@ export const large: Story = {
 export const iconLabel: Story = {
   args: {
     text: "Texte",
-    iconPath: "/assets/img/icons/cross.svg",
+    iconPath: "./assets/img/icons/cross-grey-100.svg",
   },
 };
 export const iconButton: Story = {
   args: {
-    iconPath: "/assets/img/icons/cross.svg",
+    iconPath: "./assets/img/icons/cross-grey-100.svg",
   },
 };
 export const loading: Story = {

@@ -9,7 +9,7 @@
     "components": [
         {
             "name": "ButtonComponent",
-            "id": "component-ButtonComponent-de8d791162ca7d0eb99053b409d2ffe152c4ebeeee0e9ba9fd53934ff8ffd926bdf04d9e39a21eb9dcd16a3df488c5601c2d0d6e6733033a28754228c6977d6a",
+            "id": "component-ButtonComponent-d680b0c38e325a985ffd3772b5322f69e812b72c28396d90e2b053157811317b44da158ccc089915b064cf824d633e2624650460ce743b9d2aea062d563638e2",
             "file": "projects/ngx-leocare-ui/src/lib/button/button.component.ts",
             "changeDetection": "ChangeDetectionStrategy.OnPush",
             "encapsulation": [],
@@ -155,7 +155,10 @@
                     "typeParameters": [],
                     "line": 35,
                     "deprecated": false,
-                    "deprecationMessage": ""
+                    "deprecationMessage": "",
+                    "modifierKind": [
+                        123
+                    ]
                 }
             ],
             "deprecated": false,
@@ -165,7 +168,7 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import {\n  ChangeDetectionStrategy,\n  Component,\n  Input,\n  OnInit,\n} from \"@angular/core\";\nimport {\n  BUTTON_ICON_COLOR_CONFIG,\n  BUTTON_ICON_SIZE_CONFIG,\n  BUTTON_SIZE_CONFIG,\n  BUTTON_TYPE_CONFIG,\n  EButtonSize,\n  EButtonType,\n} from \"./button.config\";\n\n@Component({\n  selector: \"leo-button\",\n  templateUrl: \"./button.component.html\",\n  changeDetection: ChangeDetectionStrategy.OnPush,\n})\nexport class ButtonComponent implements OnInit {\n  @Input() type: EButtonType = EButtonType.PRIMARY;\n  @Input() size: EButtonSize = EButtonSize.MEDIUM;\n  @Input() isDisable?: boolean = false;\n  @Input() isLoading?: boolean = false;\n  @Input() text?: string;\n  @Input() iconPath?: string;\n\n  public buttonTypeClasses: string = \"\";\n  public buttonSizeClasses: string = \"\";\n  public buttonIconSizeClasses: string = \"\";\n  public buttonIconColorClasses: string = \"\";\n  public EButtonSize = EButtonSize;\n\n  ngOnInit(): void {\n    this.buttonTypeClasses = BUTTON_TYPE_CONFIG[this.type];\n    this.buttonSizeClasses = !this.isIconButton\n      ? BUTTON_SIZE_CONFIG[this.size]\n      : \"w-9 h-9\";\n    this.buttonIconSizeClasses = BUTTON_ICON_SIZE_CONFIG[this.size];\n    this.buttonIconColorClasses = BUTTON_ICON_COLOR_CONFIG[this.type];\n  }\n\n  get isIconButton(): boolean {\n    return (\n      (this.text === undefined || this.text === \"\") &&\n      (this.iconPath !== undefined || this.iconPath !== \"\")\n    );\n  }\n}\n",
+            "sourceCode": "import {\n  ChangeDetectionStrategy,\n  Component,\n  Input,\n  OnInit,\n} from \"@angular/core\";\nimport {\n  BUTTON_ICON_COLOR_CONFIG,\n  BUTTON_ICON_SIZE_CONFIG,\n  BUTTON_SIZE_CONFIG,\n  BUTTON_TYPE_CONFIG,\n  EButtonSize,\n  EButtonType,\n} from \"./button.config\";\n\n@Component({\n  selector: \"leo-button\",\n  templateUrl: \"./button.component.html\",\n  changeDetection: ChangeDetectionStrategy.OnPush,\n})\nexport class ButtonComponent implements OnInit {\n  @Input() type: EButtonType = EButtonType.PRIMARY;\n  @Input() size: EButtonSize = EButtonSize.MEDIUM;\n  @Input() isDisable?: boolean = false;\n  @Input() isLoading?: boolean = false;\n  @Input() text?: string;\n  @Input() iconPath?: string;\n\n  public buttonTypeClasses: string = \"\";\n  public buttonSizeClasses: string = \"\";\n  public buttonIconSizeClasses: string = \"\";\n  public buttonIconColorClasses: string = \"\";\n  public EButtonSize = EButtonSize;\n\n  public ngOnInit(): void {\n    this.buttonTypeClasses = BUTTON_TYPE_CONFIG[this.type];\n    this.buttonSizeClasses = !this.isIconButton\n      ? BUTTON_SIZE_CONFIG[this.size]\n      : \"w-9 h-9\";\n    this.buttonIconSizeClasses = BUTTON_ICON_SIZE_CONFIG[this.size];\n    this.buttonIconColorClasses = BUTTON_ICON_COLOR_CONFIG[this.type];\n  }\n\n  get isIconButton(): boolean {\n    return (\n      (this.text === undefined || this.text === \"\") &&\n      (this.iconPath !== undefined || this.iconPath !== \"\")\n    );\n  }\n}\n",
             "assetsDirs": [],
             "styleUrlsData": "",
             "stylesData": "",
@@ -187,7 +190,7 @@
         },
         {
             "name": "IconComponent",
-            "id": "component-IconComponent-79a253a257a73d0e070c2ded217ba892dd2040b80897dda7dfb8b88b52469bb917236275e15220bf0cc976ba3027ef5434edd530bbbeb4f44d77551f1286e3ce",
+            "id": "component-IconComponent-dc80afe57e6bb3a61fb9e9ac3d5909669eeb00efab63c39eb06e7fce0bd267dc005a22c9865b8331ee15612d9b7edfb03da2c315aa14745502b4f1bab01a02a0",
             "file": "projects/ngx-leocare-ui/src/lib/icon/icon.component.ts",
             "changeDetection": "ChangeDetectionStrategy.OnPush",
             "encapsulation": [],
@@ -291,7 +294,10 @@
                     "typeParameters": [],
                     "line": 29,
                     "deprecated": false,
-                    "deprecationMessage": ""
+                    "deprecationMessage": "",
+                    "modifierKind": [
+                        123
+                    ]
                 }
             ],
             "deprecated": false,
@@ -301,7 +307,7 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import {\n  ChangeDetectionStrategy,\n  Component,\n  Input,\n  OnInit,\n} from \"@angular/core\";\nimport {\n  EIconColor,\n  EIconSize,\n  ICON_COLOR_CONFIG,\n  ICON_SIZE_CONFIG,\n} from \"./icon.config\";\n\n@Component({\n  selector: \"leo-icon\",\n  templateUrl: \"./icon.component.html\",\n  changeDetection: ChangeDetectionStrategy.OnPush,\n})\nexport class IconComponent implements OnInit {\n  @Input() name: string = \"\";\n  @Input() size: EIconSize = EIconSize.SQUARE_20PX;\n  @Input() color: EIconColor = EIconColor.GREY_40;\n  @Input() isFill = false;\n\n  public baseIconUrl = \"./assets/img/icons/\";\n  public iconStyles: string = \"\";\n  public iconSizeClasses: string = \"\";\n\n  ngOnInit(): void {\n    this.iconStyles = ICON_COLOR_CONFIG[this.color];\n    this.iconSizeClasses = ICON_SIZE_CONFIG[this.size];\n  }\n}\n",
+            "sourceCode": "import {\n  ChangeDetectionStrategy,\n  Component,\n  Input,\n  OnInit,\n} from \"@angular/core\";\nimport {\n  EIconColor,\n  EIconSize,\n  ICON_COLOR_CONFIG,\n  ICON_SIZE_CONFIG,\n} from \"./icon.config\";\n\n@Component({\n  selector: \"leo-icon\",\n  templateUrl: \"./icon.component.html\",\n  changeDetection: ChangeDetectionStrategy.OnPush,\n})\nexport class IconComponent implements OnInit {\n  @Input() name: string = \"\";\n  @Input() size: EIconSize = EIconSize.SQUARE_20PX;\n  @Input() color: EIconColor = EIconColor.GREY_40;\n  @Input() isFill = false;\n\n  public baseIconUrl = \"./assets/img/icons/\";\n  public iconStyles: string = \"\";\n  public iconSizeClasses: string = \"\";\n\n  public ngOnInit(): void {\n    this.iconStyles = ICON_COLOR_CONFIG[this.color];\n    this.iconSizeClasses = ICON_SIZE_CONFIG[this.size];\n  }\n}\n",
             "assetsDirs": [],
             "styleUrlsData": "",
             "stylesData": "",
@@ -769,7 +775,7 @@
         },
         {
             "name": "TitleComponent",
-            "id": "component-TitleComponent-c2db794d36117de5ce4f4c4230a680df18baf881b4472c078592d32ba784e33e34313be6b22aa5b74941f47adf647dbed4ea18c0d624d2c016fb0e7dfbb2e2fa",
+            "id": "component-TitleComponent-49b507b2e9771fce4012169329e7dbbbc6ba58252051726db39394df40c903d030ca8b69cd7de059ea398e72acfefaa7f5d1801622d280f4a0496c822aeaa79b",
             "file": "projects/ngx-leocare-ui/src/lib/title/title.component.ts",
             "changeDetection": "ChangeDetectionStrategy.OnPush",
             "encapsulation": [],
@@ -923,7 +929,10 @@
                     "typeParameters": [],
                     "line": 50,
                     "deprecated": false,
-                    "deprecationMessage": ""
+                    "deprecationMessage": "",
+                    "modifierKind": [
+                        123
+                    ]
                 },
                 {
                     "name": "setAlignConfigByDefault",
@@ -935,7 +944,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "modifierKind": [
-                        121
+                        123
                     ]
                 },
                 {
@@ -948,7 +957,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "modifierKind": [
-                        121
+                        123
                     ]
                 },
                 {
@@ -961,7 +970,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "modifierKind": [
-                        121
+                        123
                     ]
                 }
             ],
@@ -972,7 +981,7 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import {\n  ChangeDetectionStrategy,\n  Component,\n  Input,\n  OnInit,\n} from \"@angular/core\";\nimport {\n  ATOM_TITLE_ALIGN_CONFIG,\n  ATOM_TITLE_COLOR_CONFIG,\n  ATOM_TITLE_DISPLAY_CONFIG,\n  ATOM_TITLE_DISPLAY_CONFIG_BY_DEFAULT,\n  EAtomTitleAlignConfig,\n  EAtomTitleColorConfig,\n  EAtomTitleDisplayConfig,\n  EAtomTitleLevel,\n} from \"./title.config\";\n\nexport type AtomTitle = {\n  alignConfig?: EAtomTitleAlignConfig;\n  text: string;\n  level: EAtomTitleLevel;\n  displayConfig?: EAtomTitleDisplayConfig;\n  colorConfig?: EAtomTitleColorConfig;\n};\n\n@Component({\n  selector: \"leo-title\",\n  templateUrl: \"./title.component.html\",\n  changeDetection: ChangeDetectionStrategy.OnPush,\n})\nexport class TitleComponent implements OnInit {\n  @Input() level: EAtomTitleLevel = EAtomTitleLevel.H1;\n  @Input() text: string = \"\";\n  @Input() alignConfig: EAtomTitleAlignConfig =\n    EAtomTitleAlignConfig.ALIGN_LEFT;\n  @Input() displayConfig: EAtomTitleDisplayConfig =\n    EAtomTitleDisplayConfig.DISPLAY_H1;\n  @Input() colorConfig: EAtomTitleColorConfig = EAtomTitleColorConfig.GREY_25;\n\n  eAtomTitleLevel = EAtomTitleLevel;\n  eAtomTitleAlignConfig = EAtomTitleAlignConfig;\n  eAtomTitleDisplayConfig = EAtomTitleDisplayConfig;\n  eAtomTitleColorConfig = EAtomTitleColorConfig;\n\n  atomTitleAlignConfig = ATOM_TITLE_ALIGN_CONFIG;\n  atomTitleDisplayConfig = ATOM_TITLE_DISPLAY_CONFIG;\n  atomTitleColorConfig = ATOM_TITLE_COLOR_CONFIG;\n  atomTitleDisplayConfigByDefault = ATOM_TITLE_DISPLAY_CONFIG_BY_DEFAULT;\n\n  ngOnInit() {\n    this.setDisplayConfigByDefault();\n    this.setAlignConfigByDefault();\n    this.setColorConfigByDefault();\n  }\n\n  private setDisplayConfigByDefault(): void {\n    this.displayConfig =\n      this.displayConfig ?? ATOM_TITLE_DISPLAY_CONFIG_BY_DEFAULT[this.level];\n  }\n\n  private setAlignConfigByDefault(): void {\n    this.alignConfig =\n      this.alignConfig ?? this.eAtomTitleAlignConfig.ALIGN_CENTERED;\n  }\n\n  private setColorConfigByDefault(): void {\n    this.colorConfig = this.colorConfig ?? this.eAtomTitleColorConfig.GREY_25;\n  }\n}\n",
+            "sourceCode": "import {\n  ChangeDetectionStrategy,\n  Component,\n  Input,\n  OnInit,\n} from \"@angular/core\";\nimport {\n  ATOM_TITLE_ALIGN_CONFIG,\n  ATOM_TITLE_COLOR_CONFIG,\n  ATOM_TITLE_DISPLAY_CONFIG,\n  ATOM_TITLE_DISPLAY_CONFIG_BY_DEFAULT,\n  EAtomTitleAlignConfig,\n  EAtomTitleColorConfig,\n  EAtomTitleDisplayConfig,\n  EAtomTitleLevel,\n} from \"./title.config\";\n\nexport type AtomTitle = {\n  alignConfig?: EAtomTitleAlignConfig;\n  text: string;\n  level: EAtomTitleLevel;\n  displayConfig?: EAtomTitleDisplayConfig;\n  colorConfig?: EAtomTitleColorConfig;\n};\n\n@Component({\n  selector: \"leo-title\",\n  templateUrl: \"./title.component.html\",\n  changeDetection: ChangeDetectionStrategy.OnPush,\n})\nexport class TitleComponent implements OnInit {\n  @Input() level: EAtomTitleLevel = EAtomTitleLevel.H1;\n  @Input() text: string = \"\";\n  @Input() alignConfig: EAtomTitleAlignConfig =\n    EAtomTitleAlignConfig.ALIGN_LEFT;\n  @Input() displayConfig: EAtomTitleDisplayConfig =\n    EAtomTitleDisplayConfig.DISPLAY_H1;\n  @Input() colorConfig: EAtomTitleColorConfig = EAtomTitleColorConfig.GREY_25;\n\n  eAtomTitleLevel = EAtomTitleLevel;\n  eAtomTitleAlignConfig = EAtomTitleAlignConfig;\n  eAtomTitleDisplayConfig = EAtomTitleDisplayConfig;\n  eAtomTitleColorConfig = EAtomTitleColorConfig;\n\n  atomTitleAlignConfig = ATOM_TITLE_ALIGN_CONFIG;\n  atomTitleDisplayConfig = ATOM_TITLE_DISPLAY_CONFIG;\n  atomTitleColorConfig = ATOM_TITLE_COLOR_CONFIG;\n  atomTitleDisplayConfigByDefault = ATOM_TITLE_DISPLAY_CONFIG_BY_DEFAULT;\n\n  public ngOnInit() {\n    this.setDisplayConfigByDefault();\n    this.setAlignConfigByDefault();\n    this.setColorConfigByDefault();\n  }\n\n  public setDisplayConfigByDefault(): void {\n    this.displayConfig =\n      this.displayConfig ?? ATOM_TITLE_DISPLAY_CONFIG_BY_DEFAULT[this.level];\n  }\n\n  public setAlignConfigByDefault(): void {\n    this.alignConfig =\n      this.alignConfig ?? this.eAtomTitleAlignConfig.ALIGN_CENTERED;\n  }\n\n  public setColorConfigByDefault(): void {\n    this.colorConfig = this.colorConfig ?? this.eAtomTitleColorConfig.GREY_25;\n  }\n}\n",
             "assetsDirs": [],
             "styleUrlsData": "",
             "stylesData": "",
@@ -1358,7 +1367,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: {},\n}"
+                "defaultValue": "{\n  args: {\n    text: \"Je suis un text exemple\",\n  },\n}"
             },
             {
                 "name": "disable",
@@ -1448,7 +1457,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: {\n    iconPath: \"/assets/img/icons/cross.svg\",\n  },\n}"
+                "defaultValue": "{\n  args: {\n    iconPath: \"./assets/img/icons/cross.svg\",\n  },\n}"
             },
             {
                 "name": "iconLabel",
@@ -1458,7 +1467,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: {\n    text: \"Texte\",\n    iconPath: \"/assets/img/icons/cross.svg\",\n  },\n}"
+                "defaultValue": "{\n  args: {\n    text: \"Texte\",\n    iconPath: \"./assets/img/icons/cross.svg\",\n  },\n}"
             },
             {
                 "name": "Invalid",
@@ -1508,7 +1517,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Meta<ButtonComponent>",
-                "defaultValue": "{\n  title: \"UI/Button\",\n  component: ButtonComponent,\n  tags: [\"autodocs\"],\n  parameters: {\n    docs: {\n      description: {\n        component: \"Button cliquable avec plusieurs état\",\n      },\n    },\n  },\n  render: (args: ButtonComponent) => ({\n    props: {\n      ...args,\n    },\n  }),\n}"
+                "defaultValue": "{\n  title: \"UI/Button\",\n  component: ButtonComponent,\n  argTypes: {\n    buttonTypeClasses: { table: { disable: true } },\n    buttonSizeClasses: { table: { disable: true } },\n    buttonIconSizeClasses: { table: { disable: true } },\n    buttonIconColorClasses: { table: { disable: true } },\n    EButtonSize: { table: { disable: true } },\n    ngOnInit: { table: { disable: true } },\n  },\n  tags: [\"autodocs\"],\n  parameters: {\n    docs: {\n      description: {\n        component: \"Button cliquable avec plusieurs état\",\n      },\n    },\n  },\n  render: (args: ButtonComponent) => ({\n    props: {\n      ...args,\n    },\n  }),\n}"
             },
             {
                 "name": "meta",
@@ -1518,7 +1527,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Meta<IconComponent>",
-                "defaultValue": "{\n  title: \"UI/Icon\",\n  component: IconComponent,\n  tags: [\"autodocs\"],\n  render: (args: IconComponent) => ({\n    props: {\n      ...args,\n      description: {\n        component:\n          \"Composant d'icone, charge un svg depuis son nom, applique les couleurs du design system depuis son enum de config\",\n      },\n    },\n  }),\n}"
+                "defaultValue": "{\n  title: \"UI/Icon\",\n  component: IconComponent,\n  argTypes: {\n    baseIconUrl: { table: { disable: true } },\n    iconStyles: { table: { disable: true } },\n    iconSizeClasses: { table: { disable: true } },\n    ngOnInit: { table: { disable: true } },\n  },\n  tags: [\"autodocs\"],\n  render: (args: IconComponent) => ({\n    props: {\n      ...args,\n      description: {\n        component:\n          \"Composant d'icone, charge un svg depuis son nom, applique les couleurs du design system depuis son enum de config\",\n      },\n    },\n  }),\n}"
             },
             {
                 "name": "meta",
@@ -1528,7 +1537,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Meta<InputComponent>",
-                "defaultValue": "{\n  title: \"UI/Input\",\n  component: InputComponent,\n  tags: [\"autodocs\"],\n  render: (args: InputComponent) => ({\n    props: {\n      ...args,\n    },\n  }),\n}"
+                "defaultValue": "{\n  title: \"UI/Input\",\n  component: InputComponent,\n  argTypes: {\n    EInputType: { table: { disable: true } },\n  },\n  tags: [\"autodocs\"],\n  render: (args: InputComponent) => ({\n    props: {\n      ...args,\n    },\n  }),\n}"
             },
             {
                 "name": "meta",
@@ -1538,7 +1547,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Meta<PopupComponent>",
-                "defaultValue": "{\n  title: \"UI/Popup\",\n  component: PopupComponent,\n  argTypes: {\n    eIconColor: {\n      control: false,\n    },\n    eTextColor: {\n      control: false,\n    },\n    eTextSize: {\n      control: false,\n    },\n    eTextFamily: {\n      control: false,\n    },\n    eTextAlign: {\n      control: false,\n    },\n    eIconSize: {\n      control: false,\n    },\n    eButtonType: {\n      control: false,\n    },\n    ePopupIconName: {\n      control: false,\n    },\n    ePopupState: {\n      control: false,\n    },\n  },\n  tags: [\"autodocs\"],\n  decorators: [\n    componentWrapperDecorator(\n      (story) => `<div style=\"height: 50vh; transform: scale(1)\">${story}</div>`\n    ),\n    moduleMetadata({\n      //👇 Imports both components to allow component composition with Storybook\n      declarations: [PopupComponent],\n      imports: [CommonModule, TextModule, IconModule, ButtonModule],\n    }),\n  ],\n  render: (args: PopupComponent) => ({\n    props: {\n      ...args,\n    },\n  }),\n}"
+                "defaultValue": "{\n  title: \"UI/Popup\",\n  component: PopupComponent,\n  argTypes: {\n    eIconColor: { table: { disable: true } },\n    eTextColor: { table: { disable: true } },\n    eTextSize: { table: { disable: true } },\n    eTextFamily: { table: { disable: true } },\n    eTextAlign: { table: { disable: true } },\n    eIconSize: { table: { disable: true } },\n    eButtonType: { table: { disable: true } },\n    ePopupIconName: { table: { disable: true } },\n    ePopupState: { table: { disable: true } },\n    cancelEvent: { table: { disable: true } },\n    validateEvent: { table: { disable: true } },\n  },\n  tags: [\"autodocs\"],\n  decorators: [\n    componentWrapperDecorator(\n      (story) => `<div style=\"height: 50vh; transform: scale(1)\">${story}</div>`\n    ),\n    moduleMetadata({\n      //👇 Imports both components to allow component composition with Storybook\n      declarations: [PopupComponent],\n      imports: [CommonModule, TextModule, IconModule, ButtonModule],\n    }),\n  ],\n  render: (args: PopupComponent) => ({\n    props: {\n      ...args,\n    },\n  }),\n}"
             },
             {
                 "name": "meta",
@@ -1548,7 +1557,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Meta<TextComponent>",
-                "defaultValue": "{\n  title: \"UI/Text\",\n  component: TextComponent,\n  tags: [\"autodocs\"],\n  render: (args: TextComponent) => ({\n    props: {\n      ...args,\n    },\n  }),\n}"
+                "defaultValue": "{\n  title: \"UI/Text\",\n  component: TextComponent,\n  argTypes: {\n    TEXT_SIZE_CONFIG: { table: { disable: true } },\n    TEXT_ALIGN_CONFIG: { table: { disable: true } },\n    TEXT_FAMILY_CONFIG: { table: { disable: true } },\n    TEXT_COLOR_CONFIG: { table: { disable: true } },\n  },\n  tags: [\"autodocs\"],\n  render: (args: TextComponent) => ({\n    props: {\n      ...args,\n    },\n  }),\n}"
             },
             {
                 "name": "meta",
@@ -1558,7 +1567,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Meta<TitleComponent>",
-                "defaultValue": "{\n  title: \"UI/Title\",\n  component: TitleComponent,\n  tags: [\"autodocs\"],\n  render: (args: TitleComponent) => ({\n    props: {\n      ...args,\n    },\n  }),\n}"
+                "defaultValue": "{\n  title: \"UI/Title\",\n  component: TitleComponent,\n  argTypes: {\n    eAtomTitleLevel: { table: { disable: true } },\n    eAtomTitleAlignConfig: { table: { disable: true } },\n    eAtomTitleDisplayConfig: { table: { disable: true } },\n    eAtomTitleColorConfig: { table: { disable: true } },\n    atomTitleAlignConfig: { table: { disable: true } },\n    atomTitleDisplayConfig: { table: { disable: true } },\n    atomTitleColorConfig: { table: { disable: true } },\n    atomTitleDisplayConfigByDefault: { table: { disable: true } },\n    ngOnInit: { table: { disable: true } },\n    setDisplayConfigByDefault: { table: { disable: true } },\n    setAlignConfigByDefault: { table: { disable: true } },\n    setColorConfigByDefault: { table: { disable: true } },\n  },\n  tags: [\"autodocs\"],\n  render: (args: TitleComponent) => ({\n    props: {\n      ...args,\n    },\n  }),\n}"
             },
             {
                 "name": "Normal",
@@ -2742,7 +2751,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Meta<PopupComponent>",
-                    "defaultValue": "{\n  title: \"UI/Popup\",\n  component: PopupComponent,\n  argTypes: {\n    eIconColor: {\n      control: false,\n    },\n    eTextColor: {\n      control: false,\n    },\n    eTextSize: {\n      control: false,\n    },\n    eTextFamily: {\n      control: false,\n    },\n    eTextAlign: {\n      control: false,\n    },\n    eIconSize: {\n      control: false,\n    },\n    eButtonType: {\n      control: false,\n    },\n    ePopupIconName: {\n      control: false,\n    },\n    ePopupState: {\n      control: false,\n    },\n  },\n  tags: [\"autodocs\"],\n  decorators: [\n    componentWrapperDecorator(\n      (story) => `<div style=\"height: 50vh; transform: scale(1)\">${story}</div>`\n    ),\n    moduleMetadata({\n      //👇 Imports both components to allow component composition with Storybook\n      declarations: [PopupComponent],\n      imports: [CommonModule, TextModule, IconModule, ButtonModule],\n    }),\n  ],\n  render: (args: PopupComponent) => ({\n    props: {\n      ...args,\n    },\n  }),\n}"
+                    "defaultValue": "{\n  title: \"UI/Popup\",\n  component: PopupComponent,\n  argTypes: {\n    eIconColor: { table: { disable: true } },\n    eTextColor: { table: { disable: true } },\n    eTextSize: { table: { disable: true } },\n    eTextFamily: { table: { disable: true } },\n    eTextAlign: { table: { disable: true } },\n    eIconSize: { table: { disable: true } },\n    eButtonType: { table: { disable: true } },\n    ePopupIconName: { table: { disable: true } },\n    ePopupState: { table: { disable: true } },\n    cancelEvent: { table: { disable: true } },\n    validateEvent: { table: { disable: true } },\n  },\n  tags: [\"autodocs\"],\n  decorators: [\n    componentWrapperDecorator(\n      (story) => `<div style=\"height: 50vh; transform: scale(1)\">${story}</div>`\n    ),\n    moduleMetadata({\n      //👇 Imports both components to allow component composition with Storybook\n      declarations: [PopupComponent],\n      imports: [CommonModule, TextModule, IconModule, ButtonModule],\n    }),\n  ],\n  render: (args: PopupComponent) => ({\n    props: {\n      ...args,\n    },\n  }),\n}"
                 }
             ],
             "projects/ngx-leocare-ui/src/lib/text/text.stories.ts": [
@@ -2754,7 +2763,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  args: {},\n}"
+                    "defaultValue": "{\n  args: {\n    text: \"Je suis un text exemple\",\n  },\n}"
                 },
                 {
                     "name": "meta",
@@ -2764,7 +2773,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Meta<TextComponent>",
-                    "defaultValue": "{\n  title: \"UI/Text\",\n  component: TextComponent,\n  tags: [\"autodocs\"],\n  render: (args: TextComponent) => ({\n    props: {\n      ...args,\n    },\n  }),\n}"
+                    "defaultValue": "{\n  title: \"UI/Text\",\n  component: TextComponent,\n  argTypes: {\n    TEXT_SIZE_CONFIG: { table: { disable: true } },\n    TEXT_ALIGN_CONFIG: { table: { disable: true } },\n    TEXT_FAMILY_CONFIG: { table: { disable: true } },\n    TEXT_COLOR_CONFIG: { table: { disable: true } },\n  },\n  tags: [\"autodocs\"],\n  render: (args: TextComponent) => ({\n    props: {\n      ...args,\n    },\n  }),\n}"
                 }
             ],
             "projects/ngx-leocare-ui/src/lib/button/button.stories.ts": [
@@ -2786,7 +2795,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  args: {\n    iconPath: \"/assets/img/icons/cross.svg\",\n  },\n}"
+                    "defaultValue": "{\n  args: {\n    iconPath: \"./assets/img/icons/cross.svg\",\n  },\n}"
                 },
                 {
                     "name": "iconLabel",
@@ -2796,7 +2805,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  args: {\n    text: \"Texte\",\n    iconPath: \"/assets/img/icons/cross.svg\",\n  },\n}"
+                    "defaultValue": "{\n  args: {\n    text: \"Texte\",\n    iconPath: \"./assets/img/icons/cross.svg\",\n  },\n}"
                 },
                 {
                     "name": "large",
@@ -2836,7 +2845,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Meta<ButtonComponent>",
-                    "defaultValue": "{\n  title: \"UI/Button\",\n  component: ButtonComponent,\n  tags: [\"autodocs\"],\n  parameters: {\n    docs: {\n      description: {\n        component: \"Button cliquable avec plusieurs état\",\n      },\n    },\n  },\n  render: (args: ButtonComponent) => ({\n    props: {\n      ...args,\n    },\n  }),\n}"
+                    "defaultValue": "{\n  title: \"UI/Button\",\n  component: ButtonComponent,\n  argTypes: {\n    buttonTypeClasses: { table: { disable: true } },\n    buttonSizeClasses: { table: { disable: true } },\n    buttonIconSizeClasses: { table: { disable: true } },\n    buttonIconColorClasses: { table: { disable: true } },\n    EButtonSize: { table: { disable: true } },\n    ngOnInit: { table: { disable: true } },\n  },\n  tags: [\"autodocs\"],\n  parameters: {\n    docs: {\n      description: {\n        component: \"Button cliquable avec plusieurs état\",\n      },\n    },\n  },\n  render: (args: ButtonComponent) => ({\n    props: {\n      ...args,\n    },\n  }),\n}"
                 },
                 {
                     "name": "Primary",
@@ -2918,7 +2927,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Meta<InputComponent>",
-                    "defaultValue": "{\n  title: \"UI/Input\",\n  component: InputComponent,\n  tags: [\"autodocs\"],\n  render: (args: InputComponent) => ({\n    props: {\n      ...args,\n    },\n  }),\n}"
+                    "defaultValue": "{\n  title: \"UI/Input\",\n  component: InputComponent,\n  argTypes: {\n    EInputType: { table: { disable: true } },\n  },\n  tags: [\"autodocs\"],\n  render: (args: InputComponent) => ({\n    props: {\n      ...args,\n    },\n  }),\n}"
                 },
                 {
                     "name": "Normal",
@@ -3000,7 +3009,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Meta<TitleComponent>",
-                    "defaultValue": "{\n  title: \"UI/Title\",\n  component: TitleComponent,\n  tags: [\"autodocs\"],\n  render: (args: TitleComponent) => ({\n    props: {\n      ...args,\n    },\n  }),\n}"
+                    "defaultValue": "{\n  title: \"UI/Title\",\n  component: TitleComponent,\n  argTypes: {\n    eAtomTitleLevel: { table: { disable: true } },\n    eAtomTitleAlignConfig: { table: { disable: true } },\n    eAtomTitleDisplayConfig: { table: { disable: true } },\n    eAtomTitleColorConfig: { table: { disable: true } },\n    atomTitleAlignConfig: { table: { disable: true } },\n    atomTitleDisplayConfig: { table: { disable: true } },\n    atomTitleColorConfig: { table: { disable: true } },\n    atomTitleDisplayConfigByDefault: { table: { disable: true } },\n    ngOnInit: { table: { disable: true } },\n    setDisplayConfigByDefault: { table: { disable: true } },\n    setAlignConfigByDefault: { table: { disable: true } },\n    setColorConfigByDefault: { table: { disable: true } },\n  },\n  tags: [\"autodocs\"],\n  render: (args: TitleComponent) => ({\n    props: {\n      ...args,\n    },\n  }),\n}"
                 }
             ],
             "projects/ngx-leocare-ui/src/lib/icon/icon.config.ts": [
@@ -3034,7 +3043,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Meta<IconComponent>",
-                    "defaultValue": "{\n  title: \"UI/Icon\",\n  component: IconComponent,\n  tags: [\"autodocs\"],\n  render: (args: IconComponent) => ({\n    props: {\n      ...args,\n      description: {\n        component:\n          \"Composant d'icone, charge un svg depuis son nom, applique les couleurs du design system depuis son enum de config\",\n      },\n    },\n  }),\n}"
+                    "defaultValue": "{\n  title: \"UI/Icon\",\n  component: IconComponent,\n  argTypes: {\n    baseIconUrl: { table: { disable: true } },\n    iconStyles: { table: { disable: true } },\n    iconSizeClasses: { table: { disable: true } },\n    ngOnInit: { table: { disable: true } },\n  },\n  tags: [\"autodocs\"],\n  render: (args: IconComponent) => ({\n    props: {\n      ...args,\n      description: {\n        component:\n          \"Composant d'icone, charge un svg depuis son nom, applique les couleurs du design system depuis son enum de config\",\n      },\n    },\n  }),\n}"
                 },
                 {
                     "name": "SquareL",
