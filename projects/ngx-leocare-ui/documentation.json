@@ -9,7 +9,7 @@
     "components": [
         {
             "name": "ButtonComponent",
-            "id": "component-ButtonComponent-d680b0c38e325a985ffd3772b5322f69e812b72c28396d90e2b053157811317b44da158ccc089915b064cf824d633e2624650460ce743b9d2aea062d563638e2",
+            "id": "component-ButtonComponent-1e8b4a76e3ef2be568dd3b2e8c375a2615871167e17b4f963a829757ecf33b01c20d8ea22e4c603a7d66aba281f91fb2b11af9ced240c3655d4513042177a0d9",
             "file": "projects/ngx-leocare-ui/src/lib/button/button.component.ts",
             "changeDetection": "ChangeDetectionStrategy.OnPush",
             "encapsulation": [],
@@ -26,10 +26,19 @@
             "viewProviders": [],
             "inputsClass": [
                 {
+                    "name": "buttonType",
+                    "defaultValue": "EButtonType.PRIMARY",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 22,
+                    "type": "EButtonType",
+                    "decorators": []
+                },
+                {
                     "name": "iconPath",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 27,
+                    "line": 28,
                     "type": "string",
                     "decorators": []
                 },
@@ -38,7 +47,7 @@
                     "defaultValue": "false",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 24,
+                    "line": 25,
                     "type": "boolean",
                     "decorators": []
                 },
@@ -47,7 +56,7 @@
                     "defaultValue": "false",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 25,
+                    "line": 26,
                     "type": "boolean",
                     "decorators": []
                 },
@@ -56,7 +65,7 @@
                     "defaultValue": "EButtonSize.MEDIUM",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 23,
+                    "line": 24,
                     "type": "EButtonSize",
                     "decorators": []
                 },
@@ -64,17 +73,16 @@
                     "name": "text",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 26,
+                    "line": 27,
                     "type": "string",
                     "decorators": []
                 },
                 {
                     "name": "type",
-                    "defaultValue": "EButtonType.PRIMARY",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 22,
-                    "type": "EButtonType",
+                    "line": 23,
+                    "type": "string",
                     "decorators": []
                 }
             ],
@@ -88,7 +96,7 @@
                     "type": "string",
                     "optional": false,
                     "description": "",
-                    "line": 32,
+                    "line": 33,
                     "modifierKind": [
                         123
                     ]
@@ -101,7 +109,7 @@
                     "type": "string",
                     "optional": false,
                     "description": "",
-                    "line": 31,
+                    "line": 32,
                     "modifierKind": [
                         123
                     ]
@@ -114,7 +122,7 @@
                     "type": "string",
                     "optional": false,
                     "description": "",
-                    "line": 30,
+                    "line": 31,
                     "modifierKind": [
                         123
                     ]
@@ -127,7 +135,7 @@
                     "type": "string",
                     "optional": false,
                     "description": "",
-                    "line": 29,
+                    "line": 30,
                     "modifierKind": [
                         123
                     ]
@@ -140,7 +148,7 @@
                     "type": "",
                     "optional": false,
                     "description": "",
-                    "line": 33,
+                    "line": 34,
                     "modifierKind": [
                         123
                     ]
@@ -153,7 +161,7 @@
                     "optional": false,
                     "returnType": "void",
                     "typeParameters": [],
-                    "line": 35,
+                    "line": 36,
                     "deprecated": false,
                     "deprecationMessage": "",
                     "modifierKind": [
@@ -168,7 +176,7 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import {\n  ChangeDetectionStrategy,\n  Component,\n  Input,\n  OnInit,\n} from \"@angular/core\";\nimport {\n  BUTTON_ICON_COLOR_CONFIG,\n  BUTTON_ICON_SIZE_CONFIG,\n  BUTTON_SIZE_CONFIG,\n  BUTTON_TYPE_CONFIG,\n  EButtonSize,\n  EButtonType,\n} from \"./button.config\";\n\n@Component({\n  selector: \"leo-button\",\n  templateUrl: \"./button.component.html\",\n  changeDetection: ChangeDetectionStrategy.OnPush,\n})\nexport class ButtonComponent implements OnInit {\n  @Input() type: EButtonType = EButtonType.PRIMARY;\n  @Input() size: EButtonSize = EButtonSize.MEDIUM;\n  @Input() isDisable?: boolean = false;\n  @Input() isLoading?: boolean = false;\n  @Input() text?: string;\n  @Input() iconPath?: string;\n\n  public buttonTypeClasses: string = \"\";\n  public buttonSizeClasses: string = \"\";\n  public buttonIconSizeClasses: string = \"\";\n  public buttonIconColorClasses: string = \"\";\n  public EButtonSize = EButtonSize;\n\n  public ngOnInit(): void {\n    this.buttonTypeClasses = BUTTON_TYPE_CONFIG[this.type];\n    this.buttonSizeClasses = !this.isIconButton\n      ? BUTTON_SIZE_CONFIG[this.size]\n      : \"w-9 h-9\";\n    this.buttonIconSizeClasses = BUTTON_ICON_SIZE_CONFIG[this.size];\n    this.buttonIconColorClasses = BUTTON_ICON_COLOR_CONFIG[this.type];\n  }\n\n  get isIconButton(): boolean {\n    return (\n      (this.text === undefined || this.text === \"\") &&\n      (this.iconPath !== undefined || this.iconPath !== \"\")\n    );\n  }\n}\n",
+            "sourceCode": "import {\n  ChangeDetectionStrategy,\n  Component,\n  Input,\n  OnInit,\n} from \"@angular/core\";\nimport {\n  BUTTON_ICON_COLOR_CONFIG,\n  BUTTON_ICON_SIZE_CONFIG,\n  BUTTON_SIZE_CONFIG,\n  BUTTON_TYPE_CONFIG,\n  EButtonSize,\n  EButtonType,\n} from \"./button.config\";\n\n@Component({\n  selector: \"leo-button\",\n  templateUrl: \"./button.component.html\",\n  changeDetection: ChangeDetectionStrategy.OnPush,\n})\nexport class ButtonComponent implements OnInit {\n  @Input() buttonType: EButtonType = EButtonType.PRIMARY;\n  @Input() type?: string;\n  @Input() size: EButtonSize = EButtonSize.MEDIUM;\n  @Input() isDisable?: boolean = false;\n  @Input() isLoading?: boolean = false;\n  @Input() text?: string;\n  @Input() iconPath?: string;\n\n  public buttonTypeClasses: string = \"\";\n  public buttonSizeClasses: string = \"\";\n  public buttonIconSizeClasses: string = \"\";\n  public buttonIconColorClasses: string = \"\";\n  public EButtonSize = EButtonSize;\n\n  public ngOnInit(): void {\n    this.buttonTypeClasses = BUTTON_TYPE_CONFIG[this.buttonType];\n    this.buttonSizeClasses = !this.isIconButton\n      ? BUTTON_SIZE_CONFIG[this.size]\n      : \"w-9 h-9\";\n    this.buttonIconSizeClasses = BUTTON_ICON_SIZE_CONFIG[this.size];\n    this.buttonIconColorClasses = BUTTON_ICON_COLOR_CONFIG[this.buttonType];\n  }\n\n  get isIconButton(): boolean {\n    return (\n      (this.text === undefined || this.text === \"\") &&\n      (this.iconPath !== undefined || this.iconPath !== \"\")\n    );\n  }\n}\n",
             "assetsDirs": [],
             "styleUrlsData": "",
             "stylesData": "",
@@ -182,11 +190,11 @@
                         "name": "isIconButton",
                         "type": "boolean",
                         "returnType": "boolean",
-                        "line": 44
+                        "line": 45
                     }
                 }
             },
-            "templateData": "<section\n  class=\"max-w-4xl p-6 mx-auto bg-white rounded-md shadow-md dark:bg-gray-800\"\n>\n  <h2 class=\"text-lg font-semibold text-gray-700 capitalize dark:text-white\">\n    Account settings\n  </h2>\n\n  <form>\n    <div class=\"grid grid-cols-1 gap-6 mt-4 sm:grid-cols-2\">\n      <div>\n        <label class=\"text-gray-700 dark:text-gray-200\" for=\"username\"\n          >Username</label\n        >\n        <input\n          id=\"username\"\n          type=\"text\"\n          class=\"block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring\"\n        />\n      </div>\n\n      <div>\n        <label class=\"text-gray-700 dark:text-gray-200\" for=\"emailAddress\"\n          >Email Address</label\n        >\n        <input\n          id=\"emailAddress\"\n          type=\"email\"\n          class=\"block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring\"\n        />\n      </div>\n\n      <div>\n        <label class=\"text-gray-700 dark:text-gray-200\" for=\"password\"\n          >Password</label\n        >\n        <input\n          id=\"password\"\n          type=\"password\"\n          class=\"block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring\"\n        />\n      </div>\n\n      <div>\n        <label\n          class=\"text-gray-700 dark:text-gray-200\"\n          for=\"passwordConfirmation\"\n          >Password Confirmation</label\n        >\n        <input\n          id=\"passwordConfirmation\"\n          type=\"password\"\n          class=\"block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring\"\n        />\n      </div>\n    </div>\n\n    <div class=\"flex justify-end mt-6\">\n      <button\n        class=\"px-8 py-2.5 leading-5 text-white transition-colors duration-300 transform bg-gray-700 rounded-md hover:bg-gray-600 focus:outline-none focus:bg-gray-600\"\n      >\n        Save\n      </button>\n    </div>\n  </form>\n</section>\n"
+            "templateData": "<button\n  [attr.type]=\"type\"\n  [disabled]=\"isDisable\"\n  class=\"hover:shadow-md flex items-center justify-center disabled:bg-grey-95 disabled:text-grey-80 rounded-[50px]\"\n  [ngClass]=\"[buttonTypeClasses, buttonSizeClasses]\"\n  [class.hover:shadow-none]=\"isIconButton || size === EButtonSize.XS\"\n  [class.hover:shadow-md]=\"!(isIconButton || size === EButtonSize.XS)\"\n>\n  <ng-container *ngIf=\"!isLoading; else loader\">\n    <img *ngIf=\"iconPath\" [ngClass]=\"buttonIconSizeClasses\" [src]=\"iconPath\" />\n  </ng-container>\n  <span\n    *ngIf=\"text\"\n    [class.ml-2]=\"isLoading || iconPath\"\n    [class.hover:underline]=\"size === EButtonSize.XS\"\n    >{{ text }}</span\n  >\n</button>\n\n<ng-template #loader>\n  <svg\n    class=\"animate-spin\"\n    [ngClass]=\"[buttonIconColorClasses, buttonIconSizeClasses]\"\n    fill=\"none\"\n    viewBox=\"0 0 22 22\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n  >\n    <path\n      d=\"M18.6581 17.4961C17.1109 19.3069 14.9681 20.506 12.6155 20.8775C10.2629 21.2491 7.85489 20.7687 5.8249 19.5229C3.79492 18.2771 2.27626 16.3476 1.54225 14.0817C0.808241 11.8159 0.907079 9.36243 1.82098 7.16296C2.73488 4.96348 4.40382 3.16242 6.52744 2.08393C8.65106 1.00543 11.0899 0.720327 13.405 1.27992\"\n      stroke-width=\"1.5\"\n    />\n  </svg>\n</ng-template>\n"
         },
         {
             "name": "IconComponent",
@@ -317,22 +325,25 @@
             "templateData": "<img\n  [src]=\"\n    isFill ? baseIconUrl + name + '-fill.svg' : baseIconUrl + name + '.svg'\n  \"\n  [alt]=\"'icon' + name\"\n  [style]=\"iconStyles\"\n  [ngClass]=\"iconSizeClasses\"\n/>\n"
         },
         {
-            "name": "InputComponent",
-            "id": "component-InputComponent-9cc23bcf764adc073a74b93809470923738a1797bff84871c7468869eb214d7bfccc1a47ebd035d00557e71fd376cb863961fb8380dae6a41d879b7bc509cff5",
-            "file": "projects/ngx-leocare-ui/src/lib/input/input.component.ts",
+            "name": "InputTextComponent",
+            "id": "component-InputTextComponent-5d45131cd17b7329a91f0e4527688ccd89901f4a7e015a12be89f2533c9f20d2b91390b378825d5f13061a1875a43145ccb5fe2cf508d132b974b46682d5e785",
+            "file": "projects/ngx-leocare-ui/src/lib/input-text/input-text.component.ts",
             "changeDetection": "ChangeDetectionStrategy.OnPush",
             "encapsulation": [],
             "entryComponents": [],
             "inputs": [],
             "outputs": [],
-            "providers": [],
-            "selector": "leo-input",
-            "styleUrls": [
-                "./input.component.css"
+            "providers": [
+                {
+                    "name": "{\n    provide: NG_VALUE_ACCESSOR, multi: true, useExisting: InputTextComponent,\n}",
+                    "type": "component"
+                }
             ],
+            "selector": "leo-input",
+            "styleUrls": [],
             "styles": [],
             "templateUrl": [
-                "./input.component.html"
+                "./input-text.component.html"
             ],
             "viewProviders": [],
             "inputsClass": [
@@ -341,17 +352,8 @@
                     "defaultValue": "\"\"",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 11,
+                    "line": 22,
                     "type": "string",
-                    "decorators": []
-                },
-                {
-                    "name": "isDisabled",
-                    "defaultValue": "false",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "line": 16,
-                    "type": "boolean",
                     "decorators": []
                 },
                 {
@@ -359,7 +361,7 @@
                     "defaultValue": "false",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 18,
+                    "line": 27,
                     "type": "boolean",
                     "decorators": []
                 },
@@ -368,7 +370,7 @@
                     "defaultValue": "false",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 19,
+                    "line": 28,
                     "type": "boolean",
                     "decorators": []
                 },
@@ -377,7 +379,7 @@
                     "defaultValue": "false",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 17,
+                    "line": 26,
                     "type": "boolean",
                     "decorators": []
                 },
@@ -386,7 +388,7 @@
                     "defaultValue": "\"\"",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 12,
+                    "line": 23,
                     "type": "string",
                     "decorators": []
                 },
@@ -395,7 +397,7 @@
                     "defaultValue": "\"\"",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 13,
+                    "line": 24,
                     "type": "string",
                     "decorators": []
                 },
@@ -404,37 +406,191 @@
                     "defaultValue": "\"\"",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 15,
+                    "line": 25,
                     "type": "string",
-                    "decorators": []
-                },
-                {
-                    "name": "type",
-                    "defaultValue": "EInputType.TEXT",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "line": 14,
-                    "type": "EInputType",
                     "decorators": []
                 }
             ],
             "outputsClass": [],
             "propertiesClass": [
                 {
-                    "name": "EInputType",
-                    "defaultValue": "EInputType",
+                    "name": "_value",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "any",
+                    "optional": false,
+                    "description": "",
+                    "line": 32,
+                    "modifierKind": [
+                        121
+                    ]
+                },
+                {
+                    "name": "isDisabled",
+                    "defaultValue": "false",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "",
                     "optional": false,
                     "description": "",
-                    "line": 21,
+                    "line": 43,
+                    "modifierKind": [
+                        123
+                    ]
+                },
+                {
+                    "name": "onChange",
+                    "defaultValue": "() => {...}",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 45,
+                    "modifierKind": [
+                        123
+                    ]
+                },
+                {
+                    "name": "onTouched",
+                    "defaultValue": "() => {...}",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 46,
                     "modifierKind": [
                         123
                     ]
                 }
             ],
-            "methodsClass": [],
+            "methodsClass": [
+                {
+                    "name": "registerOnChange",
+                    "args": [
+                        {
+                            "name": "fn",
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 56,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "modifierKind": [
+                        123
+                    ],
+                    "jsdoctags": [
+                        {
+                            "name": "fn",
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "registerOnTouched",
+                    "args": [
+                        {
+                            "name": "fn",
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 60,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "modifierKind": [
+                        123
+                    ],
+                    "jsdoctags": [
+                        {
+                            "name": "fn",
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "setDisabledState",
+                    "args": [
+                        {
+                            "name": "isDisabled",
+                            "type": "boolean",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 64,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "modifierKind": [
+                        123
+                    ],
+                    "jsdoctags": [
+                        {
+                            "name": "isDisabled",
+                            "type": "boolean",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "writeValue",
+                    "args": [
+                        {
+                            "name": "value",
+                            "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 48,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "modifierKind": [
+                        123
+                    ],
+                    "jsdoctags": [
+                        {
+                            "name": "value",
+                            "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                }
+            ],
             "deprecated": false,
             "deprecationMessage": "",
             "hostBindings": [],
@@ -442,16 +598,78 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { ChangeDetectionStrategy, Component, Input } from \"@angular/core\";\nimport { EInputType } from \"./input.config\";\n\n@Component({\n  selector: \"leo-input\",\n  templateUrl: \"./input.component.html\",\n  styleUrls: [\"./input.component.css\"],\n  changeDetection: ChangeDetectionStrategy.OnPush,\n})\nexport class InputComponent {\n  @Input() identifier: string = \"\";\n  @Input() label: string = \"\";\n  @Input() name: string = \"\";\n  @Input() type: EInputType = EInputType.TEXT;\n  @Input() placeholder: string = \"\";\n  @Input() isDisabled: boolean = false;\n  @Input() isValid: boolean = false;\n  @Input() isInvalid: boolean = false;\n  @Input() isRequired: boolean = false;\n\n  public EInputType = EInputType;\n}\n",
+            "sourceCode": "import {\n  ChangeDetectionStrategy,\n  ChangeDetectorRef,\n  Component,\n  Input,\n} from \"@angular/core\";\nimport { ControlValueAccessor, NG_VALUE_ACCESSOR } from \"@angular/forms\";\n\n@Component({\n  selector: \"leo-input\",\n  templateUrl: \"./input-text.component.html\",\n  providers: [\n    {\n      provide: NG_VALUE_ACCESSOR,\n      multi: true,\n      useExisting: InputTextComponent,\n    },\n  ],\n  changeDetection: ChangeDetectionStrategy.OnPush,\n})\nexport class InputTextComponent implements ControlValueAccessor {\n  @Input() identifier: string = \"\";\n  @Input() label: string = \"\";\n  @Input() name: string = \"\";\n  @Input() placeholder: string = \"\";\n  @Input() isValid: boolean = false;\n  @Input() isInvalid: boolean = false;\n  @Input() isRequired: boolean = false;\n\n  constructor(private changeDetectorRef: ChangeDetectorRef) {}\n\n  private _value: any;\n\n  set value(value: any) {\n    this._value = value;\n    this.onChange(value);\n  }\n\n  get value(): any {\n    return this._value;\n  }\n\n  public isDisabled = false;\n\n  public onChange = (_event?: string) => {};\n  public onTouched = () => {};\n\n  public writeValue(value: string): void {\n    debugger;\n    this.value = value;\n    if (this.changeDetectorRef) {\n      this.changeDetectorRef.markForCheck();\n    }\n  }\n\n  public registerOnChange(fn: any): void {\n    this.onChange = fn;\n  }\n\n  public registerOnTouched(fn: any): void {\n    this.onTouched = fn;\n  }\n\n  public setDisabledState(isDisabled: boolean): void {\n    this.isDisabled = isDisabled;\n  }\n}\n",
             "assetsDirs": [],
-            "styleUrlsData": [
-                {
-                    "data": ".base-label {\n    @apply text-xs text-grey-40 pl-2.5 font-steven mb-2;\n}\n.base-input {\n    @apply h-[45px] bg-grey-95 rounded-xl text-sm text-grey-25 font-steven py-3 pl-2.5 pr-5 placeholder:text-grey-80 placeholder:font-steven placeholder:text-sm disabled:bg-grey-90 outline-transparent outline-1 hover:outline-grey-90 invalid:outline-red-70 valid:outline-green-50 focus:outline-purple-55;\n}",
-                    "styleUrl": "./input.component.css"
-                }
-            ],
+            "styleUrlsData": "",
             "stylesData": "",
-            "templateData": "<ng-container [ngSwitch]=\"type\">\n  <ng-container *ngSwitchCase=\"EInputType.TEXT\">\n    <div class=\"flex flex-col\">\n      <label class=\"base-label\" *ngIf=\"label\" [for]=\"identifier\"\n        >{{ label }} <span *ngIf=\"isRequired\">*</span></label\n      >\n      <input\n        class=\"base-input\"\n        [id]=\"identifier\"\n        [name]=\"name\"\n        type=\"text\"\n        [placeholder]=\"placeholder\"\n        [disabled]=\"isDisabled\"\n        [attr.aria-invalid]=\"isInvalid\"\n        [attr.aria-valid]=\"isValid\"\n      />\n    </div>\n  </ng-container>\n  <ng-container *ngSwitchCase=\"EInputType.PASSWORD\"></ng-container>\n  <ng-container *ngSwitchCase=\"EInputType.SEARCH\"></ng-container>\n  <ng-container *ngSwitchCase=\"EInputType.DROPDOWN\"></ng-container>\n  <ng-container *ngSwitchCase=\"EInputType.DATEPICKER\"></ng-container>\n  <ng-container *ngSwitchCase=\"EInputType.AUTOCOMPLETE\"></ng-container>\n</ng-container>\n"
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [
+                    {
+                        "name": "changeDetectorRef",
+                        "type": "ChangeDetectorRef",
+                        "deprecated": false,
+                        "deprecationMessage": ""
+                    }
+                ],
+                "line": 28,
+                "jsdoctags": [
+                    {
+                        "name": "changeDetectorRef",
+                        "type": "ChangeDetectorRef",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    }
+                ]
+            },
+            "implements": [
+                "ControlValueAccessor"
+            ],
+            "accessors": {
+                "value": {
+                    "name": "value",
+                    "setSignature": {
+                        "name": "value",
+                        "type": "void",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "args": [
+                            {
+                                "name": "value",
+                                "type": "any",
+                                "deprecated": false,
+                                "deprecationMessage": ""
+                            }
+                        ],
+                        "returnType": "void",
+                        "line": 34,
+                        "jsdoctags": [
+                            {
+                                "name": "value",
+                                "type": "any",
+                                "deprecated": false,
+                                "deprecationMessage": "",
+                                "tagName": {
+                                    "text": "param"
+                                }
+                            }
+                        ]
+                    },
+                    "getSignature": {
+                        "name": "value",
+                        "type": "any",
+                        "returnType": "any",
+                        "line": 39
+                    }
+                }
+            },
+            "templateData": "<div class=\"flex flex-col\">\n  <label\n    class=\"text-xs text-grey-40 pl-2.5 font-steven mb-2\"\n    *ngIf=\"label\"\n    [for]=\"identifier\"\n    >{{ label }} <span *ngIf=\"isRequired\">*</span></label\n  >\n  <input\n    class=\"h-[45px] bg-grey-95 rounded-xl text-sm text-grey-25 font-steven py-3 pl-2.5 pr-5 placeholder:text-grey-80 placeholder:font-steven placeholder:text-sm disabled:bg-grey-90 outline-transparent outline-1 hover:outline-grey-90 invalid:outline-red-70 valid:outline-green-50 focus:outline-purple-55\"\n    [id]=\"identifier\"\n    [name]=\"name\"\n    type=\"text\"\n    [placeholder]=\"placeholder\"\n    [disabled]=\"isDisabled\"\n    [attr.aria-invalid]=\"isInvalid\"\n    [attr.aria-valid]=\"isValid\"\n    (focus)=\"onTouched()\"\n  />\n</div>\n"
         },
         {
             "name": "PopupComponent",
@@ -1081,14 +1299,14 @@
             ]
         },
         {
-            "name": "InputModule",
-            "id": "module-InputModule-ad0a7aa3a0083804516b346f119ef16e041a7707639a6196fa11d5942737f6dc389d5604a013e3d18eaf91d0ca1a9b9b03e9409c5cd8901064f2e5cd6a1b5d3e",
+            "name": "InputTextModule",
+            "id": "module-InputTextModule-f2ecea8dfce7448cc60d9af9d079c17b43396d078153f3c341213c32debaa1c2b85d3864a39f557181669e3a2e6d998cf4d9af3eeef6026bc91674cfafd44ebe",
             "description": "",
             "deprecationMessage": "",
             "deprecated": false,
-            "file": "projects/ngx-leocare-ui/src/lib/input/input.module.ts",
+            "file": "projects/ngx-leocare-ui/src/lib/input-text/input-text.module.ts",
             "methods": [],
-            "sourceCode": "import { CommonModule } from \"@angular/common\";\nimport { NgModule } from \"@angular/core\";\nimport { InputComponent } from \"./input.component\";\n\n@NgModule({\n  declarations: [InputComponent],\n  exports: [InputComponent],\n  imports: [CommonModule],\n})\nexport class InputModule {}\n",
+            "sourceCode": "import { CommonModule } from \"@angular/common\";\nimport { NgModule } from \"@angular/core\";\nimport { InputTextComponent } from \"./input-text.component\";\n\n@NgModule({\n  declarations: [InputTextComponent],\n  exports: [InputTextComponent],\n  imports: [CommonModule],\n})\nexport class InputTextModule {}\n",
             "children": [
                 {
                     "type": "providers",
@@ -1098,7 +1316,7 @@
                     "type": "declarations",
                     "elements": [
                         {
-                            "name": "InputComponent"
+                            "name": "InputTextComponent"
                         }
                     ]
                 },
@@ -1110,7 +1328,7 @@
                     "type": "exports",
                     "elements": [
                         {
-                            "name": "InputComponent"
+                            "name": "InputTextComponent"
                         }
                     ]
                 },
@@ -1350,14 +1568,14 @@
                 "defaultValue": "{\n  [EButtonType.PRIMARY]: \"bg-purple-55 text-grey-100\",\n  [EButtonType.SECONDARY]: \"bg-grey-95 text-grey-25\",\n  [EButtonType.WARNING]: \"bg-red-70 text-grey-100\",\n}"
             },
             {
-                "name": "Default",
+                "name": "COUNTRY_CONTROL_VALUE_ACCESSOR",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/ngx-leocare-ui/src/lib/popup/popup.stories.ts",
+                "file": "projects/ngx-leocare-ui/src/lib/input-text/input-text.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
-                "type": "Story",
-                "defaultValue": "{\n  args: {},\n}"
+                "type": "Provider",
+                "defaultValue": "{\n  provide: NG_VALUE_ACCESSOR,\n  useExisting: forwardRef(() => InputTextComponent),\n  multi: true,\n}"
             },
             {
                 "name": "Default",
@@ -1368,6 +1586,16 @@
                 "deprecationMessage": "",
                 "type": "Story",
                 "defaultValue": "{\n  args: {\n    text: \"Je suis un text exemple\",\n  },\n}"
+            },
+            {
+                "name": "Default",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/ngx-leocare-ui/src/lib/popup/popup.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  args: {},\n}"
             },
             {
                 "name": "disable",
@@ -1383,11 +1611,11 @@
                 "name": "Disabled",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/ngx-leocare-ui/src/lib/input/input.stories.ts",
+                "file": "projects/ngx-leocare-ui/src/lib/input-text/input-text.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: {\n    label: \"Label\",\n    placeholder: \"Un placeholder\",\n    type: EInputType.TEXT,\n    isDisabled: true,\n  },\n}"
+                "defaultValue": "{\n  args: {\n    label: \"Label\",\n    placeholder: \"Un placeholder\",\n  },\n}"
             },
             {
                 "name": "H1",
@@ -1473,11 +1701,11 @@
                 "name": "Invalid",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/ngx-leocare-ui/src/lib/input/input.stories.ts",
+                "file": "projects/ngx-leocare-ui/src/lib/input-text/input-text.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: {\n    label: \"Label\",\n    placeholder: \"Un placeholder\",\n    type: EInputType.TEXT,\n    isInvalid: true,\n  },\n}"
+                "defaultValue": "{\n  decorators: [\n    componentWrapperDecorator(\n      (story) => `\n      <form [formGroup]=\"form\" (ngSubmit)=\"onSubmit($f)\">\n        ${story}\n      </form>\n    `\n    ),\n    moduleMetadata({\n      imports: [\n        CommonModule,\n        ButtonModule,\n        FormsModule,\n        ReactiveFormsModule,\n        InputTextModule,\n      ],\n    }),\n  ],\n  render: (args) => ({\n    props: {\n      ...args,\n      form: new FormGroup({\n        name: new FormControl(\"Test\", Validators.required),\n      }),\n    },\n    template: `\n      <leo-input formControlName=\"name\" class=\"block mb-5\" label=\"Label\" placeholder=\"Placeholder\" identifier=\"name\" [isRequired]=\"true\"></leo-input>\n      <leo-button type=\"submit\" text=\"Valider\"></leo-button>\n\n      <h1 class=\"block mb-5\">Le formulaire est valid :</h1>\n      {{ form.valid }}\n\n      <h1 class=\"block mb-5\">Valeur de l'input:</h1>\n      {{ form.value | json }}\n    `,\n  }),\n}"
             },
             {
                 "name": "large",
@@ -1533,21 +1761,11 @@
                 "name": "meta",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/ngx-leocare-ui/src/lib/input/input.stories.ts",
+                "file": "projects/ngx-leocare-ui/src/lib/input-text/input-text.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
-                "type": "Meta<InputComponent>",
-                "defaultValue": "{\n  title: \"UI/Input\",\n  component: InputComponent,\n  argTypes: {\n    EInputType: { table: { disable: true } },\n  },\n  tags: [\"autodocs\"],\n  render: (args: InputComponent) => ({\n    props: {\n      ...args,\n    },\n  }),\n}"
-            },
-            {
-                "name": "meta",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "projects/ngx-leocare-ui/src/lib/popup/popup.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Meta<PopupComponent>",
-                "defaultValue": "{\n  title: \"UI/Popup\",\n  component: PopupComponent,\n  argTypes: {\n    eIconColor: { table: { disable: true } },\n    eTextColor: { table: { disable: true } },\n    eTextSize: { table: { disable: true } },\n    eTextFamily: { table: { disable: true } },\n    eTextAlign: { table: { disable: true } },\n    eIconSize: { table: { disable: true } },\n    eButtonType: { table: { disable: true } },\n    ePopupIconName: { table: { disable: true } },\n    ePopupState: { table: { disable: true } },\n    cancelEvent: { table: { disable: true } },\n    validateEvent: { table: { disable: true } },\n  },\n  tags: [\"autodocs\"],\n  decorators: [\n    componentWrapperDecorator(\n      (story) => `<div style=\"height: 50vh; transform: scale(1)\">${story}</div>`\n    ),\n    moduleMetadata({\n      //👇 Imports both components to allow component composition with Storybook\n      declarations: [PopupComponent],\n      imports: [CommonModule, TextModule, IconModule, ButtonModule],\n    }),\n  ],\n  render: (args: PopupComponent) => ({\n    props: {\n      ...args,\n    },\n  }),\n}"
+                "type": "Meta<InputTextComponent>",
+                "defaultValue": "{\n  title: \"UI/Input Text\",\n  component: InputTextComponent,\n  argTypes: {\n    writeValue: { table: { disable: true } },\n    registerOnChange: { table: { disable: true } },\n    registerOnTouched: { table: { disable: true } },\n    setDisabledState: { table: { disable: true } },\n  },\n  tags: [\"autodocs\"],\n  render: (args: InputTextComponent) => ({\n    props: {\n      ...args,\n      form: new FormGroup({\n        name: new FormControl(\"Test\", Validators.required),\n      }),\n    },\n  }),\n}"
             },
             {
                 "name": "meta",
@@ -1563,6 +1781,16 @@
                 "name": "meta",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
+                "file": "projects/ngx-leocare-ui/src/lib/popup/popup.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Meta<PopupComponent>",
+                "defaultValue": "{\n  title: \"UI/Popup\",\n  component: PopupComponent,\n  argTypes: {\n    eIconColor: { table: { disable: true } },\n    eTextColor: { table: { disable: true } },\n    eTextSize: { table: { disable: true } },\n    eTextFamily: { table: { disable: true } },\n    eTextAlign: { table: { disable: true } },\n    eIconSize: { table: { disable: true } },\n    eButtonType: { table: { disable: true } },\n    ePopupIconName: { table: { disable: true } },\n    ePopupState: { table: { disable: true } },\n    cancelEvent: { table: { disable: true } },\n    validateEvent: { table: { disable: true } },\n  },\n  tags: [\"autodocs\"],\n  decorators: [\n    componentWrapperDecorator(\n      (story) => `<div style=\"height: 50vh; transform: scale(1)\">${story}</div>`\n    ),\n    moduleMetadata({\n      //👇 Imports both components to allow component composition with Storybook\n      declarations: [PopupComponent],\n      imports: [CommonModule, TextModule, IconModule, ButtonModule],\n    }),\n  ],\n  render: (args: PopupComponent) => ({\n    props: {\n      ...args,\n    },\n  }),\n}"
+            },
+            {
+                "name": "meta",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
                 "file": "projects/ngx-leocare-ui/src/lib/title/title.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
@@ -1573,11 +1801,11 @@
                 "name": "Normal",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/ngx-leocare-ui/src/lib/input/input.stories.ts",
+                "file": "projects/ngx-leocare-ui/src/lib/input-text/input-text.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: {\n    label: \"Label\",\n    placeholder: \"Un placeholder\",\n    type: EInputType.TEXT,\n  },\n}"
+                "defaultValue": "{\n  args: {\n    label: \"Label\",\n    placeholder: \"Un placeholder\",\n  },\n}"
             },
             {
                 "name": "preview",
@@ -1597,17 +1825,17 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: {\n    text: \"Valider\",\n    type: EButtonType.PRIMARY,\n  },\n}"
+                "defaultValue": "{\n  args: {\n    text: \"Valider\",\n    buttonType: EButtonType.PRIMARY,\n  },\n}"
             },
             {
                 "name": "Required",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/ngx-leocare-ui/src/lib/input/input.stories.ts",
+                "file": "projects/ngx-leocare-ui/src/lib/input-text/input-text.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: {\n    label: \"Label\",\n    placeholder: \"Un placeholder\",\n    type: EInputType.TEXT,\n    isRequired: true,\n  },\n}"
+                "defaultValue": "{\n  args: {\n    label: \"Label\",\n    placeholder: \"Un placeholder\",\n    isRequired: true,\n  },\n}"
             },
             {
                 "name": "Secondary",
@@ -1617,7 +1845,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: {\n    text: \"Suivant\",\n    type: EButtonType.SECONDARY,\n  },\n}"
+                "defaultValue": "{\n  args: {\n    text: \"Suivant\",\n    buttonType: EButtonType.SECONDARY,\n  },\n}"
             },
             {
                 "name": "small",
@@ -1740,14 +1968,24 @@
                 "defaultValue": "{\n  [ETextSize.XXS]: \"text-xxs\",\n  [ETextSize.XS]: \"text-xs\",\n  [ETextSize.S]: \"text-sm\",\n  [ETextSize.M]: \"text-base\",\n  [ETextSize.L]: \"text-lg\",\n  [ETextSize.XL]: \"text-xl\",\n  [ETextSize.XXL]: \"text-3.5xl\",\n}"
             },
             {
-                "name": "Valid",
+                "name": "Toggle",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/ngx-leocare-ui/src/lib/input/input.stories.ts",
+                "file": "projects/ngx-leocare-ui/src/lib/popup/popup.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: {\n    label: \"Label\",\n    placeholder: \"Un placeholder\",\n    type: EInputType.TEXT,\n    isValid: true,\n  },\n}"
+                "defaultValue": "{\n  render: (args) => ({\n    props: args,\n    template: `\n    <leo-button text=\"Afficher / Masquer\" (click)=\"isDisplayed = !isDisplayed\"></leo-button>\n    <leo-popup *ngIf=\"isDisplayed\" (cancelEvent)=\"isDisplayed = !isDisplayed\" (validateEvent)=\"isDisplayed = !isDisplayed\"></leo-popup>\n    `,\n  }),\n}"
+            },
+            {
+                "name": "Valid",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/ngx-leocare-ui/src/lib/input-text/input-text.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  args: {\n    label: \"Label\",\n    placeholder: \"Un placeholder\",\n    isValid: true,\n  },\n}"
             },
             {
                 "name": "Warning",
@@ -1757,7 +1995,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: {\n    text: \"Refuser\",\n    type: EButtonType.WARNING,\n  },\n}"
+                "defaultValue": "{\n  args: {\n    text: \"Refuser\",\n    buttonType: EButtonType.WARNING,\n  },\n}"
             },
             {
                 "name": "xs",
@@ -1809,19 +2047,8 @@
                 "name": "Story",
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
-                "rawtype": "StoryObj<InputComponent>",
-                "file": "projects/ngx-leocare-ui/src/lib/input/input.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "description": "",
-                "kind": 177
-            },
-            {
-                "name": "Story",
-                "ctype": "miscellaneous",
-                "subtype": "typealias",
-                "rawtype": "StoryObj<PopupComponent>",
-                "file": "projects/ngx-leocare-ui/src/lib/popup/popup.stories.ts",
+                "rawtype": "StoryObj<InputTextComponent>",
+                "file": "projects/ngx-leocare-ui/src/lib/input-text/input-text.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -1833,6 +2060,17 @@
                 "subtype": "typealias",
                 "rawtype": "StoryObj<TextComponent>",
                 "file": "projects/ngx-leocare-ui/src/lib/text/text.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 177
+            },
+            {
+                "name": "Story",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "rawtype": "StoryObj<PopupComponent>",
+                "file": "projects/ngx-leocare-ui/src/lib/popup/popup.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -2276,65 +2514,6 @@
                 "file": "projects/ngx-leocare-ui/src/lib/icon/icon.config.ts"
             },
             {
-                "name": "EInputType",
-                "childs": [
-                    {
-                        "name": "TEXT",
-                        "deprecated": false,
-                        "deprecationMessage": "",
-                        "value": "TEXT"
-                    },
-                    {
-                        "name": "EMAIL",
-                        "deprecated": false,
-                        "deprecationMessage": "",
-                        "value": "EMAIL"
-                    },
-                    {
-                        "name": "PHONE",
-                        "deprecated": false,
-                        "deprecationMessage": "",
-                        "value": "PHONE"
-                    },
-                    {
-                        "name": "PASSWORD",
-                        "deprecated": false,
-                        "deprecationMessage": "",
-                        "value": "PASSWORD"
-                    },
-                    {
-                        "name": "SEARCH",
-                        "deprecated": false,
-                        "deprecationMessage": "",
-                        "value": "SEARCH"
-                    },
-                    {
-                        "name": "DROPDOWN",
-                        "deprecated": false,
-                        "deprecationMessage": "",
-                        "value": "DROPDOWN"
-                    },
-                    {
-                        "name": "DATEPICKER",
-                        "deprecated": false,
-                        "deprecationMessage": "",
-                        "value": "DATEPICKER"
-                    },
-                    {
-                        "name": "AUTOCOMPLETE",
-                        "deprecated": false,
-                        "deprecationMessage": "",
-                        "value": "AUTOCOMPLETE"
-                    }
-                ],
-                "ctype": "miscellaneous",
-                "subtype": "enum",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "description": "",
-                "file": "projects/ngx-leocare-ui/src/lib/input/input.config.ts"
-            },
-            {
                 "name": "EPopupIconName",
                 "childs": [
                     {
@@ -2732,26 +2911,76 @@
                     "defaultValue": "{\n  [EButtonType.PRIMARY]: \"bg-purple-55 text-grey-100\",\n  [EButtonType.SECONDARY]: \"bg-grey-95 text-grey-25\",\n  [EButtonType.WARNING]: \"bg-red-70 text-grey-100\",\n}"
                 }
             ],
-            "projects/ngx-leocare-ui/src/lib/popup/popup.stories.ts": [
+            "projects/ngx-leocare-ui/src/lib/input-text/input-text.stories.ts": [
                 {
-                    "name": "Default",
+                    "name": "COUNTRY_CONTROL_VALUE_ACCESSOR",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "projects/ngx-leocare-ui/src/lib/popup/popup.stories.ts",
+                    "file": "projects/ngx-leocare-ui/src/lib/input-text/input-text.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Provider",
+                    "defaultValue": "{\n  provide: NG_VALUE_ACCESSOR,\n  useExisting: forwardRef(() => InputTextComponent),\n  multi: true,\n}"
+                },
+                {
+                    "name": "Disabled",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/ngx-leocare-ui/src/lib/input-text/input-text.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  args: {},\n}"
+                    "defaultValue": "{\n  args: {\n    label: \"Label\",\n    placeholder: \"Un placeholder\",\n  },\n}"
+                },
+                {
+                    "name": "Invalid",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/ngx-leocare-ui/src/lib/input-text/input-text.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  decorators: [\n    componentWrapperDecorator(\n      (story) => `\n      <form [formGroup]=\"form\" (ngSubmit)=\"onSubmit($f)\">\n        ${story}\n      </form>\n    `\n    ),\n    moduleMetadata({\n      imports: [\n        CommonModule,\n        ButtonModule,\n        FormsModule,\n        ReactiveFormsModule,\n        InputTextModule,\n      ],\n    }),\n  ],\n  render: (args) => ({\n    props: {\n      ...args,\n      form: new FormGroup({\n        name: new FormControl(\"Test\", Validators.required),\n      }),\n    },\n    template: `\n      <leo-input formControlName=\"name\" class=\"block mb-5\" label=\"Label\" placeholder=\"Placeholder\" identifier=\"name\" [isRequired]=\"true\"></leo-input>\n      <leo-button type=\"submit\" text=\"Valider\"></leo-button>\n\n      <h1 class=\"block mb-5\">Le formulaire est valid :</h1>\n      {{ form.valid }}\n\n      <h1 class=\"block mb-5\">Valeur de l'input:</h1>\n      {{ form.value | json }}\n    `,\n  }),\n}"
                 },
                 {
                     "name": "meta",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "projects/ngx-leocare-ui/src/lib/popup/popup.stories.ts",
+                    "file": "projects/ngx-leocare-ui/src/lib/input-text/input-text.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "type": "Meta<PopupComponent>",
-                    "defaultValue": "{\n  title: \"UI/Popup\",\n  component: PopupComponent,\n  argTypes: {\n    eIconColor: { table: { disable: true } },\n    eTextColor: { table: { disable: true } },\n    eTextSize: { table: { disable: true } },\n    eTextFamily: { table: { disable: true } },\n    eTextAlign: { table: { disable: true } },\n    eIconSize: { table: { disable: true } },\n    eButtonType: { table: { disable: true } },\n    ePopupIconName: { table: { disable: true } },\n    ePopupState: { table: { disable: true } },\n    cancelEvent: { table: { disable: true } },\n    validateEvent: { table: { disable: true } },\n  },\n  tags: [\"autodocs\"],\n  decorators: [\n    componentWrapperDecorator(\n      (story) => `<div style=\"height: 50vh; transform: scale(1)\">${story}</div>`\n    ),\n    moduleMetadata({\n      //👇 Imports both components to allow component composition with Storybook\n      declarations: [PopupComponent],\n      imports: [CommonModule, TextModule, IconModule, ButtonModule],\n    }),\n  ],\n  render: (args: PopupComponent) => ({\n    props: {\n      ...args,\n    },\n  }),\n}"
+                    "type": "Meta<InputTextComponent>",
+                    "defaultValue": "{\n  title: \"UI/Input Text\",\n  component: InputTextComponent,\n  argTypes: {\n    writeValue: { table: { disable: true } },\n    registerOnChange: { table: { disable: true } },\n    registerOnTouched: { table: { disable: true } },\n    setDisabledState: { table: { disable: true } },\n  },\n  tags: [\"autodocs\"],\n  render: (args: InputTextComponent) => ({\n    props: {\n      ...args,\n      form: new FormGroup({\n        name: new FormControl(\"Test\", Validators.required),\n      }),\n    },\n  }),\n}"
+                },
+                {
+                    "name": "Normal",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/ngx-leocare-ui/src/lib/input-text/input-text.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    label: \"Label\",\n    placeholder: \"Un placeholder\",\n  },\n}"
+                },
+                {
+                    "name": "Required",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/ngx-leocare-ui/src/lib/input-text/input-text.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    label: \"Label\",\n    placeholder: \"Un placeholder\",\n    isRequired: true,\n  },\n}"
+                },
+                {
+                    "name": "Valid",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/ngx-leocare-ui/src/lib/input-text/input-text.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    label: \"Label\",\n    placeholder: \"Un placeholder\",\n    isValid: true,\n  },\n}"
                 }
             ],
             "projects/ngx-leocare-ui/src/lib/text/text.stories.ts": [
@@ -2774,6 +3003,38 @@
                     "deprecationMessage": "",
                     "type": "Meta<TextComponent>",
                     "defaultValue": "{\n  title: \"UI/Text\",\n  component: TextComponent,\n  argTypes: {\n    TEXT_SIZE_CONFIG: { table: { disable: true } },\n    TEXT_ALIGN_CONFIG: { table: { disable: true } },\n    TEXT_FAMILY_CONFIG: { table: { disable: true } },\n    TEXT_COLOR_CONFIG: { table: { disable: true } },\n  },\n  tags: [\"autodocs\"],\n  render: (args: TextComponent) => ({\n    props: {\n      ...args,\n    },\n  }),\n}"
+                }
+            ],
+            "projects/ngx-leocare-ui/src/lib/popup/popup.stories.ts": [
+                {
+                    "name": "Default",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/ngx-leocare-ui/src/lib/popup/popup.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {},\n}"
+                },
+                {
+                    "name": "meta",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/ngx-leocare-ui/src/lib/popup/popup.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Meta<PopupComponent>",
+                    "defaultValue": "{\n  title: \"UI/Popup\",\n  component: PopupComponent,\n  argTypes: {\n    eIconColor: { table: { disable: true } },\n    eTextColor: { table: { disable: true } },\n    eTextSize: { table: { disable: true } },\n    eTextFamily: { table: { disable: true } },\n    eTextAlign: { table: { disable: true } },\n    eIconSize: { table: { disable: true } },\n    eButtonType: { table: { disable: true } },\n    ePopupIconName: { table: { disable: true } },\n    ePopupState: { table: { disable: true } },\n    cancelEvent: { table: { disable: true } },\n    validateEvent: { table: { disable: true } },\n  },\n  tags: [\"autodocs\"],\n  decorators: [\n    componentWrapperDecorator(\n      (story) => `<div style=\"height: 50vh; transform: scale(1)\">${story}</div>`\n    ),\n    moduleMetadata({\n      //👇 Imports both components to allow component composition with Storybook\n      declarations: [PopupComponent],\n      imports: [CommonModule, TextModule, IconModule, ButtonModule],\n    }),\n  ],\n  render: (args: PopupComponent) => ({\n    props: {\n      ...args,\n    },\n  }),\n}"
+                },
+                {
+                    "name": "Toggle",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/ngx-leocare-ui/src/lib/popup/popup.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  render: (args) => ({\n    props: args,\n    template: `\n    <leo-button text=\"Afficher / Masquer\" (click)=\"isDisplayed = !isDisplayed\"></leo-button>\n    <leo-popup *ngIf=\"isDisplayed\" (cancelEvent)=\"isDisplayed = !isDisplayed\" (validateEvent)=\"isDisplayed = !isDisplayed\"></leo-popup>\n    `,\n  }),\n}"
                 }
             ],
             "projects/ngx-leocare-ui/src/lib/button/button.stories.ts": [
@@ -2855,7 +3116,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  args: {\n    text: \"Valider\",\n    type: EButtonType.PRIMARY,\n  },\n}"
+                    "defaultValue": "{\n  args: {\n    text: \"Valider\",\n    buttonType: EButtonType.PRIMARY,\n  },\n}"
                 },
                 {
                     "name": "Secondary",
@@ -2865,7 +3126,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  args: {\n    text: \"Suivant\",\n    type: EButtonType.SECONDARY,\n  },\n}"
+                    "defaultValue": "{\n  args: {\n    text: \"Suivant\",\n    buttonType: EButtonType.SECONDARY,\n  },\n}"
                 },
                 {
                     "name": "small",
@@ -2885,7 +3146,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  args: {\n    text: \"Refuser\",\n    type: EButtonType.WARNING,\n  },\n}"
+                    "defaultValue": "{\n  args: {\n    text: \"Refuser\",\n    buttonType: EButtonType.WARNING,\n  },\n}"
                 },
                 {
                     "name": "xs",
@@ -2896,68 +3157,6 @@
                     "deprecationMessage": "",
                     "type": "Story",
                     "defaultValue": "{\n  args: {\n    text: \"Action\",\n    size: EButtonSize.XS,\n  },\n}"
-                }
-            ],
-            "projects/ngx-leocare-ui/src/lib/input/input.stories.ts": [
-                {
-                    "name": "Disabled",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "projects/ngx-leocare-ui/src/lib/input/input.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story",
-                    "defaultValue": "{\n  args: {\n    label: \"Label\",\n    placeholder: \"Un placeholder\",\n    type: EInputType.TEXT,\n    isDisabled: true,\n  },\n}"
-                },
-                {
-                    "name": "Invalid",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "projects/ngx-leocare-ui/src/lib/input/input.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story",
-                    "defaultValue": "{\n  args: {\n    label: \"Label\",\n    placeholder: \"Un placeholder\",\n    type: EInputType.TEXT,\n    isInvalid: true,\n  },\n}"
-                },
-                {
-                    "name": "meta",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "projects/ngx-leocare-ui/src/lib/input/input.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Meta<InputComponent>",
-                    "defaultValue": "{\n  title: \"UI/Input\",\n  component: InputComponent,\n  argTypes: {\n    EInputType: { table: { disable: true } },\n  },\n  tags: [\"autodocs\"],\n  render: (args: InputComponent) => ({\n    props: {\n      ...args,\n    },\n  }),\n}"
-                },
-                {
-                    "name": "Normal",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "projects/ngx-leocare-ui/src/lib/input/input.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story",
-                    "defaultValue": "{\n  args: {\n    label: \"Label\",\n    placeholder: \"Un placeholder\",\n    type: EInputType.TEXT,\n  },\n}"
-                },
-                {
-                    "name": "Required",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "projects/ngx-leocare-ui/src/lib/input/input.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story",
-                    "defaultValue": "{\n  args: {\n    label: \"Label\",\n    placeholder: \"Un placeholder\",\n    type: EInputType.TEXT,\n    isRequired: true,\n  },\n}"
-                },
-                {
-                    "name": "Valid",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "projects/ngx-leocare-ui/src/lib/input/input.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story",
-                    "defaultValue": "{\n  args: {\n    label: \"Label\",\n    placeholder: \"Un placeholder\",\n    type: EInputType.TEXT,\n    isValid: true,\n  },\n}"
                 }
             ],
             "projects/ngx-leocare-ui/src/lib/title/title.stories.ts": [
@@ -3603,67 +3802,6 @@
                     "file": "projects/ngx-leocare-ui/src/lib/icon/icon.config.ts"
                 }
             ],
-            "projects/ngx-leocare-ui/src/lib/input/input.config.ts": [
-                {
-                    "name": "EInputType",
-                    "childs": [
-                        {
-                            "name": "TEXT",
-                            "deprecated": false,
-                            "deprecationMessage": "",
-                            "value": "TEXT"
-                        },
-                        {
-                            "name": "EMAIL",
-                            "deprecated": false,
-                            "deprecationMessage": "",
-                            "value": "EMAIL"
-                        },
-                        {
-                            "name": "PHONE",
-                            "deprecated": false,
-                            "deprecationMessage": "",
-                            "value": "PHONE"
-                        },
-                        {
-                            "name": "PASSWORD",
-                            "deprecated": false,
-                            "deprecationMessage": "",
-                            "value": "PASSWORD"
-                        },
-                        {
-                            "name": "SEARCH",
-                            "deprecated": false,
-                            "deprecationMessage": "",
-                            "value": "SEARCH"
-                        },
-                        {
-                            "name": "DROPDOWN",
-                            "deprecated": false,
-                            "deprecationMessage": "",
-                            "value": "DROPDOWN"
-                        },
-                        {
-                            "name": "DATEPICKER",
-                            "deprecated": false,
-                            "deprecationMessage": "",
-                            "value": "DATEPICKER"
-                        },
-                        {
-                            "name": "AUTOCOMPLETE",
-                            "deprecated": false,
-                            "deprecationMessage": "",
-                            "value": "AUTOCOMPLETE"
-                        }
-                    ],
-                    "ctype": "miscellaneous",
-                    "subtype": "enum",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "description": "",
-                    "file": "projects/ngx-leocare-ui/src/lib/input/input.config.ts"
-                }
-            ],
             "projects/ngx-leocare-ui/src/lib/popup/popup.config.ts": [
                 {
                     "name": "EPopupIconName",
@@ -4021,26 +4159,13 @@
                     "kind": 177
                 }
             ],
-            "projects/ngx-leocare-ui/src/lib/input/input.stories.ts": [
+            "projects/ngx-leocare-ui/src/lib/input-text/input-text.stories.ts": [
                 {
                     "name": "Story",
                     "ctype": "miscellaneous",
                     "subtype": "typealias",
-                    "rawtype": "StoryObj<InputComponent>",
-                    "file": "projects/ngx-leocare-ui/src/lib/input/input.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "description": "",
-                    "kind": 177
-                }
-            ],
-            "projects/ngx-leocare-ui/src/lib/popup/popup.stories.ts": [
-                {
-                    "name": "Story",
-                    "ctype": "miscellaneous",
-                    "subtype": "typealias",
-                    "rawtype": "StoryObj<PopupComponent>",
-                    "file": "projects/ngx-leocare-ui/src/lib/popup/popup.stories.ts",
+                    "rawtype": "StoryObj<InputTextComponent>",
+                    "file": "projects/ngx-leocare-ui/src/lib/input-text/input-text.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
@@ -4054,6 +4179,19 @@
                     "subtype": "typealias",
                     "rawtype": "StoryObj<TextComponent>",
                     "file": "projects/ngx-leocare-ui/src/lib/text/text.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 177
+                }
+            ],
+            "projects/ngx-leocare-ui/src/lib/popup/popup.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<PopupComponent>",
+                    "file": "projects/ngx-leocare-ui/src/lib/popup/popup.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
@@ -4096,7 +4234,7 @@
                 "linktype": "component",
                 "name": "ButtonComponent",
                 "coveragePercent": 0,
-                "coverageCount": "0/13",
+                "coverageCount": "0/14",
                 "status": "low"
             },
             {
@@ -4369,16 +4507,26 @@
                 "status": "low"
             },
             {
-                "filePath": "projects/ngx-leocare-ui/src/lib/input/input.component.ts",
+                "filePath": "projects/ngx-leocare-ui/src/lib/input-text/input-text.component.ts",
                 "type": "component",
                 "linktype": "component",
-                "name": "InputComponent",
+                "name": "InputTextComponent",
                 "coveragePercent": 0,
-                "coverageCount": "0/11",
+                "coverageCount": "0/17",
                 "status": "low"
             },
             {
-                "filePath": "projects/ngx-leocare-ui/src/lib/input/input.stories.ts",
+                "filePath": "projects/ngx-leocare-ui/src/lib/input-text/input-text.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "COUNTRY_CONTROL_VALUE_ACCESSOR",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/ngx-leocare-ui/src/lib/input-text/input-text.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -4388,7 +4536,7 @@
                 "status": "low"
             },
             {
-                "filePath": "projects/ngx-leocare-ui/src/lib/input/input.stories.ts",
+                "filePath": "projects/ngx-leocare-ui/src/lib/input-text/input-text.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -4398,7 +4546,7 @@
                 "status": "low"
             },
             {
-                "filePath": "projects/ngx-leocare-ui/src/lib/input/input.stories.ts",
+                "filePath": "projects/ngx-leocare-ui/src/lib/input-text/input-text.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -4408,7 +4556,7 @@
                 "status": "low"
             },
             {
-                "filePath": "projects/ngx-leocare-ui/src/lib/input/input.stories.ts",
+                "filePath": "projects/ngx-leocare-ui/src/lib/input-text/input-text.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -4418,7 +4566,7 @@
                 "status": "low"
             },
             {
-                "filePath": "projects/ngx-leocare-ui/src/lib/input/input.stories.ts",
+                "filePath": "projects/ngx-leocare-ui/src/lib/input-text/input-text.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -4428,7 +4576,7 @@
                 "status": "low"
             },
             {
-                "filePath": "projects/ngx-leocare-ui/src/lib/input/input.stories.ts",
+                "filePath": "projects/ngx-leocare-ui/src/lib/input-text/input-text.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -4462,6 +4610,16 @@
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
                 "name": "meta",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/ngx-leocare-ui/src/lib/popup/popup.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Toggle",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"
