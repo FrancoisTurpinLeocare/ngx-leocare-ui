@@ -744,6 +744,10 @@ video {
   max-width: 42rem !important;
 }
 
+.border-collapse {
+  border-collapse: collapse !important;
+}
+
 .transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y)) !important;
 }
@@ -779,12 +783,20 @@ video {
   gap: 1rem !important;
 }
 
+.whitespace-nowrap {
+  white-space: nowrap !important;
+}
+
 .rounded-2xl {
   border-radius: 1rem !important;
 }
 
 .rounded-\[50px\] {
   border-radius: 50px !important;
+}
+
+.border-0 {
+  border-width: 0px !important;
 }
 
 .border-b {
