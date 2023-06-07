@@ -1,11 +1,4 @@
 import { Meta } from "@storybook/blocks";
-import PurpleSwatches from "../assets/img/swatches-purple.png";
-import CyanSwatches from "../assets/img/swatches-cyan.png";
-import YellowSwatches from "../assets/img/swatches-yellow.png";
-import GreySwatches from "../assets/img/swatches-grey.png";
-import GreenSwatches from "../assets/img/swatches-green.png";
-import OrangeSwatches from "../assets/img/swatches-orange.png";
-import RedSwatches from "../assets/img/swatches-red.png";
 
 {/* 👇 Documentation-only page */}
 
@@ -15,10 +8,383 @@ import RedSwatches from "../assets/img/swatches-red.png";
 
 Utilisation des couleurs dans les environnements Leocare
 
-<img src={PurpleSwatches} />
-<img src={CyanSwatches} />
-<img src={YellowSwatches} />
-<img src={GreySwatches} />
-<img src={GreenSwatches} />
-<img src={OrangeSwatches} />
-<img src={RedSwatches} />
+<table class="border-collapse text-left whitespace-nowrap text-grey-25">
+  <thead>
+    <tr class="border-0 bg-grey-100">
+      <th class="border-0 text-grey-40"></th>
+      <th class="border-0 text-grey-40"></th>
+      <th class="border-0 text-grey-40">Color</th>
+      <th class="border-0 text-grey-40">Old color name</th>
+      <th class="border-0 text-grey-40">Utilisation principale</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="border-0 bg-grey-100">
+      <td class="border-0 align-top" rowspan="3">
+        <span class="block -rotate-90 origin-top-right text-right text-grey-40 uppercase">
+          Purple
+        </span>
+      </td>
+      <td class="border-0">
+        <p class="block w-24 h-24 bg-purple-95">&ensp;</p>
+      </td>
+      <td class="border-0">
+        <span class="font-hole">Purple 95</span>
+        <br></br>#F0ECFA<br></br>rgb(240, 236, 250)<br></br>hsl(257, 58, 95)
+      </td>
+      <td class="border-0">Light Purple</td>
+      <td class="border-0">
+        Couleur de fond pour des blocs de mise en avant d’informations, ou
+        d’aide
+      </td>
+    </tr>
+    <tr class="border-0 bg-grey-100">
+      <td class="border-0">
+        <p class="block w-24 h-24 bg-purple-55">&ensp;</p>
+      </td>
+      <td class="border-0">
+        <span class="font-hole">Purple 55</span>
+        <br></br>#6F43D6<br></br>rgb(111, 67, 214)<br></br>hsl(258, 64, 55)
+      </td>
+      <td class="border-0">Purple</td>
+      <td class="border-0">
+        Couleur principale, pour mettre en avant certaines notions et utilisée
+        pour <br></br>les boutons principaux.<br></br>⚠️ Cas Dark palette app
+        mobile : remplacer par Cyan 70
+      </td>
+    </tr>
+    <tr class="border-0 bg-grey-100 !border-b-[25px] border-transparent">
+      <td class="border-0">
+        <p class="block w-24 h-24 bg-purple-25">&ensp;</p>
+      </td>
+      <td class="border-0">
+        <span class="font-hole">Purple 25</span>
+        <br></br>#410079<br></br>rgb(65, 0, 121)<br></br>hsl(272, 100, 24)
+      </td>
+      <td class="border-0">Dark Purple</td>
+      <td class="border-0">
+        Couleur utilisée dans le cas de fond purple 95, pour respecter les
+        notion de<br></br>contraste, ou pour un background de mise en avant.
+      </td>
+    </tr>
+    <tr class="border-0 bg-grey-100">
+      <td class="border-0 align-top" rowspan="2">
+        <span class="block -rotate-90 origin-top-right text-right text-grey-40 uppercase">
+          Cyan
+        </span>
+      </td>
+      <td class="border-0">
+        <p class="block w-24 h-24 bg-cyan-90">&ensp;</p>
+      </td>
+      <td class="border-0">
+        <span class="font-hole">Cyan 90</span>
+        <br></br>#D4FAF5<br></br>rgb(212, 250, 245)<br></br>hsl(172, 79, 91)
+      </td>
+      <td class="border-0">Light Blue</td>
+      <td class="border-0">
+        Couleur de fond pour des blocs de mise en avant d’informations<br></br>secondaires
+        ou de succès.
+      </td>
+    </tr>
+    <tr class="border-0 bg-grey-100 !border-b-[25px] border-transparent">
+      <td class="border-0">
+        <p class="block w-24 h-24 bg-cyan-70">&ensp;</p>
+      </td>
+      <td class="border-0">
+        <span class="font-hole">Cyan 70</span>
+        <br></br>#70EFDD<br></br>rgb(112, 239, 221)<br></br>hsl(171, 80, 69)
+      </td>
+      <td class="border-0">Blue</td>
+      <td class="border-0">
+        Couleur utilisée dans les illustrations en combinaison du violet, ou
+        pour <br></br>certaines icônes.<br></br>⚠️ Cas Dark palette app mobile :
+        remplacer par Grey 25
+      </td>
+    </tr>
+    <tr class="border-0 bg-grey-100">
+      <td class="border-0 align-top" rowspan="3">
+        <span class="block -rotate-90 origin-top-right text-right text-grey-40 uppercase">
+          Yellow
+        </span>
+      </td>
+      <td class="border-0">
+        <p class="block w-24 h-24 bg-yellow-90">&ensp;</p>
+      </td>
+      <td class="border-0">
+        <span class="font-hole">Yellow 90</span>
+        <br></br>#FFF6CB<br></br>rgb(255, 246, 203)<br></br>hsl(50, 100, 90)
+      </td>
+      <td class="border-0">Light Yellow</td>
+      <td class="border-0">
+        Couleur de fond pour des blocs de mise en avant d’informations <br></br>importantes
+      </td>
+    </tr>
+    <tr class="border-0 bg-grey-100">
+      <td class="border-0">
+        <p class="block w-24 h-24 bg-yellow-55">&ensp;</p>
+      </td>
+      <td class="border-0">
+        <span class="font-hole">Yellow 55</span>
+        <br></br>#ECD524<br></br>rgb(236, 213, 36)<br></br>hsl(53, 84, 53)
+      </td>
+      <td class="border-0">Yellow</td>
+      <td class="border-0">
+        Couleurs de mise en avant, utilisée pour les illustrations
+      </td>
+    </tr>
+    <tr class="border-0 bg-grey-100 !border-b-[25px] border-transparent">
+      <td class="border-0">
+        <p class="block w-24 h-24 bg-yellow-25">&ensp;</p>
+      </td>
+      <td class="border-0">
+        <span class="font-hole">Yellow 25</span>
+        <br></br>#786B06<br></br>rgb(120, 107, 6)<br></br>hsl(53, 90, 25)
+      </td>
+      <td class="border-0">Dark Yellow</td>
+      <td class="border-0">
+        Couleur utilisée en font si fond de bloc en light yellow
+      </td>
+    </tr>
+    <tr class="border-0 bg-grey-100">
+      <td class="border-0 align-top" rowspan="7">
+        <span class="block -rotate-90 origin-top-right text-right text-grey-40 uppercase">
+          Grey
+        </span>
+      </td>
+      <td class="border-0">
+        <p class="block w-24 h-24 bg-grey-100 !border-2 border-solid !border-grey-80">
+          &ensp;
+        </p>
+      </td>
+      <td class="border-0">
+        <span class="font-hole">Grey 100</span>
+        <br></br>#FFFFFF<br></br>rgb(255, 255, 255)<br></br>hsl(0, 0, 100)
+      </td>
+      <td class="border-0">White</td>
+      <td class="border-0">
+        ⚠️ Cas Dark palette app mobile : remplacer par #0C0018
+      </td>
+    </tr>
+    <tr class="border-0 bg-grey-100">
+      <td class="border-0">
+        <p class="block w-24 h-24 bg-grey-95">&ensp;</p>
+      </td>
+      <td class="border-0">
+        <span class="font-hole">Grey 95</span>
+        <br></br>#F2F4F8<br></br>rgb(242, 244, 248)<br></br>hsl(220, 30, 96)
+      </td>
+      <td class="border-0">Solitude 06</td>
+      <td class="border-0">
+        Couleur utilisée dans les background de cards et de choices.<br></br>⚠️ Cas
+        Dark palette app mobile : remplacer par #1E0F30
+      </td>
+    </tr>
+    <tr class="border-0 bg-grey-100">
+      <td class="border-0">
+        <p class="block w-24 h-24 bg-grey-90">&ensp;</p>
+      </td>
+      <td class="border-0">
+        <span class="font-hole">Grey 90</span>
+        <br></br>#EBEBEB<br></br>rgb(235, 235, 235)<br></br>hsl(0, 0, 92)
+      </td>
+      <td class="border-0">White Smoke</td>
+      <td class="border-0">
+        Couleur utilisée pour des contours ou des filets, ou des états de
+        composants <br></br>inactifs.<br></br>⚠️ Cas Dark palette app mobile :
+        remplacer par #332644
+      </td>
+    </tr>
+    <tr class="border-0 bg-grey-100">
+      <td class="border-0">
+        <p class="block w-24 h-24 bg-grey-80">&ensp;</p>
+      </td>
+      <td class="border-0">
+        <span class="font-hole">Grey 80</span>
+        <br></br>#C2D1D9<br></br>rgb(194, 209, 217)<br></br>hsl(201, 23, 81)
+      </td>
+      <td class="border-0">LinkWater 15</td>
+      <td class="border-0">
+        Couleur utilisée pour des états inactifs de composants.<br></br>⚠️ Cas Dark
+        palette app mobile : remplacer par #332644
+      </td>
+    </tr>
+    <tr class="border-0 bg-grey-100">
+      <td class="border-0">
+        <p class="block w-24 h-24 bg-grey-40">&ensp;</p>
+      </td>
+      <td class="border-0">
+        <span class="font-hole">Grey 40</span>
+        <br></br>#58627C<br></br>rgb(88, 98, 124)<br></br>hsl(223, 17, 42)
+      </td>
+      <td class="border-0">EastBay 52</td>
+      <td class="border-0">
+        Couleur utilisée pour des icon ou textes secondaires.<br></br>⚠️ Cas Dark
+        palette app mobile : remplacer par #B7B3BD
+      </td>
+    </tr>
+    <tr class="border-0 bg-grey-100">
+      <td class="border-0">
+        <p class="block w-24 h-24 bg-grey-25">&ensp;</p>
+      </td>
+      <td class="border-0">
+        <span class="font-hole">Grey 25</span>
+        <br></br>#2E374D<br></br>rgb(46, 55, 77)<br></br>hsl(223, 25, 24)
+      </td>
+      <td class="border-0">Bunting 70</td>
+      <td class="border-0">
+        Couleur utilisée de manière générale pour tous les textes et titres.<br></br>
+        ⚠️ Cas Dark palette app mobile : remplacer par Grey 100
+      </td>
+    </tr>
+    <tr class="border-0 bg-grey-100 !border-b-[25px] border-transparent">
+      <td class="border-0">
+        <p class="block w-24 h-24 bg-grey-0">&ensp;</p>
+      </td>
+      <td class="border-0">
+        <span class="font-hole">Grey 0</span>
+        <br></br>#000000<br></br>rgb(0, 0, 0)<br></br>hsl(0, 0, 0)
+      </td>
+      <td class="border-0">Black</td>
+      <td class="border-0">
+        Couleur utilisée uniquement coté dashboard.<br></br>⚠️ Cas Dark palette app
+        mobile : remplacer par Grey 100
+      </td>
+    </tr>
+    <tr class="border-0 bg-grey-100">
+      <td class="border-0 align-top" rowspan="3">
+        <span class="block -rotate-90 origin-top-right text-right text-grey-40 uppercase">
+          Green
+        </span>
+      </td>
+      <td class="border-0">
+        <p class="block w-24 h-24 bg-green-95">&ensp;</p>
+      </td>
+      <td class="border-0">
+        <span class="font-hole">Green 95</span>
+        <br></br>#E5FBE6<br></br>rgb(229, 251, 230)<br></br>hsl(123, 73, 94)
+      </td>
+      <td class="border-0">Light Green</td>
+      <td class="border-0">
+        Couleur utilisée pour des background de blocs, dans le cas de succès.
+      </td>
+    </tr>
+    <tr class="border-0 bg-grey-100">
+      <td class="border-0">
+        <p class="block w-24 h-24 bg-green-50">&ensp;</p>
+      </td>
+      <td class="border-0">
+        <span class="font-hole">Green 50</span>
+        <br></br>#46C38E<br></br>rgb(70, 195, 142)<br></br>hsl(155, 51, 52)
+      </td>
+      <td class="border-0">Green</td>
+      <td class="border-0">
+        Couleur utilisée pour des icon ou éléments graphiques, dans le cas de{" "}
+        <br></br>succès.
+      </td>
+    </tr>
+    <tr class="border-0 bg-grey-100 !border-b-[25px] border-transparent">
+      <td class="border-0">
+        <p class="block w-24 h-24 bg-green-30">&ensp;</p>
+      </td>
+      <td class="border-0">
+        <span class="font-hole">Green 30</span>
+        <br></br>#287B53<br></br>rgb(40, 123, 83)<br></br>hsl(151, 51, 32)
+      </td>
+      <td class="border-0">Dark Green</td>
+      <td class="border-0">
+        Couleur utilisée pour des font sur fond green 95, dans le cas de succès.
+      </td>
+    </tr>
+    <tr class="border-0 bg-grey-100">
+      <td class="border-0 align-top" rowspan="3">
+        <span class="block -rotate-90 origin-top-right text-right text-grey-40 uppercase">
+          Orange
+        </span>
+      </td>
+      <td class="border-0">
+        <p class="block w-24 h-24 bg-orange-90">&ensp;</p>
+      </td>
+      <td class="border-0">
+        <span class="font-hole">Orange 90</span>
+        <br></br>#FFEDD2<br></br>rgb(255, 237, 210)<br></br>hsl(36, 100, 91)
+      </td>
+      <td class="border-0">Light Orange</td>
+      <td class="border-0">
+        Couleur utilisée pour des background de blocs, dans le cas de vigilance.
+      </td>
+    </tr>
+    <tr class="border-0 bg-grey-100">
+      <td class="border-0">
+        <p class="block w-24 h-24 bg-orange-65">&ensp;</p>
+      </td>
+      <td class="border-0">
+        <span class="font-hole">Orange 65</span>
+        <br></br>#FEB241<br></br>rgb(254, 178, 65)<br></br>hsl(36, 99, 63)
+      </td>
+      <td class="border-0">Orange</td>
+      <td class="border-0">
+        Couleur utilisée pour des icon ou éléments graphiques, dans le cas de{" "}
+        <br></br>vigilance.
+      </td>
+    </tr>
+    <tr class="border-0 bg-grey-100 !border-b-[25px] border-transparent">
+      <td class="border-0">
+        <p class="block w-24 h-24 bg-orange-30">&ensp;</p>
+      </td>
+      <td class="border-0">
+        <span class="font-hole">Orange 30</span>
+        <br></br>#9A5D01<br></br>rgb(154, 93, 1)<br></br>hsl(36, 99, 30)
+      </td>
+      <td class="border-0">Dark Orange</td>
+      <td class="border-0">
+        Couleur utilisée pour des font sur fond orange 90, dans le cas de
+        succès.
+      </td>
+    </tr>
+    <tr class="border-0 bg-grey-100">
+      <td class="border-0 align-top" rowspan="3">
+        <span class="block -rotate-90 origin-top-right text-right text-grey-40 uppercase">
+          Red
+        </span>
+      </td>
+      <td class="border-0">
+        <p class="block w-24 h-24 bg-red-95">&ensp;</p>
+      </td>
+      <td class="border-0">
+        <span class="font-hole">Red 95</span>
+        <br></br>#FFE0E0<br></br>rgb(255, 224, 224)<br></br>hsl(0, 100, 94)
+      </td>
+      <td class="border-0">Light Red</td>
+      <td class="border-0">
+        Couleur utilisée pour des background de blocs, dans le cas d’alerte.
+      </td>
+    </tr>
+    <tr class="border-0 bg-grey-100">
+      <td class="border-0">
+        <p class="block w-24 h-24 bg-red-70">&ensp;</p>
+      </td>
+      <td class="border-0">
+        <span class="font-hole">Red 70</span>
+        <br></br>#F36D6D<br></br>rgb(243, 109, 109)<br></br>hsl(0, 85, 69)
+      </td>
+      <td class="border-0">Red</td>
+      <td class="border-0">
+        Couleur utilisée pour des icon ou éléments graphiques, dans le cas
+        d’alerte.
+      </td>
+    </tr>
+    <tr class="border-0 bg-grey-100">
+      <td class="border-0">
+        <p class="block w-24 h-24 bg-red-40">&ensp;</p>
+      </td>
+      <td class="border-0">
+        <span class="font-hole">Red 40</span>
+        <br></br>#B90B20<br></br>rgb(185, 11, 32)<br></br>hsl(353, 89, 38)
+      </td>
+      <td class="border-0">Dark Red</td>
+      <td class="border-0">
+        Couleur utilisée pour des font sur fond red 95, dans le cas d’alerte.
+      </td>
+    </tr>
+  </tbody>
+</table>

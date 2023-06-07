@@ -1,6 +1,9 @@
 module.exports = {
   important: true,
-  content: ["./projects/ngx-leocare-ui/src/lib/**/*.{html,ts}"],
+  content: [
+    "./projects/ngx-leocare-ui/src/lib/**/*.{html,ts,mdx}",
+    "./projects/ngx-leocare-ui/src/doc/**/*.mdx",
+  ],
   theme: {
     colors: {
       transparent: "transparent",
