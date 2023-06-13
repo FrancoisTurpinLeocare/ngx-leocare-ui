@@ -1,6 +1,6 @@
 <button
   [disabled]="isDisable"
-  class="hover:shadow-md flex items-center justify-center disabled:bg-grey-95 disabled:text-grey-80 rounded-[50px]"
+  class="hover:shadow-md flex items-center justify-center disabled:bg-grey-95 disabled:text-grey-80 rounded-[50px] cursor-pointer"
   [ngClass]="[buttonTypeClasses, buttonSizeClasses]"
   [class.hover:shadow-none]="isIconButton || size === EButtonSize.XS"
   [class.hover:shadow-md]="!(isIconButton || size === EButtonSize.XS)"
