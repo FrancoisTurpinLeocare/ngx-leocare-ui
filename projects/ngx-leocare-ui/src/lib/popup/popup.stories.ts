@@ -12,7 +12,7 @@ import { PopupComponent } from "./popup.component";
 
 // More on how to set up stories at: https://storybook.js.org/docs/angular/writing-stories/introduction
 const meta: Meta<PopupComponent> = {
-  title: "UI/Popup",
+  title: "UI/Popups",
   component: PopupComponent,
   argTypes: {
     eIconColor: { table: { disable: true } },
