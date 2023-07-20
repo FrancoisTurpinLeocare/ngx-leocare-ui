@@ -728,6 +728,10 @@ video {
   width: 1rem !important;
 }
 
+.w-56 {
+  width: 14rem !important;
+}
+
 .w-9 {
   width: 2.25rem !important;
 }
@@ -1128,6 +1132,11 @@ video {
   font-family: Steven, sans-serif !important;
 }
 
+.text-2xl {
+  font-size: 1.5rem !important;
+  line-height: 2rem !important;
+}
+
 .text-3\.5xl {
   font-size: 2rem !important;
 }
@@ -1135,6 +1144,11 @@ video {
 .text-3xl {
   font-size: 1.875rem !important;
   line-height: 2.25rem !important;
+}
+
+.text-4xl {
+  font-size: 2.25rem !important;
+  line-height: 2.5rem !important;
 }
 
 .text-base {
