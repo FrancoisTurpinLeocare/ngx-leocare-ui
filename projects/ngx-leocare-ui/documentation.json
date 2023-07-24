@@ -189,6 +189,95 @@
             "templateData": "<button\n  [disabled]=\"isDisable\"\n  class=\"hover:shadow-md flex items-center justify-center disabled:bg-grey-95 disabled:text-grey-80 rounded-[50px] cursor-pointer\"\n  [ngClass]=\"[buttonTypeClasses, buttonSizeClasses]\"\n  [class.hover:shadow-none]=\"isIconButton || size === EButtonSize.XS\"\n  [class.hover:shadow-md]=\"!(isIconButton || size === EButtonSize.XS)\"\n>\n  <ng-container *ngIf=\"!isLoading; else loader\">\n    <img *ngIf=\"iconPath\" [ngClass]=\"buttonIconSizeClasses\" [src]=\"iconPath\" />\n  </ng-container>\n  <span\n    *ngIf=\"text\"\n    [class.ml-2]=\"isLoading || iconPath\"\n    [class.hover:underline]=\"size === EButtonSize.XS\"\n    >{{ text }}</span\n  >\n</button>\n\n<ng-template #loader>\n  <svg\n    class=\"animate-spin\"\n    [ngClass]=\"[buttonIconColorClasses, buttonIconSizeClasses]\"\n    fill=\"none\"\n    viewBox=\"0 0 22 22\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n  >\n    <path\n      d=\"M18.6581 17.4961C17.1109 19.3069 14.9681 20.506 12.6155 20.8775C10.2629 21.2491 7.85489 20.7687 5.8249 19.5229C3.79492 18.2771 2.27626 16.3476 1.54225 14.0817C0.808241 11.8159 0.907079 9.36243 1.82098 7.16296C2.73488 4.96348 4.40382 3.16242 6.52744 2.08393C8.65106 1.00543 11.0899 0.720327 13.405 1.27992\"\n      stroke-width=\"1.5\"\n    />\n  </svg>\n</ng-template>\n"
         },
         {
+            "name": "ButtonPrimeComponent",
+            "id": "component-ButtonPrimeComponent-e421c6f8befb78337942bed5cbc80c01474a95b2af17fda2235d89507282430d0b2e78eef8eab6522af5f01f8c3c0627bbf83745f33deadae4c32996776db432",
+            "file": "projects/ngx-leocare-ui/src/lib/button/button-prime/button-prime.component.ts",
+            "changeDetection": "ChangeDetectionStrategy.OnPush",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "leo-button-prime",
+            "styleUrls": [],
+            "styles": [],
+            "templateUrl": [
+                "./button-prime.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "classes",
+                    "defaultValue": "\"\"",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 10,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "icon",
+                    "defaultValue": "\"\"",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 11,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "iconPos",
+                    "defaultValue": "\"\"",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 12,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "label",
+                    "defaultValue": "\"Button\"",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 9,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "loading",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 13,
+                    "type": "boolean",
+                    "decorators": []
+                },
+                {
+                    "name": "loadingIcon",
+                    "defaultValue": "\"\"",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 14,
+                    "type": "string",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { ChangeDetectionStrategy, Component, Input } from \"@angular/core\";\n\n@Component({\n  selector: \"leo-button-prime\",\n  templateUrl: \"./button-prime.component.html\",\n  changeDetection: ChangeDetectionStrategy.OnPush,\n})\nexport class ButtonPrimeComponent {\n  @Input() label: string = \"Button\";\n  @Input() classes: string = \"\";\n  @Input() icon: string = \"\";\n  @Input() iconPos: string = \"\";\n  @Input() loading: boolean = false;\n  @Input() loadingIcon: string = \"\";\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "",
+            "templateData": "<button\n  pButton\n  [label]=\"label\"\n  [icon]=\"icon\"\n  [loading]=\"loading\"\n  [class]=\"classes\"\n></button>\n"
+        },
+        {
             "name": "IconComponent",
             "id": "component-IconComponent-dc80afe57e6bb3a61fb9e9ac3d5909669eeb00efab63c39eb06e7fce0bd267dc005a22c9865b8331ee15612d9b7edfb03da2c315aa14745502b4f1bab01a02a0",
             "file": "projects/ngx-leocare-ui/src/lib/icon/icon.component.ts",
@@ -1037,6 +1126,54 @@
             ]
         },
         {
+            "name": "ButtonPrimeModule",
+            "id": "module-ButtonPrimeModule-2a249d7230a10b9c94ab27a6a03cdfa93c4b80c5de2f409418d94aafd896e5f4a7b2398888868a178d5f8b7f1f9c4a755d7c76be79110284aabdba88c65fd10e",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "projects/ngx-leocare-ui/src/lib/button/button-prime/button-prime.module.ts",
+            "methods": [],
+            "sourceCode": "import { CommonModule } from \"@angular/common\";\nimport { NgModule } from \"@angular/core\";\nimport { ButtonModule } from \"primeng/button\";\nimport { ButtonPrimeComponent } from \"./button-prime.component\";\n\n@NgModule({\n  declarations: [ButtonPrimeComponent],\n  exports: [ButtonPrimeComponent],\n  imports: [CommonModule, ButtonModule],\n})\nexport class ButtonPrimeModule {}\n",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": [
+                        {
+                            "name": "ButtonPrimeComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "imports",
+                    "elements": [
+                        {
+                            "name": "ButtonModule"
+                        }
+                    ]
+                },
+                {
+                    "type": "exports",
+                    "elements": [
+                        {
+                            "name": "ButtonPrimeComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        },
+        {
             "name": "IconModule",
             "id": "module-IconModule-710cd3ac3892b03a381cc50d263d7cd8728fe08b04dbcd65075898d61e21a40101b8a14cf5b42c14816ba3e7dfe234e6853ad2e9f2ff5f7919904e3b62c79f07",
             "description": "",
@@ -1570,6 +1707,16 @@
                 "defaultValue": "{\n  title: \"UI/Title\",\n  component: TitleComponent,\n  argTypes: {\n    eAtomTitleLevel: { table: { disable: true } },\n    eAtomTitleAlignConfig: { table: { disable: true } },\n    eAtomTitleDisplayConfig: { table: { disable: true } },\n    eAtomTitleColorConfig: { table: { disable: true } },\n    atomTitleAlignConfig: { table: { disable: true } },\n    atomTitleDisplayConfig: { table: { disable: true } },\n    atomTitleColorConfig: { table: { disable: true } },\n    atomTitleDisplayConfigByDefault: { table: { disable: true } },\n    ngOnInit: { table: { disable: true } },\n    setDisplayConfigByDefault: { table: { disable: true } },\n    setAlignConfigByDefault: { table: { disable: true } },\n    setColorConfigByDefault: { table: { disable: true } },\n  },\n  tags: [\"autodocs\"],\n  render: (args: TitleComponent) => ({\n    props: {\n      ...args,\n    },\n  }),\n}"
             },
             {
+                "name": "meta",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/ngx-leocare-ui/src/lib/button/button-prime/button-prime.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Meta<ButtonPrimeComponent>",
+                "defaultValue": "{\n  title: \"UI/Button/PrimeNG\",\n  component: ButtonPrimeComponent,\n  tags: [\"autodocs\"],\n  parameters: {\n    docs: {\n      description: {\n        component:\n          \"Surcouche composant prime NG (cf https://www.primefaces.org/primeng-v14-lts/button)\",\n      },\n      previewSource: \"open\",\n    },\n  },\n  decorators: [\n    moduleMetadata({\n      //👇 Imports both components to allow component composition with Storybook\n      declarations: [ButtonPrimeComponent],\n      imports: [CommonModule, ButtonModule],\n    }),\n  ],\n  render: (args: ButtonPrimeComponent) => ({\n    props: {\n      ...args,\n    },\n  }),\n}"
+            },
+            {
                 "name": "Normal",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -1598,6 +1745,16 @@
                 "deprecationMessage": "",
                 "type": "Story",
                 "defaultValue": "{\n  args: {\n    text: \"Valider\",\n    type: EButtonType.PRIMARY,\n  },\n}"
+            },
+            {
+                "name": "Primary",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/ngx-leocare-ui/src/lib/button/button-prime/button-prime.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  args: {\n    label: \"Button\",\n  },\n}"
             },
             {
                 "name": "Required",
@@ -1854,6 +2011,17 @@
                 "subtype": "typealias",
                 "rawtype": "StoryObj<TitleComponent>",
                 "file": "projects/ngx-leocare-ui/src/lib/title/title.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 177
+            },
+            {
+                "name": "Story",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "rawtype": "StoryObj<ButtonPrimeComponent>",
+                "file": "projects/ngx-leocare-ui/src/lib/button/button-prime/button-prime.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -3136,6 +3304,28 @@
                     "defaultValue": "{\n  args: {\n    name: \"cross\",\n    size: EIconSize.SQUARE_10PX,\n    color: EIconColor.GREY_0,\n  },\n}"
                 }
             ],
+            "projects/ngx-leocare-ui/src/lib/button/button-prime/button-prime.stories.ts": [
+                {
+                    "name": "meta",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/ngx-leocare-ui/src/lib/button/button-prime/button-prime.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Meta<ButtonPrimeComponent>",
+                    "defaultValue": "{\n  title: \"UI/Button/PrimeNG\",\n  component: ButtonPrimeComponent,\n  tags: [\"autodocs\"],\n  parameters: {\n    docs: {\n      description: {\n        component:\n          \"Surcouche composant prime NG (cf https://www.primefaces.org/primeng-v14-lts/button)\",\n      },\n      previewSource: \"open\",\n    },\n  },\n  decorators: [\n    moduleMetadata({\n      //👇 Imports both components to allow component composition with Storybook\n      declarations: [ButtonPrimeComponent],\n      imports: [CommonModule, ButtonModule],\n    }),\n  ],\n  render: (args: ButtonPrimeComponent) => ({\n    props: {\n      ...args,\n    },\n  }),\n}"
+                },
+                {
+                    "name": "Primary",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/ngx-leocare-ui/src/lib/button/button-prime/button-prime.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    label: \"Button\",\n  },\n}"
+                }
+            ],
             "projects/ngx-leocare-ui/.storybook/preview.ts": [
                 {
                     "name": "preview",
@@ -4092,6 +4282,19 @@
                     "description": "",
                     "kind": 177
                 }
+            ],
+            "projects/ngx-leocare-ui/src/lib/button/button-prime/button-prime.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<ButtonPrimeComponent>",
+                    "file": "projects/ngx-leocare-ui/src/lib/button/button-prime/button-prime.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 177
+                }
             ]
         }
     },
@@ -4106,6 +4309,35 @@
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
                 "name": "preview",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/ngx-leocare-ui/src/lib/button/button-prime/button-prime.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "ButtonPrimeComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/7",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/ngx-leocare-ui/src/lib/button/button-prime/button-prime.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "meta",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/ngx-leocare-ui/src/lib/button/button-prime/button-prime.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Primary",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"

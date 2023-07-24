@@ -12,7 +12,7 @@
     "noFallthroughCasesInSwitch": true,
     "sourceMap": true,
     "paths": {
-      "ngx-leocare-ui": ["dist/ngx-leocare-ui"]
+      "lib-leocare-components": ["dist/lib-leocare-components"]
     },
     "declaration": false,
     "downlevelIteration": true,

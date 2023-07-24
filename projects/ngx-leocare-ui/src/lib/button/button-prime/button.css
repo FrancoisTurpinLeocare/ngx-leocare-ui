@@ -1,0 +1,63 @@
+.p-button {
+  @apply flex !h-11 items-center justify-center !border-0 !bg-purple-55 !py-0 !px-5 !font-hole !text-sm hover:shadow-md focus:!shadow-none;
+}
+
+.p-button-link {
+  @apply !bg-transparent hover:underline;
+}
+
+.p-button-secondary {
+  @apply !bg-purple-95 !text-purple-25;
+}
+
+.p-button-text {
+  @apply !bg-transparent;
+}
+
+.p-button-text {
+  @apply !bg-transparent;
+}
+
+.p-button-help {
+  @apply !bg-purple-95 !text-purple-25;
+}
+
+.p-button-danger {
+  @apply !bg-red-70;
+}
+
+.p-button-rounded {
+  @apply !rounded-6xl;
+}
+
+.p-button-rounded.p-button-sm {
+  @apply !rounded-2xl;
+}
+
+.p-button-rounded.p-button-icon-only {
+  @apply !rounded-full;
+}
+
+.p-button-sm {
+  @apply !h-8 !font-steven;
+}
+
+.p-button-lg {
+  @apply !h-12;
+}
+
+.p-button.p-button-icon-only {
+  @apply !w-11 !p-0;
+}
+
+.p-button-sm.p-button-icon-only {
+  @apply !w-8;
+}
+
+.p-button-lg.p-button-icon-only {
+  @apply !w-12;
+}
+
+.p-button:disabled {
+  @apply !bg-grey-90 !text-grey-80 !opacity-100;
+}

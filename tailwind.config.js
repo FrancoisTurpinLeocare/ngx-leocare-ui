@@ -1,4 +1,13 @@
 module.exports = {
-  presets: [require("./projects/ngx-leocare-ui/tailwind-base.config.js")],
+  presets: [
+    require("./projects/lib-leocare-components/tailwind-base.config.js"),
+  ],
   // ...
+  theme: {
+    extend: {
+      borderRadius: {
+        "6xl": "3rem",
+      },
+    },
+  },
 };

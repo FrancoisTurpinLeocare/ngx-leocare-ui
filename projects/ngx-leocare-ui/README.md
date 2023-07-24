@@ -4,20 +4,20 @@ This library was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Code scaffolding
 
-Run `ng generate component component-name --project ngx-leocare-ui` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project ngx-leocare-ui`.
-> Note: Don't forget to add `--project ngx-leocare-ui` or else it will be added to the default project in your `angular.json` file. 
+Run `ng generate component component-name --project lib-leocare-components` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project lib-leocare-components`.
+> Note: Don't forget to add `--project lib-leocare-components` or else it will be added to the default project in your `angular.json` file.
 
 ## Build
 
-Run `ng build ngx-leocare-ui` to build the project. The build artifacts will be stored in the `dist/` directory.
+Run `ng build lib-leocare-components` to build the project. The build artifacts will be stored in the `dist/` directory.
 
 ## Publishing
 
-After building your library with `ng build ngx-leocare-ui`, go to the dist folder `cd dist/ngx-leocare-ui` and run `npm publish`.
+After building your library with `ng build lib-leocare-components`, go to the dist folder `cd dist/lib-leocare-components` and run `npm publish`.
 
 ## Running unit tests
 
-Run `ng test ngx-leocare-ui` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Run `ng test lib-leocare-components` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
 ## Further help
 

@@ -1,8 +1,8 @@
 module.exports = {
   important: true,
   content: [
-    "./projects/ngx-leocare-ui/src/lib/**/*.{html,ts,mdx}",
-    "./projects/ngx-leocare-ui/src/doc/**/*.mdx",
+    "./projects/lib-leocare-components/src/lib/**/*.{html,ts,mdx}",
+    "./projects/lib-leocare-components/src/doc/**/*.mdx",
   ],
   theme: {
     colors: {

@@ -1,6 +1,9 @@
 /*
- * Public API Surface of ngx-leocare-ui
+ * Public API Surface of lib-leocare-components
  */
+// BUTTON
+export * from "./lib/button/button-prime/button-prime.component";
+export * from "./lib/button/button-prime/button-prime.module";
 // BUTTON
 export * from "./lib/button/button.component";
 export * from "./lib/button/button.config";
