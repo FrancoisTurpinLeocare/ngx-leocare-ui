@@ -1,6 +1,6 @@
 {
   "$schema": "../../node_modules/ng-packagr/ng-package.schema.json",
-  "dest": "../../dist/ngx-leocare-ui",
+  "dest": "../../dist/lib-leocare-components",
   "assets": ["./tailwind-base.config.js"],
   "lib": {
     "entryFile": "src/public-api.ts"

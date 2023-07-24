@@ -10,7 +10,7 @@
         {
             "name": "ButtonComponent",
             "id": "component-ButtonComponent-d680b0c38e325a985ffd3772b5322f69e812b72c28396d90e2b053157811317b44da158ccc089915b064cf824d633e2624650460ce743b9d2aea062d563638e2",
-            "file": "projects/ngx-leocare-ui/src/lib/button/button.component.ts",
+            "file": "projects/lib-leocare-components/src/lib/button/button.component.ts",
             "changeDetection": "ChangeDetectionStrategy.OnPush",
             "encapsulation": [],
             "entryComponents": [],
@@ -24,6 +24,7 @@
                 "./button.component.html"
             ],
             "viewProviders": [],
+            "hostDirectives": [],
             "inputsClass": [
                 {
                     "name": "iconPath",
@@ -165,6 +166,8 @@
             "deprecationMessage": "",
             "hostBindings": [],
             "hostListeners": [],
+            "standalone": false,
+            "imports": [],
             "description": "",
             "rawdescription": "\n",
             "type": "component",
@@ -191,7 +194,7 @@
         {
             "name": "ButtonPrimeComponent",
             "id": "component-ButtonPrimeComponent-e421c6f8befb78337942bed5cbc80c01474a95b2af17fda2235d89507282430d0b2e78eef8eab6522af5f01f8c3c0627bbf83745f33deadae4c32996776db432",
-            "file": "projects/ngx-leocare-ui/src/lib/button/button-prime/button-prime.component.ts",
+            "file": "projects/lib-leocare-components/src/lib/button/button-prime/button-prime.component.ts",
             "changeDetection": "ChangeDetectionStrategy.OnPush",
             "encapsulation": [],
             "entryComponents": [],
@@ -205,6 +208,7 @@
                 "./button-prime.component.html"
             ],
             "viewProviders": [],
+            "hostDirectives": [],
             "inputsClass": [
                 {
                     "name": "classes",
@@ -268,6 +272,8 @@
             "deprecationMessage": "",
             "hostBindings": [],
             "hostListeners": [],
+            "standalone": false,
+            "imports": [],
             "description": "",
             "rawdescription": "\n",
             "type": "component",
@@ -280,7 +286,7 @@
         {
             "name": "IconComponent",
             "id": "component-IconComponent-dc80afe57e6bb3a61fb9e9ac3d5909669eeb00efab63c39eb06e7fce0bd267dc005a22c9865b8331ee15612d9b7edfb03da2c315aa14745502b4f1bab01a02a0",
-            "file": "projects/ngx-leocare-ui/src/lib/icon/icon.component.ts",
+            "file": "projects/lib-leocare-components/src/lib/icon/icon.component.ts",
             "changeDetection": "ChangeDetectionStrategy.OnPush",
             "encapsulation": [],
             "entryComponents": [],
@@ -294,6 +300,7 @@
                 "./icon.component.html"
             ],
             "viewProviders": [],
+            "hostDirectives": [],
             "inputsClass": [
                 {
                     "name": "color",
@@ -393,6 +400,8 @@
             "deprecationMessage": "",
             "hostBindings": [],
             "hostListeners": [],
+            "standalone": false,
+            "imports": [],
             "description": "",
             "rawdescription": "\n",
             "type": "component",
@@ -408,7 +417,7 @@
         {
             "name": "InputComponent",
             "id": "component-InputComponent-9cc23bcf764adc073a74b93809470923738a1797bff84871c7468869eb214d7bfccc1a47ebd035d00557e71fd376cb863961fb8380dae6a41d879b7bc509cff5",
-            "file": "projects/ngx-leocare-ui/src/lib/input/input.component.ts",
+            "file": "projects/lib-leocare-components/src/lib/input/input.component.ts",
             "changeDetection": "ChangeDetectionStrategy.OnPush",
             "encapsulation": [],
             "entryComponents": [],
@@ -424,6 +433,7 @@
                 "./input.component.html"
             ],
             "viewProviders": [],
+            "hostDirectives": [],
             "inputsClass": [
                 {
                     "name": "identifier",
@@ -528,6 +538,8 @@
             "deprecationMessage": "",
             "hostBindings": [],
             "hostListeners": [],
+            "standalone": false,
+            "imports": [],
             "description": "",
             "rawdescription": "\n",
             "type": "component",
@@ -545,7 +557,7 @@
         {
             "name": "PopupComponent",
             "id": "component-PopupComponent-99519da0b5fecf181950205ac6a9b8a965abd04687085497cd5311db94aced8db522364a71c345ed46c9eb12ef35780cac63d018d49480f9a22836f790cc858d",
-            "file": "projects/ngx-leocare-ui/src/lib/popup/popup.component.ts",
+            "file": "projects/lib-leocare-components/src/lib/popup/popup.component.ts",
             "changeDetection": "ChangeDetectionStrategy.OnPush",
             "encapsulation": [],
             "entryComponents": [],
@@ -559,6 +571,7 @@
                 "./popup.component.html"
             ],
             "viewProviders": [],
+            "hostDirectives": [],
             "inputsClass": [
                 {
                     "name": "cancelLabel",
@@ -724,6 +737,8 @@
             "deprecationMessage": "",
             "hostBindings": [],
             "hostListeners": [],
+            "standalone": false,
+            "imports": [],
             "description": "",
             "rawdescription": "\n",
             "type": "component",
@@ -736,7 +751,7 @@
         {
             "name": "TextComponent",
             "id": "component-TextComponent-ef7d51c772ee38be52a909973329aac9a44dc6375c45da58564c60ed57d69e49f47e19f6719251cc5633a31d586afc6bb2af52644dfdbbeb8123bc65c131c38c",
-            "file": "projects/ngx-leocare-ui/src/lib/text/text.component.ts",
+            "file": "projects/lib-leocare-components/src/lib/text/text.component.ts",
             "changeDetection": "ChangeDetectionStrategy.OnPush",
             "encapsulation": [],
             "entryComponents": [],
@@ -750,6 +765,7 @@
                 "./text.component.html"
             ],
             "viewProviders": [],
+            "hostDirectives": [],
             "inputsClass": [
                 {
                     "name": "align",
@@ -853,6 +869,8 @@
             "deprecationMessage": "",
             "hostBindings": [],
             "hostListeners": [],
+            "standalone": false,
+            "imports": [],
             "description": "",
             "rawdescription": "\n",
             "type": "component",
@@ -865,7 +883,7 @@
         {
             "name": "TitleComponent",
             "id": "component-TitleComponent-49b507b2e9771fce4012169329e7dbbbc6ba58252051726db39394df40c903d030ca8b69cd7de059ea398e72acfefaa7f5d1801622d280f4a0496c822aeaa79b",
-            "file": "projects/ngx-leocare-ui/src/lib/title/title.component.ts",
+            "file": "projects/lib-leocare-components/src/lib/title/title.component.ts",
             "changeDetection": "ChangeDetectionStrategy.OnPush",
             "encapsulation": [],
             "entryComponents": [],
@@ -879,6 +897,7 @@
                 "./title.component.html"
             ],
             "viewProviders": [],
+            "hostDirectives": [],
             "inputsClass": [
                 {
                     "name": "alignConfig",
@@ -1067,6 +1086,8 @@
             "deprecationMessage": "",
             "hostBindings": [],
             "hostListeners": [],
+            "standalone": false,
+            "imports": [],
             "description": "",
             "rawdescription": "\n",
             "type": "component",
@@ -1087,7 +1108,7 @@
             "description": "",
             "deprecationMessage": "",
             "deprecated": false,
-            "file": "projects/ngx-leocare-ui/src/lib/button/button.module.ts",
+            "file": "projects/lib-leocare-components/src/lib/button/button.module.ts",
             "methods": [],
             "sourceCode": "import { CommonModule } from \"@angular/common\";\nimport { NgModule } from \"@angular/core\";\nimport { ButtonComponent } from \"./button.component\";\n\n@NgModule({\n  declarations: [ButtonComponent],\n  exports: [ButtonComponent],\n  imports: [CommonModule],\n})\nexport class ButtonModule {}\n",
             "children": [
@@ -1131,7 +1152,7 @@
             "description": "",
             "deprecationMessage": "",
             "deprecated": false,
-            "file": "projects/ngx-leocare-ui/src/lib/button/button-prime/button-prime.module.ts",
+            "file": "projects/lib-leocare-components/src/lib/button/button-prime/button-prime.module.ts",
             "methods": [],
             "sourceCode": "import { CommonModule } from \"@angular/common\";\nimport { NgModule } from \"@angular/core\";\nimport { ButtonModule } from \"primeng/button\";\nimport { ButtonPrimeComponent } from \"./button-prime.component\";\n\n@NgModule({\n  declarations: [ButtonPrimeComponent],\n  exports: [ButtonPrimeComponent],\n  imports: [CommonModule, ButtonModule],\n})\nexport class ButtonPrimeModule {}\n",
             "children": [
@@ -1179,7 +1200,7 @@
             "description": "",
             "deprecationMessage": "",
             "deprecated": false,
-            "file": "projects/ngx-leocare-ui/src/lib/icon/icon.module.ts",
+            "file": "projects/lib-leocare-components/src/lib/icon/icon.module.ts",
             "methods": [],
             "sourceCode": "import { CommonModule } from \"@angular/common\";\nimport { NgModule } from \"@angular/core\";\nimport { IconComponent } from \"./icon.component\";\n\n@NgModule({\n  declarations: [IconComponent],\n  imports: [CommonModule],\n  exports: [IconComponent],\n})\nexport class IconModule {}\n",
             "children": [
@@ -1223,7 +1244,7 @@
             "description": "",
             "deprecationMessage": "",
             "deprecated": false,
-            "file": "projects/ngx-leocare-ui/src/lib/input/input.module.ts",
+            "file": "projects/lib-leocare-components/src/lib/input/input.module.ts",
             "methods": [],
             "sourceCode": "import { CommonModule } from \"@angular/common\";\nimport { NgModule } from \"@angular/core\";\nimport { InputComponent } from \"./input.component\";\n\n@NgModule({\n  declarations: [InputComponent],\n  exports: [InputComponent],\n  imports: [CommonModule],\n})\nexport class InputModule {}\n",
             "children": [
@@ -1267,7 +1288,7 @@
             "description": "",
             "deprecationMessage": "",
             "deprecated": false,
-            "file": "projects/ngx-leocare-ui/src/lib/popup/popup.module.ts",
+            "file": "projects/lib-leocare-components/src/lib/popup/popup.module.ts",
             "methods": [],
             "sourceCode": "import { CommonModule } from \"@angular/common\";\nimport { NgModule } from \"@angular/core\";\nimport { ButtonModule } from \"../button/button.module\";\nimport { IconModule } from \"../icon/icon.module\";\nimport { TextModule } from \"../text/text.module\";\nimport { PopupComponent } from \"./popup.component\";\n\n@NgModule({\n  declarations: [PopupComponent],\n  exports: [PopupComponent],\n  imports: [CommonModule, TextModule, IconModule, ButtonModule],\n})\nexport class PopupModule {}\n",
             "children": [
@@ -1321,7 +1342,7 @@
             "description": "",
             "deprecationMessage": "",
             "deprecated": false,
-            "file": "projects/ngx-leocare-ui/src/lib/text/text.module.ts",
+            "file": "projects/lib-leocare-components/src/lib/text/text.module.ts",
             "methods": [],
             "sourceCode": "import { CommonModule } from \"@angular/common\";\nimport { NgModule } from \"@angular/core\";\nimport { TextComponent } from \"./text.component\";\n\n@NgModule({\n  declarations: [TextComponent],\n  exports: [TextComponent],\n  imports: [CommonModule],\n})\nexport class TextModule {}\n",
             "children": [
@@ -1365,7 +1386,7 @@
             "description": "",
             "deprecationMessage": "",
             "deprecated": false,
-            "file": "projects/ngx-leocare-ui/src/lib/title/title.module.ts",
+            "file": "projects/lib-leocare-components/src/lib/title/title.module.ts",
             "methods": [],
             "sourceCode": "import { CommonModule } from \"@angular/common\";\nimport { NgModule } from \"@angular/core\";\nimport { TitleComponent } from \"./title.component\";\n\n@NgModule({\n  declarations: [TitleComponent],\n  exports: [TitleComponent],\n  imports: [CommonModule],\n})\nexport class TitleModule {}\n",
             "children": [
@@ -1410,7 +1431,7 @@
                 "name": "ATOM_TITLE_ALIGN_CONFIG",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/ngx-leocare-ui/src/lib/title/title.config.ts",
+                "file": "projects/lib-leocare-components/src/lib/title/title.config.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Record<EAtomTitleAlignConfig, string>",
@@ -1420,7 +1441,7 @@
                 "name": "ATOM_TITLE_COLOR_CONFIG",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/ngx-leocare-ui/src/lib/title/title.config.ts",
+                "file": "projects/lib-leocare-components/src/lib/title/title.config.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Record<EAtomTitleColorConfig, string>",
@@ -1430,7 +1451,7 @@
                 "name": "ATOM_TITLE_DISPLAY_CONFIG",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/ngx-leocare-ui/src/lib/title/title.config.ts",
+                "file": "projects/lib-leocare-components/src/lib/title/title.config.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Record<EAtomTitleDisplayConfig, string>",
@@ -1440,7 +1461,7 @@
                 "name": "ATOM_TITLE_DISPLAY_CONFIG_BY_DEFAULT",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/ngx-leocare-ui/src/lib/title/title.config.ts",
+                "file": "projects/lib-leocare-components/src/lib/title/title.config.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Record<EAtomTitleLevel, EAtomTitleDisplayConfig>",
@@ -1450,7 +1471,7 @@
                 "name": "BUTTON_ICON_COLOR_CONFIG",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/ngx-leocare-ui/src/lib/button/button.config.ts",
+                "file": "projects/lib-leocare-components/src/lib/button/button.config.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Record<EButtonType, string>",
@@ -1460,7 +1481,7 @@
                 "name": "BUTTON_ICON_SIZE_CONFIG",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/ngx-leocare-ui/src/lib/button/button.config.ts",
+                "file": "projects/lib-leocare-components/src/lib/button/button.config.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Record<EButtonSize, string>",
@@ -1470,7 +1491,7 @@
                 "name": "BUTTON_SIZE_CONFIG",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/ngx-leocare-ui/src/lib/button/button.config.ts",
+                "file": "projects/lib-leocare-components/src/lib/button/button.config.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Record<EButtonSize, string>",
@@ -1480,7 +1501,7 @@
                 "name": "BUTTON_TYPE_CONFIG",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/ngx-leocare-ui/src/lib/button/button.config.ts",
+                "file": "projects/lib-leocare-components/src/lib/button/button.config.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Record<EButtonType, string>",
@@ -1490,7 +1511,7 @@
                 "name": "Default",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/ngx-leocare-ui/src/lib/popup/popup.stories.ts",
+                "file": "projects/lib-leocare-components/src/lib/popup/popup.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
@@ -1500,7 +1521,7 @@
                 "name": "Default",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/ngx-leocare-ui/src/lib/text/text.stories.ts",
+                "file": "projects/lib-leocare-components/src/lib/text/text.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
@@ -1510,7 +1531,7 @@
                 "name": "disable",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/ngx-leocare-ui/src/lib/button/button.stories.ts",
+                "file": "projects/lib-leocare-components/src/lib/button/button.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
@@ -1520,7 +1541,7 @@
                 "name": "Disabled",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/ngx-leocare-ui/src/lib/input/input.stories.ts",
+                "file": "projects/lib-leocare-components/src/lib/input/input.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
@@ -1530,7 +1551,7 @@
                 "name": "H1",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/ngx-leocare-ui/src/lib/title/title.stories.ts",
+                "file": "projects/lib-leocare-components/src/lib/title/title.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
@@ -1540,7 +1561,7 @@
                 "name": "H2",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/ngx-leocare-ui/src/lib/title/title.stories.ts",
+                "file": "projects/lib-leocare-components/src/lib/title/title.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
@@ -1550,7 +1571,7 @@
                 "name": "H3",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/ngx-leocare-ui/src/lib/title/title.stories.ts",
+                "file": "projects/lib-leocare-components/src/lib/title/title.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
@@ -1560,7 +1581,7 @@
                 "name": "H4",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/ngx-leocare-ui/src/lib/title/title.stories.ts",
+                "file": "projects/lib-leocare-components/src/lib/title/title.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
@@ -1570,7 +1591,7 @@
                 "name": "ICON_COLOR_CONFIG",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/ngx-leocare-ui/src/lib/icon/icon.config.ts",
+                "file": "projects/lib-leocare-components/src/lib/icon/icon.config.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Record<EIconColor, string>",
@@ -1580,7 +1601,7 @@
                 "name": "ICON_SIZE_CONFIG",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/ngx-leocare-ui/src/lib/icon/icon.config.ts",
+                "file": "projects/lib-leocare-components/src/lib/icon/icon.config.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Record<EIconSize, string>",
@@ -1590,7 +1611,7 @@
                 "name": "iconButton",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/ngx-leocare-ui/src/lib/button/button.stories.ts",
+                "file": "projects/lib-leocare-components/src/lib/button/button.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
@@ -1600,7 +1621,7 @@
                 "name": "iconLabel",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/ngx-leocare-ui/src/lib/button/button.stories.ts",
+                "file": "projects/lib-leocare-components/src/lib/button/button.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
@@ -1610,7 +1631,7 @@
                 "name": "Invalid",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/ngx-leocare-ui/src/lib/input/input.stories.ts",
+                "file": "projects/lib-leocare-components/src/lib/input/input.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
@@ -1620,7 +1641,7 @@
                 "name": "large",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/ngx-leocare-ui/src/lib/button/button.stories.ts",
+                "file": "projects/lib-leocare-components/src/lib/button/button.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
@@ -1630,7 +1651,7 @@
                 "name": "loading",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/ngx-leocare-ui/src/lib/button/button.stories.ts",
+                "file": "projects/lib-leocare-components/src/lib/button/button.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
@@ -1640,7 +1661,7 @@
                 "name": "medium",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/ngx-leocare-ui/src/lib/button/button.stories.ts",
+                "file": "projects/lib-leocare-components/src/lib/button/button.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
@@ -1650,7 +1671,7 @@
                 "name": "meta",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/ngx-leocare-ui/src/lib/button/button.stories.ts",
+                "file": "projects/lib-leocare-components/src/lib/button/button.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Meta<ButtonComponent>",
@@ -1660,7 +1681,7 @@
                 "name": "meta",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/ngx-leocare-ui/src/lib/icon/icon.stories.ts",
+                "file": "projects/lib-leocare-components/src/lib/icon/icon.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Meta<IconComponent>",
@@ -1670,7 +1691,7 @@
                 "name": "meta",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/ngx-leocare-ui/src/lib/input/input.stories.ts",
+                "file": "projects/lib-leocare-components/src/lib/input/input.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Meta<InputComponent>",
@@ -1680,7 +1701,7 @@
                 "name": "meta",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/ngx-leocare-ui/src/lib/popup/popup.stories.ts",
+                "file": "projects/lib-leocare-components/src/lib/popup/popup.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Meta<PopupComponent>",
@@ -1690,7 +1711,7 @@
                 "name": "meta",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/ngx-leocare-ui/src/lib/text/text.stories.ts",
+                "file": "projects/lib-leocare-components/src/lib/text/text.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Meta<TextComponent>",
@@ -1700,7 +1721,7 @@
                 "name": "meta",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/ngx-leocare-ui/src/lib/title/title.stories.ts",
+                "file": "projects/lib-leocare-components/src/lib/title/title.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Meta<TitleComponent>",
@@ -1710,7 +1731,7 @@
                 "name": "meta",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/ngx-leocare-ui/src/lib/button/button-prime/button-prime.stories.ts",
+                "file": "projects/lib-leocare-components/src/lib/button/button-prime/button-prime.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Meta<ButtonPrimeComponent>",
@@ -1720,7 +1741,7 @@
                 "name": "Normal",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/ngx-leocare-ui/src/lib/input/input.stories.ts",
+                "file": "projects/lib-leocare-components/src/lib/input/input.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
@@ -1730,7 +1751,7 @@
                 "name": "preview",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/ngx-leocare-ui/.storybook/preview.ts",
+                "file": "projects/lib-leocare-components/.storybook/preview.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Preview",
@@ -1740,7 +1761,7 @@
                 "name": "Primary",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/ngx-leocare-ui/src/lib/button/button.stories.ts",
+                "file": "projects/lib-leocare-components/src/lib/button/button.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
@@ -1750,7 +1771,7 @@
                 "name": "Primary",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/ngx-leocare-ui/src/lib/button/button-prime/button-prime.stories.ts",
+                "file": "projects/lib-leocare-components/src/lib/button/button-prime/button-prime.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
@@ -1760,7 +1781,7 @@
                 "name": "Required",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/ngx-leocare-ui/src/lib/input/input.stories.ts",
+                "file": "projects/lib-leocare-components/src/lib/input/input.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
@@ -1770,7 +1791,7 @@
                 "name": "Secondary",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/ngx-leocare-ui/src/lib/button/button.stories.ts",
+                "file": "projects/lib-leocare-components/src/lib/button/button.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
@@ -1780,7 +1801,7 @@
                 "name": "small",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/ngx-leocare-ui/src/lib/button/button.stories.ts",
+                "file": "projects/lib-leocare-components/src/lib/button/button.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
@@ -1790,7 +1811,7 @@
                 "name": "SquareL",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/ngx-leocare-ui/src/lib/icon/icon.stories.ts",
+                "file": "projects/lib-leocare-components/src/lib/icon/icon.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
@@ -1800,7 +1821,7 @@
                 "name": "SquareM",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/ngx-leocare-ui/src/lib/icon/icon.stories.ts",
+                "file": "projects/lib-leocare-components/src/lib/icon/icon.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
@@ -1810,7 +1831,7 @@
                 "name": "SquareS",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/ngx-leocare-ui/src/lib/icon/icon.stories.ts",
+                "file": "projects/lib-leocare-components/src/lib/icon/icon.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
@@ -1820,7 +1841,7 @@
                 "name": "SquareXL",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/ngx-leocare-ui/src/lib/icon/icon.stories.ts",
+                "file": "projects/lib-leocare-components/src/lib/icon/icon.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
@@ -1830,7 +1851,7 @@
                 "name": "SquareXS",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/ngx-leocare-ui/src/lib/icon/icon.stories.ts",
+                "file": "projects/lib-leocare-components/src/lib/icon/icon.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
@@ -1840,7 +1861,7 @@
                 "name": "SquareXXL",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/ngx-leocare-ui/src/lib/icon/icon.stories.ts",
+                "file": "projects/lib-leocare-components/src/lib/icon/icon.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
@@ -1850,7 +1871,7 @@
                 "name": "SquareXXS",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/ngx-leocare-ui/src/lib/icon/icon.stories.ts",
+                "file": "projects/lib-leocare-components/src/lib/icon/icon.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
@@ -1860,7 +1881,7 @@
                 "name": "TEXT_ALIGN_CONFIG",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/ngx-leocare-ui/src/lib/text/text.config.ts",
+                "file": "projects/lib-leocare-components/src/lib/text/text.config.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Record<ETextAlign, string>",
@@ -1870,7 +1891,7 @@
                 "name": "TEXT_COLOR_CONFIG",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/ngx-leocare-ui/src/lib/text/text.config.ts",
+                "file": "projects/lib-leocare-components/src/lib/text/text.config.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Partial<Record<ETextColor, string>>",
@@ -1880,7 +1901,7 @@
                 "name": "TEXT_FAMILY_CONFIG",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/ngx-leocare-ui/src/lib/text/text.config.ts",
+                "file": "projects/lib-leocare-components/src/lib/text/text.config.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Record<ETextFamily, string>",
@@ -1890,7 +1911,7 @@
                 "name": "TEXT_SIZE_CONFIG",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/ngx-leocare-ui/src/lib/text/text.config.ts",
+                "file": "projects/lib-leocare-components/src/lib/text/text.config.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Record<ETextSize, string>",
@@ -1900,7 +1921,7 @@
                 "name": "Toggle",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/ngx-leocare-ui/src/lib/popup/popup.stories.ts",
+                "file": "projects/lib-leocare-components/src/lib/popup/popup.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
@@ -1910,7 +1931,7 @@
                 "name": "Valid",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/ngx-leocare-ui/src/lib/input/input.stories.ts",
+                "file": "projects/lib-leocare-components/src/lib/input/input.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
@@ -1920,7 +1941,7 @@
                 "name": "Warning",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/ngx-leocare-ui/src/lib/button/button.stories.ts",
+                "file": "projects/lib-leocare-components/src/lib/button/button.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
@@ -1930,7 +1951,7 @@
                 "name": "xs",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/ngx-leocare-ui/src/lib/button/button.stories.ts",
+                "file": "projects/lib-leocare-components/src/lib/button/button.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
@@ -1944,88 +1965,88 @@
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
                 "rawtype": "literal type",
-                "file": "projects/ngx-leocare-ui/src/lib/title/title.component.ts",
+                "file": "projects/lib-leocare-components/src/lib/title/title.component.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
-                "kind": 181
+                "kind": 184
             },
             {
                 "name": "Story",
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
                 "rawtype": "StoryObj<ButtonComponent>",
-                "file": "projects/ngx-leocare-ui/src/lib/button/button.stories.ts",
+                "file": "projects/lib-leocare-components/src/lib/button/button.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
-                "kind": 177
+                "kind": 180
             },
             {
                 "name": "Story",
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
                 "rawtype": "StoryObj<IconComponent>",
-                "file": "projects/ngx-leocare-ui/src/lib/icon/icon.stories.ts",
+                "file": "projects/lib-leocare-components/src/lib/icon/icon.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
-                "kind": 177
+                "kind": 180
             },
             {
                 "name": "Story",
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
                 "rawtype": "StoryObj<InputComponent>",
-                "file": "projects/ngx-leocare-ui/src/lib/input/input.stories.ts",
+                "file": "projects/lib-leocare-components/src/lib/input/input.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
-                "kind": 177
+                "kind": 180
             },
             {
                 "name": "Story",
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
                 "rawtype": "StoryObj<PopupComponent>",
-                "file": "projects/ngx-leocare-ui/src/lib/popup/popup.stories.ts",
+                "file": "projects/lib-leocare-components/src/lib/popup/popup.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
-                "kind": 177
+                "kind": 180
             },
             {
                 "name": "Story",
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
                 "rawtype": "StoryObj<TextComponent>",
-                "file": "projects/ngx-leocare-ui/src/lib/text/text.stories.ts",
+                "file": "projects/lib-leocare-components/src/lib/text/text.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
-                "kind": 177
+                "kind": 180
             },
             {
                 "name": "Story",
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
                 "rawtype": "StoryObj<TitleComponent>",
-                "file": "projects/ngx-leocare-ui/src/lib/title/title.stories.ts",
+                "file": "projects/lib-leocare-components/src/lib/title/title.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
-                "kind": 177
+                "kind": 180
             },
             {
                 "name": "Story",
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
                 "rawtype": "StoryObj<ButtonPrimeComponent>",
-                "file": "projects/ngx-leocare-ui/src/lib/button/button-prime/button-prime.stories.ts",
+                "file": "projects/lib-leocare-components/src/lib/button/button-prime/button-prime.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
-                "kind": 177
+                "kind": 180
             }
         ],
         "enumerations": [
@@ -2050,7 +2071,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
-                "file": "projects/ngx-leocare-ui/src/lib/title/title.config.ts"
+                "file": "projects/lib-leocare-components/src/lib/title/title.config.ts"
             },
             {
                 "name": "EAtomTitleColorConfig",
@@ -2097,7 +2118,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
-                "file": "projects/ngx-leocare-ui/src/lib/title/title.config.ts"
+                "file": "projects/lib-leocare-components/src/lib/title/title.config.ts"
             },
             {
                 "name": "EAtomTitleDisplayConfig",
@@ -2132,7 +2153,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
-                "file": "projects/ngx-leocare-ui/src/lib/title/title.config.ts"
+                "file": "projects/lib-leocare-components/src/lib/title/title.config.ts"
             },
             {
                 "name": "EAtomTitleLevel",
@@ -2167,7 +2188,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
-                "file": "projects/ngx-leocare-ui/src/lib/title/title.config.ts"
+                "file": "projects/lib-leocare-components/src/lib/title/title.config.ts"
             },
             {
                 "name": "EButtonSize",
@@ -2202,7 +2223,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
-                "file": "projects/ngx-leocare-ui/src/lib/button/button.config.ts"
+                "file": "projects/lib-leocare-components/src/lib/button/button.config.ts"
             },
             {
                 "name": "EButtonType",
@@ -2231,7 +2252,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
-                "file": "projects/ngx-leocare-ui/src/lib/button/button.config.ts"
+                "file": "projects/lib-leocare-components/src/lib/button/button.config.ts"
             },
             {
                 "name": "EIconColor",
@@ -2392,7 +2413,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
-                "file": "projects/ngx-leocare-ui/src/lib/icon/icon.config.ts"
+                "file": "projects/lib-leocare-components/src/lib/icon/icon.config.ts"
             },
             {
                 "name": "EIconSize",
@@ -2451,7 +2472,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
-                "file": "projects/ngx-leocare-ui/src/lib/icon/icon.config.ts"
+                "file": "projects/lib-leocare-components/src/lib/icon/icon.config.ts"
             },
             {
                 "name": "EInputType",
@@ -2510,7 +2531,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
-                "file": "projects/ngx-leocare-ui/src/lib/input/input.config.ts"
+                "file": "projects/lib-leocare-components/src/lib/input/input.config.ts"
             },
             {
                 "name": "EPopupIconName",
@@ -2533,7 +2554,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
-                "file": "projects/ngx-leocare-ui/src/lib/popup/popup.config.ts"
+                "file": "projects/lib-leocare-components/src/lib/popup/popup.config.ts"
             },
             {
                 "name": "EPopupState",
@@ -2556,7 +2577,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
-                "file": "projects/ngx-leocare-ui/src/lib/popup/popup.config.ts"
+                "file": "projects/lib-leocare-components/src/lib/popup/popup.config.ts"
             },
             {
                 "name": "ETextAlign",
@@ -2585,7 +2606,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
-                "file": "projects/ngx-leocare-ui/src/lib/text/text.config.ts"
+                "file": "projects/lib-leocare-components/src/lib/text/text.config.ts"
             },
             {
                 "name": "ETextColor",
@@ -2746,7 +2767,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
-                "file": "projects/ngx-leocare-ui/src/lib/text/text.config.ts"
+                "file": "projects/lib-leocare-components/src/lib/text/text.config.ts"
             },
             {
                 "name": "ETextFamily",
@@ -2769,7 +2790,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
-                "file": "projects/ngx-leocare-ui/src/lib/text/text.config.ts"
+                "file": "projects/lib-leocare-components/src/lib/text/text.config.ts"
             },
             {
                 "name": "ETextSize",
@@ -2822,16 +2843,16 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
-                "file": "projects/ngx-leocare-ui/src/lib/text/text.config.ts"
+                "file": "projects/lib-leocare-components/src/lib/text/text.config.ts"
             }
         ],
         "groupedVariables": {
-            "projects/ngx-leocare-ui/src/lib/title/title.config.ts": [
+            "projects/lib-leocare-components/src/lib/title/title.config.ts": [
                 {
                     "name": "ATOM_TITLE_ALIGN_CONFIG",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "projects/ngx-leocare-ui/src/lib/title/title.config.ts",
+                    "file": "projects/lib-leocare-components/src/lib/title/title.config.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Record<EAtomTitleAlignConfig, string>",
@@ -2841,7 +2862,7 @@
                     "name": "ATOM_TITLE_COLOR_CONFIG",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "projects/ngx-leocare-ui/src/lib/title/title.config.ts",
+                    "file": "projects/lib-leocare-components/src/lib/title/title.config.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Record<EAtomTitleColorConfig, string>",
@@ -2851,7 +2872,7 @@
                     "name": "ATOM_TITLE_DISPLAY_CONFIG",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "projects/ngx-leocare-ui/src/lib/title/title.config.ts",
+                    "file": "projects/lib-leocare-components/src/lib/title/title.config.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Record<EAtomTitleDisplayConfig, string>",
@@ -2861,19 +2882,19 @@
                     "name": "ATOM_TITLE_DISPLAY_CONFIG_BY_DEFAULT",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "projects/ngx-leocare-ui/src/lib/title/title.config.ts",
+                    "file": "projects/lib-leocare-components/src/lib/title/title.config.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Record<EAtomTitleLevel, EAtomTitleDisplayConfig>",
                     "defaultValue": "{\n  [EAtomTitleLevel.H1]: EAtomTitleDisplayConfig.DISPLAY_H1,\n  [EAtomTitleLevel.H2]: EAtomTitleDisplayConfig.DISPLAY_H2,\n  [EAtomTitleLevel.H3]: EAtomTitleDisplayConfig.DISPLAY_H3,\n  [EAtomTitleLevel.H4]: EAtomTitleDisplayConfig.DISPLAY_H4,\n}"
                 }
             ],
-            "projects/ngx-leocare-ui/src/lib/button/button.config.ts": [
+            "projects/lib-leocare-components/src/lib/button/button.config.ts": [
                 {
                     "name": "BUTTON_ICON_COLOR_CONFIG",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "projects/ngx-leocare-ui/src/lib/button/button.config.ts",
+                    "file": "projects/lib-leocare-components/src/lib/button/button.config.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Record<EButtonType, string>",
@@ -2883,7 +2904,7 @@
                     "name": "BUTTON_ICON_SIZE_CONFIG",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "projects/ngx-leocare-ui/src/lib/button/button.config.ts",
+                    "file": "projects/lib-leocare-components/src/lib/button/button.config.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Record<EButtonSize, string>",
@@ -2893,7 +2914,7 @@
                     "name": "BUTTON_SIZE_CONFIG",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "projects/ngx-leocare-ui/src/lib/button/button.config.ts",
+                    "file": "projects/lib-leocare-components/src/lib/button/button.config.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Record<EButtonSize, string>",
@@ -2903,19 +2924,19 @@
                     "name": "BUTTON_TYPE_CONFIG",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "projects/ngx-leocare-ui/src/lib/button/button.config.ts",
+                    "file": "projects/lib-leocare-components/src/lib/button/button.config.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Record<EButtonType, string>",
                     "defaultValue": "{\n  [EButtonType.PRIMARY]: \"bg-purple-55 text-grey-100\",\n  [EButtonType.SECONDARY]: \"bg-grey-95 text-grey-25\",\n  [EButtonType.WARNING]: \"bg-red-70 text-grey-100\",\n}"
                 }
             ],
-            "projects/ngx-leocare-ui/src/lib/popup/popup.stories.ts": [
+            "projects/lib-leocare-components/src/lib/popup/popup.stories.ts": [
                 {
                     "name": "Default",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "projects/ngx-leocare-ui/src/lib/popup/popup.stories.ts",
+                    "file": "projects/lib-leocare-components/src/lib/popup/popup.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
@@ -2925,7 +2946,7 @@
                     "name": "meta",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "projects/ngx-leocare-ui/src/lib/popup/popup.stories.ts",
+                    "file": "projects/lib-leocare-components/src/lib/popup/popup.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Meta<PopupComponent>",
@@ -2935,19 +2956,19 @@
                     "name": "Toggle",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "projects/ngx-leocare-ui/src/lib/popup/popup.stories.ts",
+                    "file": "projects/lib-leocare-components/src/lib/popup/popup.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
                     "defaultValue": "{\n  render: (args) => ({\n    props: args,\n    template: `\n    <leo-button text=\"Afficher / Masquer\" (click)=\"isDisplayed = !isDisplayed\"></leo-button>\n    <leo-popup *ngIf=\"isDisplayed\" (cancelEvent)=\"isDisplayed = !isDisplayed\" (validateEvent)=\"isDisplayed = !isDisplayed\"></leo-popup>\n    `,\n  }),\n}"
                 }
             ],
-            "projects/ngx-leocare-ui/src/lib/text/text.stories.ts": [
+            "projects/lib-leocare-components/src/lib/text/text.stories.ts": [
                 {
                     "name": "Default",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "projects/ngx-leocare-ui/src/lib/text/text.stories.ts",
+                    "file": "projects/lib-leocare-components/src/lib/text/text.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
@@ -2957,19 +2978,19 @@
                     "name": "meta",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "projects/ngx-leocare-ui/src/lib/text/text.stories.ts",
+                    "file": "projects/lib-leocare-components/src/lib/text/text.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Meta<TextComponent>",
                     "defaultValue": "{\n  title: \"UI/Text\",\n  component: TextComponent,\n  argTypes: {\n    TEXT_SIZE_CONFIG: { table: { disable: true } },\n    TEXT_ALIGN_CONFIG: { table: { disable: true } },\n    TEXT_FAMILY_CONFIG: { table: { disable: true } },\n    TEXT_COLOR_CONFIG: { table: { disable: true } },\n  },\n  tags: [\"autodocs\"],\n  render: (args: TextComponent) => ({\n    props: {\n      ...args,\n    },\n  }),\n}"
                 }
             ],
-            "projects/ngx-leocare-ui/src/lib/button/button.stories.ts": [
+            "projects/lib-leocare-components/src/lib/button/button.stories.ts": [
                 {
                     "name": "disable",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "projects/ngx-leocare-ui/src/lib/button/button.stories.ts",
+                    "file": "projects/lib-leocare-components/src/lib/button/button.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
@@ -2979,7 +3000,7 @@
                     "name": "iconButton",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "projects/ngx-leocare-ui/src/lib/button/button.stories.ts",
+                    "file": "projects/lib-leocare-components/src/lib/button/button.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
@@ -2989,7 +3010,7 @@
                     "name": "iconLabel",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "projects/ngx-leocare-ui/src/lib/button/button.stories.ts",
+                    "file": "projects/lib-leocare-components/src/lib/button/button.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
@@ -2999,7 +3020,7 @@
                     "name": "large",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "projects/ngx-leocare-ui/src/lib/button/button.stories.ts",
+                    "file": "projects/lib-leocare-components/src/lib/button/button.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
@@ -3009,7 +3030,7 @@
                     "name": "loading",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "projects/ngx-leocare-ui/src/lib/button/button.stories.ts",
+                    "file": "projects/lib-leocare-components/src/lib/button/button.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
@@ -3019,7 +3040,7 @@
                     "name": "medium",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "projects/ngx-leocare-ui/src/lib/button/button.stories.ts",
+                    "file": "projects/lib-leocare-components/src/lib/button/button.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
@@ -3029,7 +3050,7 @@
                     "name": "meta",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "projects/ngx-leocare-ui/src/lib/button/button.stories.ts",
+                    "file": "projects/lib-leocare-components/src/lib/button/button.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Meta<ButtonComponent>",
@@ -3039,7 +3060,7 @@
                     "name": "Primary",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "projects/ngx-leocare-ui/src/lib/button/button.stories.ts",
+                    "file": "projects/lib-leocare-components/src/lib/button/button.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
@@ -3049,7 +3070,7 @@
                     "name": "Secondary",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "projects/ngx-leocare-ui/src/lib/button/button.stories.ts",
+                    "file": "projects/lib-leocare-components/src/lib/button/button.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
@@ -3059,7 +3080,7 @@
                     "name": "small",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "projects/ngx-leocare-ui/src/lib/button/button.stories.ts",
+                    "file": "projects/lib-leocare-components/src/lib/button/button.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
@@ -3069,7 +3090,7 @@
                     "name": "Warning",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "projects/ngx-leocare-ui/src/lib/button/button.stories.ts",
+                    "file": "projects/lib-leocare-components/src/lib/button/button.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
@@ -3079,19 +3100,19 @@
                     "name": "xs",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "projects/ngx-leocare-ui/src/lib/button/button.stories.ts",
+                    "file": "projects/lib-leocare-components/src/lib/button/button.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
                     "defaultValue": "{\n  args: {\n    text: \"Action\",\n    size: EButtonSize.XS,\n  },\n}"
                 }
             ],
-            "projects/ngx-leocare-ui/src/lib/input/input.stories.ts": [
+            "projects/lib-leocare-components/src/lib/input/input.stories.ts": [
                 {
                     "name": "Disabled",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "projects/ngx-leocare-ui/src/lib/input/input.stories.ts",
+                    "file": "projects/lib-leocare-components/src/lib/input/input.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
@@ -3101,7 +3122,7 @@
                     "name": "Invalid",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "projects/ngx-leocare-ui/src/lib/input/input.stories.ts",
+                    "file": "projects/lib-leocare-components/src/lib/input/input.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
@@ -3111,7 +3132,7 @@
                     "name": "meta",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "projects/ngx-leocare-ui/src/lib/input/input.stories.ts",
+                    "file": "projects/lib-leocare-components/src/lib/input/input.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Meta<InputComponent>",
@@ -3121,7 +3142,7 @@
                     "name": "Normal",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "projects/ngx-leocare-ui/src/lib/input/input.stories.ts",
+                    "file": "projects/lib-leocare-components/src/lib/input/input.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
@@ -3131,7 +3152,7 @@
                     "name": "Required",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "projects/ngx-leocare-ui/src/lib/input/input.stories.ts",
+                    "file": "projects/lib-leocare-components/src/lib/input/input.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
@@ -3141,19 +3162,19 @@
                     "name": "Valid",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "projects/ngx-leocare-ui/src/lib/input/input.stories.ts",
+                    "file": "projects/lib-leocare-components/src/lib/input/input.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
                     "defaultValue": "{\n  args: {\n    label: \"Label\",\n    placeholder: \"Un placeholder\",\n    type: EInputType.TEXT,\n    isValid: true,\n  },\n}"
                 }
             ],
-            "projects/ngx-leocare-ui/src/lib/title/title.stories.ts": [
+            "projects/lib-leocare-components/src/lib/title/title.stories.ts": [
                 {
                     "name": "H1",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "projects/ngx-leocare-ui/src/lib/title/title.stories.ts",
+                    "file": "projects/lib-leocare-components/src/lib/title/title.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
@@ -3163,7 +3184,7 @@
                     "name": "H2",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "projects/ngx-leocare-ui/src/lib/title/title.stories.ts",
+                    "file": "projects/lib-leocare-components/src/lib/title/title.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
@@ -3173,7 +3194,7 @@
                     "name": "H3",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "projects/ngx-leocare-ui/src/lib/title/title.stories.ts",
+                    "file": "projects/lib-leocare-components/src/lib/title/title.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
@@ -3183,7 +3204,7 @@
                     "name": "H4",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "projects/ngx-leocare-ui/src/lib/title/title.stories.ts",
+                    "file": "projects/lib-leocare-components/src/lib/title/title.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
@@ -3193,19 +3214,19 @@
                     "name": "meta",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "projects/ngx-leocare-ui/src/lib/title/title.stories.ts",
+                    "file": "projects/lib-leocare-components/src/lib/title/title.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Meta<TitleComponent>",
                     "defaultValue": "{\n  title: \"UI/Title\",\n  component: TitleComponent,\n  argTypes: {\n    eAtomTitleLevel: { table: { disable: true } },\n    eAtomTitleAlignConfig: { table: { disable: true } },\n    eAtomTitleDisplayConfig: { table: { disable: true } },\n    eAtomTitleColorConfig: { table: { disable: true } },\n    atomTitleAlignConfig: { table: { disable: true } },\n    atomTitleDisplayConfig: { table: { disable: true } },\n    atomTitleColorConfig: { table: { disable: true } },\n    atomTitleDisplayConfigByDefault: { table: { disable: true } },\n    ngOnInit: { table: { disable: true } },\n    setDisplayConfigByDefault: { table: { disable: true } },\n    setAlignConfigByDefault: { table: { disable: true } },\n    setColorConfigByDefault: { table: { disable: true } },\n  },\n  tags: [\"autodocs\"],\n  render: (args: TitleComponent) => ({\n    props: {\n      ...args,\n    },\n  }),\n}"
                 }
             ],
-            "projects/ngx-leocare-ui/src/lib/icon/icon.config.ts": [
+            "projects/lib-leocare-components/src/lib/icon/icon.config.ts": [
                 {
                     "name": "ICON_COLOR_CONFIG",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "projects/ngx-leocare-ui/src/lib/icon/icon.config.ts",
+                    "file": "projects/lib-leocare-components/src/lib/icon/icon.config.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Record<EIconColor, string>",
@@ -3215,19 +3236,19 @@
                     "name": "ICON_SIZE_CONFIG",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "projects/ngx-leocare-ui/src/lib/icon/icon.config.ts",
+                    "file": "projects/lib-leocare-components/src/lib/icon/icon.config.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Record<EIconSize, string>",
                     "defaultValue": "{\n  [EIconSize.SQUARE_10PX]: \"w-[10px] h-[10px]\",\n  [EIconSize.SQUARE_12PX]: \"w-[12px] h-[12px]\",\n  [EIconSize.SQUARE_16PX]: \"w-[16px] h-[16px]\",\n  [EIconSize.SQUARE_20PX]: \"w-[20px] h-[20px]\",\n  [EIconSize.SQUARE_24PX]: \"w-[24px] h-[24px]\",\n  [EIconSize.SQUARE_34PX]: \"w-[34px] h-[34px]\",\n  [EIconSize.SQUARE_50PX]: \"w-[50px] h-[50px]\",\n  [EIconSize.SQUARE_75PX]: \"w-[75px] h-[75px]\",\n}"
                 }
             ],
-            "projects/ngx-leocare-ui/src/lib/icon/icon.stories.ts": [
+            "projects/lib-leocare-components/src/lib/icon/icon.stories.ts": [
                 {
                     "name": "meta",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "projects/ngx-leocare-ui/src/lib/icon/icon.stories.ts",
+                    "file": "projects/lib-leocare-components/src/lib/icon/icon.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Meta<IconComponent>",
@@ -3237,7 +3258,7 @@
                     "name": "SquareL",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "projects/ngx-leocare-ui/src/lib/icon/icon.stories.ts",
+                    "file": "projects/lib-leocare-components/src/lib/icon/icon.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
@@ -3247,7 +3268,7 @@
                     "name": "SquareM",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "projects/ngx-leocare-ui/src/lib/icon/icon.stories.ts",
+                    "file": "projects/lib-leocare-components/src/lib/icon/icon.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
@@ -3257,7 +3278,7 @@
                     "name": "SquareS",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "projects/ngx-leocare-ui/src/lib/icon/icon.stories.ts",
+                    "file": "projects/lib-leocare-components/src/lib/icon/icon.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
@@ -3267,7 +3288,7 @@
                     "name": "SquareXL",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "projects/ngx-leocare-ui/src/lib/icon/icon.stories.ts",
+                    "file": "projects/lib-leocare-components/src/lib/icon/icon.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
@@ -3277,7 +3298,7 @@
                     "name": "SquareXS",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "projects/ngx-leocare-ui/src/lib/icon/icon.stories.ts",
+                    "file": "projects/lib-leocare-components/src/lib/icon/icon.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
@@ -3287,7 +3308,7 @@
                     "name": "SquareXXL",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "projects/ngx-leocare-ui/src/lib/icon/icon.stories.ts",
+                    "file": "projects/lib-leocare-components/src/lib/icon/icon.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
@@ -3297,19 +3318,19 @@
                     "name": "SquareXXS",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "projects/ngx-leocare-ui/src/lib/icon/icon.stories.ts",
+                    "file": "projects/lib-leocare-components/src/lib/icon/icon.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
                     "defaultValue": "{\n  args: {\n    name: \"cross\",\n    size: EIconSize.SQUARE_10PX,\n    color: EIconColor.GREY_0,\n  },\n}"
                 }
             ],
-            "projects/ngx-leocare-ui/src/lib/button/button-prime/button-prime.stories.ts": [
+            "projects/lib-leocare-components/src/lib/button/button-prime/button-prime.stories.ts": [
                 {
                     "name": "meta",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "projects/ngx-leocare-ui/src/lib/button/button-prime/button-prime.stories.ts",
+                    "file": "projects/lib-leocare-components/src/lib/button/button-prime/button-prime.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Meta<ButtonPrimeComponent>",
@@ -3319,31 +3340,31 @@
                     "name": "Primary",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "projects/ngx-leocare-ui/src/lib/button/button-prime/button-prime.stories.ts",
+                    "file": "projects/lib-leocare-components/src/lib/button/button-prime/button-prime.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
                     "defaultValue": "{\n  args: {\n    label: \"Button\",\n  },\n}"
                 }
             ],
-            "projects/ngx-leocare-ui/.storybook/preview.ts": [
+            "projects/lib-leocare-components/.storybook/preview.ts": [
                 {
                     "name": "preview",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "projects/ngx-leocare-ui/.storybook/preview.ts",
+                    "file": "projects/lib-leocare-components/.storybook/preview.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Preview",
                     "defaultValue": "{\n  parameters: {\n    docs: {\n      theme: leocareTheme,\n    },\n    actions: { argTypesRegex: \"^on[A-Z].*\" },\n    controls: {\n      matchers: {\n        color: /(background|color)$/i,\n        date: /Date$/,\n      },\n    },\n  },\n}"
                 }
             ],
-            "projects/ngx-leocare-ui/src/lib/text/text.config.ts": [
+            "projects/lib-leocare-components/src/lib/text/text.config.ts": [
                 {
                     "name": "TEXT_ALIGN_CONFIG",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "projects/ngx-leocare-ui/src/lib/text/text.config.ts",
+                    "file": "projects/lib-leocare-components/src/lib/text/text.config.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Record<ETextAlign, string>",
@@ -3353,7 +3374,7 @@
                     "name": "TEXT_COLOR_CONFIG",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "projects/ngx-leocare-ui/src/lib/text/text.config.ts",
+                    "file": "projects/lib-leocare-components/src/lib/text/text.config.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Partial<Record<ETextColor, string>>",
@@ -3363,7 +3384,7 @@
                     "name": "TEXT_FAMILY_CONFIG",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "projects/ngx-leocare-ui/src/lib/text/text.config.ts",
+                    "file": "projects/lib-leocare-components/src/lib/text/text.config.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Record<ETextFamily, string>",
@@ -3373,7 +3394,7 @@
                     "name": "TEXT_SIZE_CONFIG",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "projects/ngx-leocare-ui/src/lib/text/text.config.ts",
+                    "file": "projects/lib-leocare-components/src/lib/text/text.config.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Record<ETextSize, string>",
@@ -3383,7 +3404,7 @@
         },
         "groupedFunctions": {},
         "groupedEnumerations": {
-            "projects/ngx-leocare-ui/src/lib/title/title.config.ts": [
+            "projects/lib-leocare-components/src/lib/title/title.config.ts": [
                 {
                     "name": "EAtomTitleAlignConfig",
                     "childs": [
@@ -3405,7 +3426,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
-                    "file": "projects/ngx-leocare-ui/src/lib/title/title.config.ts"
+                    "file": "projects/lib-leocare-components/src/lib/title/title.config.ts"
                 },
                 {
                     "name": "EAtomTitleColorConfig",
@@ -3452,7 +3473,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
-                    "file": "projects/ngx-leocare-ui/src/lib/title/title.config.ts"
+                    "file": "projects/lib-leocare-components/src/lib/title/title.config.ts"
                 },
                 {
                     "name": "EAtomTitleDisplayConfig",
@@ -3487,7 +3508,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
-                    "file": "projects/ngx-leocare-ui/src/lib/title/title.config.ts"
+                    "file": "projects/lib-leocare-components/src/lib/title/title.config.ts"
                 },
                 {
                     "name": "EAtomTitleLevel",
@@ -3522,10 +3543,10 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
-                    "file": "projects/ngx-leocare-ui/src/lib/title/title.config.ts"
+                    "file": "projects/lib-leocare-components/src/lib/title/title.config.ts"
                 }
             ],
-            "projects/ngx-leocare-ui/src/lib/button/button.config.ts": [
+            "projects/lib-leocare-components/src/lib/button/button.config.ts": [
                 {
                     "name": "EButtonSize",
                     "childs": [
@@ -3559,7 +3580,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
-                    "file": "projects/ngx-leocare-ui/src/lib/button/button.config.ts"
+                    "file": "projects/lib-leocare-components/src/lib/button/button.config.ts"
                 },
                 {
                     "name": "EButtonType",
@@ -3588,10 +3609,10 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
-                    "file": "projects/ngx-leocare-ui/src/lib/button/button.config.ts"
+                    "file": "projects/lib-leocare-components/src/lib/button/button.config.ts"
                 }
             ],
-            "projects/ngx-leocare-ui/src/lib/icon/icon.config.ts": [
+            "projects/lib-leocare-components/src/lib/icon/icon.config.ts": [
                 {
                     "name": "EIconColor",
                     "childs": [
@@ -3751,7 +3772,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
-                    "file": "projects/ngx-leocare-ui/src/lib/icon/icon.config.ts"
+                    "file": "projects/lib-leocare-components/src/lib/icon/icon.config.ts"
                 },
                 {
                     "name": "EIconSize",
@@ -3810,10 +3831,10 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
-                    "file": "projects/ngx-leocare-ui/src/lib/icon/icon.config.ts"
+                    "file": "projects/lib-leocare-components/src/lib/icon/icon.config.ts"
                 }
             ],
-            "projects/ngx-leocare-ui/src/lib/input/input.config.ts": [
+            "projects/lib-leocare-components/src/lib/input/input.config.ts": [
                 {
                     "name": "EInputType",
                     "childs": [
@@ -3871,10 +3892,10 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
-                    "file": "projects/ngx-leocare-ui/src/lib/input/input.config.ts"
+                    "file": "projects/lib-leocare-components/src/lib/input/input.config.ts"
                 }
             ],
-            "projects/ngx-leocare-ui/src/lib/popup/popup.config.ts": [
+            "projects/lib-leocare-components/src/lib/popup/popup.config.ts": [
                 {
                     "name": "EPopupIconName",
                     "childs": [
@@ -3896,7 +3917,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
-                    "file": "projects/ngx-leocare-ui/src/lib/popup/popup.config.ts"
+                    "file": "projects/lib-leocare-components/src/lib/popup/popup.config.ts"
                 },
                 {
                     "name": "EPopupState",
@@ -3919,10 +3940,10 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
-                    "file": "projects/ngx-leocare-ui/src/lib/popup/popup.config.ts"
+                    "file": "projects/lib-leocare-components/src/lib/popup/popup.config.ts"
                 }
             ],
-            "projects/ngx-leocare-ui/src/lib/text/text.config.ts": [
+            "projects/lib-leocare-components/src/lib/text/text.config.ts": [
                 {
                     "name": "ETextAlign",
                     "childs": [
@@ -3950,7 +3971,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
-                    "file": "projects/ngx-leocare-ui/src/lib/text/text.config.ts"
+                    "file": "projects/lib-leocare-components/src/lib/text/text.config.ts"
                 },
                 {
                     "name": "ETextColor",
@@ -4111,7 +4132,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
-                    "file": "projects/ngx-leocare-ui/src/lib/text/text.config.ts"
+                    "file": "projects/lib-leocare-components/src/lib/text/text.config.ts"
                 },
                 {
                     "name": "ETextFamily",
@@ -4134,7 +4155,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
-                    "file": "projects/ngx-leocare-ui/src/lib/text/text.config.ts"
+                    "file": "projects/lib-leocare-components/src/lib/text/text.config.ts"
                 },
                 {
                     "name": "ETextSize",
@@ -4187,113 +4208,113 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
-                    "file": "projects/ngx-leocare-ui/src/lib/text/text.config.ts"
+                    "file": "projects/lib-leocare-components/src/lib/text/text.config.ts"
                 }
             ]
         },
         "groupedTypeAliases": {
-            "projects/ngx-leocare-ui/src/lib/title/title.component.ts": [
+            "projects/lib-leocare-components/src/lib/title/title.component.ts": [
                 {
                     "name": "AtomTitle",
                     "ctype": "miscellaneous",
                     "subtype": "typealias",
                     "rawtype": "literal type",
-                    "file": "projects/ngx-leocare-ui/src/lib/title/title.component.ts",
+                    "file": "projects/lib-leocare-components/src/lib/title/title.component.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
-                    "kind": 181
+                    "kind": 184
                 }
             ],
-            "projects/ngx-leocare-ui/src/lib/button/button.stories.ts": [
+            "projects/lib-leocare-components/src/lib/button/button.stories.ts": [
                 {
                     "name": "Story",
                     "ctype": "miscellaneous",
                     "subtype": "typealias",
                     "rawtype": "StoryObj<ButtonComponent>",
-                    "file": "projects/ngx-leocare-ui/src/lib/button/button.stories.ts",
+                    "file": "projects/lib-leocare-components/src/lib/button/button.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
-                    "kind": 177
+                    "kind": 180
                 }
             ],
-            "projects/ngx-leocare-ui/src/lib/icon/icon.stories.ts": [
+            "projects/lib-leocare-components/src/lib/icon/icon.stories.ts": [
                 {
                     "name": "Story",
                     "ctype": "miscellaneous",
                     "subtype": "typealias",
                     "rawtype": "StoryObj<IconComponent>",
-                    "file": "projects/ngx-leocare-ui/src/lib/icon/icon.stories.ts",
+                    "file": "projects/lib-leocare-components/src/lib/icon/icon.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
-                    "kind": 177
+                    "kind": 180
                 }
             ],
-            "projects/ngx-leocare-ui/src/lib/input/input.stories.ts": [
+            "projects/lib-leocare-components/src/lib/input/input.stories.ts": [
                 {
                     "name": "Story",
                     "ctype": "miscellaneous",
                     "subtype": "typealias",
                     "rawtype": "StoryObj<InputComponent>",
-                    "file": "projects/ngx-leocare-ui/src/lib/input/input.stories.ts",
+                    "file": "projects/lib-leocare-components/src/lib/input/input.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
-                    "kind": 177
+                    "kind": 180
                 }
             ],
-            "projects/ngx-leocare-ui/src/lib/popup/popup.stories.ts": [
+            "projects/lib-leocare-components/src/lib/popup/popup.stories.ts": [
                 {
                     "name": "Story",
                     "ctype": "miscellaneous",
                     "subtype": "typealias",
                     "rawtype": "StoryObj<PopupComponent>",
-                    "file": "projects/ngx-leocare-ui/src/lib/popup/popup.stories.ts",
+                    "file": "projects/lib-leocare-components/src/lib/popup/popup.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
-                    "kind": 177
+                    "kind": 180
                 }
             ],
-            "projects/ngx-leocare-ui/src/lib/text/text.stories.ts": [
+            "projects/lib-leocare-components/src/lib/text/text.stories.ts": [
                 {
                     "name": "Story",
                     "ctype": "miscellaneous",
                     "subtype": "typealias",
                     "rawtype": "StoryObj<TextComponent>",
-                    "file": "projects/ngx-leocare-ui/src/lib/text/text.stories.ts",
+                    "file": "projects/lib-leocare-components/src/lib/text/text.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
-                    "kind": 177
+                    "kind": 180
                 }
             ],
-            "projects/ngx-leocare-ui/src/lib/title/title.stories.ts": [
+            "projects/lib-leocare-components/src/lib/title/title.stories.ts": [
                 {
                     "name": "Story",
                     "ctype": "miscellaneous",
                     "subtype": "typealias",
                     "rawtype": "StoryObj<TitleComponent>",
-                    "file": "projects/ngx-leocare-ui/src/lib/title/title.stories.ts",
+                    "file": "projects/lib-leocare-components/src/lib/title/title.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
-                    "kind": 177
+                    "kind": 180
                 }
             ],
-            "projects/ngx-leocare-ui/src/lib/button/button-prime/button-prime.stories.ts": [
+            "projects/lib-leocare-components/src/lib/button/button-prime/button-prime.stories.ts": [
                 {
                     "name": "Story",
                     "ctype": "miscellaneous",
                     "subtype": "typealias",
                     "rawtype": "StoryObj<ButtonPrimeComponent>",
-                    "file": "projects/ngx-leocare-ui/src/lib/button/button-prime/button-prime.stories.ts",
+                    "file": "projects/lib-leocare-components/src/lib/button/button-prime/button-prime.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
-                    "kind": 177
+                    "kind": 180
                 }
             ]
         }
@@ -4304,7 +4325,7 @@
         "status": "low",
         "files": [
             {
-                "filePath": "projects/ngx-leocare-ui/.storybook/preview.ts",
+                "filePath": "projects/lib-leocare-components/.storybook/preview.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -4314,7 +4335,7 @@
                 "status": "low"
             },
             {
-                "filePath": "projects/ngx-leocare-ui/src/lib/button/button-prime/button-prime.component.ts",
+                "filePath": "projects/lib-leocare-components/src/lib/button/button-prime/button-prime.component.ts",
                 "type": "component",
                 "linktype": "component",
                 "name": "ButtonPrimeComponent",
@@ -4323,7 +4344,7 @@
                 "status": "low"
             },
             {
-                "filePath": "projects/ngx-leocare-ui/src/lib/button/button-prime/button-prime.stories.ts",
+                "filePath": "projects/lib-leocare-components/src/lib/button/button-prime/button-prime.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -4333,7 +4354,7 @@
                 "status": "low"
             },
             {
-                "filePath": "projects/ngx-leocare-ui/src/lib/button/button-prime/button-prime.stories.ts",
+                "filePath": "projects/lib-leocare-components/src/lib/button/button-prime/button-prime.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -4343,7 +4364,7 @@
                 "status": "low"
             },
             {
-                "filePath": "projects/ngx-leocare-ui/src/lib/button/button.component.ts",
+                "filePath": "projects/lib-leocare-components/src/lib/button/button.component.ts",
                 "type": "component",
                 "linktype": "component",
                 "name": "ButtonComponent",
@@ -4352,7 +4373,7 @@
                 "status": "low"
             },
             {
-                "filePath": "projects/ngx-leocare-ui/src/lib/button/button.config.ts",
+                "filePath": "projects/lib-leocare-components/src/lib/button/button.config.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -4362,7 +4383,7 @@
                 "status": "low"
             },
             {
-                "filePath": "projects/ngx-leocare-ui/src/lib/button/button.config.ts",
+                "filePath": "projects/lib-leocare-components/src/lib/button/button.config.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -4372,7 +4393,7 @@
                 "status": "low"
             },
             {
-                "filePath": "projects/ngx-leocare-ui/src/lib/button/button.config.ts",
+                "filePath": "projects/lib-leocare-components/src/lib/button/button.config.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -4382,7 +4403,7 @@
                 "status": "low"
             },
             {
-                "filePath": "projects/ngx-leocare-ui/src/lib/button/button.config.ts",
+                "filePath": "projects/lib-leocare-components/src/lib/button/button.config.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -4392,7 +4413,7 @@
                 "status": "low"
             },
             {
-                "filePath": "projects/ngx-leocare-ui/src/lib/button/button.stories.ts",
+                "filePath": "projects/lib-leocare-components/src/lib/button/button.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -4402,7 +4423,7 @@
                 "status": "low"
             },
             {
-                "filePath": "projects/ngx-leocare-ui/src/lib/button/button.stories.ts",
+                "filePath": "projects/lib-leocare-components/src/lib/button/button.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -4412,7 +4433,7 @@
                 "status": "low"
             },
             {
-                "filePath": "projects/ngx-leocare-ui/src/lib/button/button.stories.ts",
+                "filePath": "projects/lib-leocare-components/src/lib/button/button.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -4422,7 +4443,7 @@
                 "status": "low"
             },
             {
-                "filePath": "projects/ngx-leocare-ui/src/lib/button/button.stories.ts",
+                "filePath": "projects/lib-leocare-components/src/lib/button/button.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -4432,7 +4453,7 @@
                 "status": "low"
             },
             {
-                "filePath": "projects/ngx-leocare-ui/src/lib/button/button.stories.ts",
+                "filePath": "projects/lib-leocare-components/src/lib/button/button.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -4442,7 +4463,7 @@
                 "status": "low"
             },
             {
-                "filePath": "projects/ngx-leocare-ui/src/lib/button/button.stories.ts",
+                "filePath": "projects/lib-leocare-components/src/lib/button/button.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -4452,7 +4473,7 @@
                 "status": "low"
             },
             {
-                "filePath": "projects/ngx-leocare-ui/src/lib/button/button.stories.ts",
+                "filePath": "projects/lib-leocare-components/src/lib/button/button.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -4462,7 +4483,7 @@
                 "status": "low"
             },
             {
-                "filePath": "projects/ngx-leocare-ui/src/lib/button/button.stories.ts",
+                "filePath": "projects/lib-leocare-components/src/lib/button/button.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -4472,7 +4493,7 @@
                 "status": "low"
             },
             {
-                "filePath": "projects/ngx-leocare-ui/src/lib/button/button.stories.ts",
+                "filePath": "projects/lib-leocare-components/src/lib/button/button.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -4482,7 +4503,7 @@
                 "status": "low"
             },
             {
-                "filePath": "projects/ngx-leocare-ui/src/lib/button/button.stories.ts",
+                "filePath": "projects/lib-leocare-components/src/lib/button/button.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -4492,7 +4513,7 @@
                 "status": "low"
             },
             {
-                "filePath": "projects/ngx-leocare-ui/src/lib/button/button.stories.ts",
+                "filePath": "projects/lib-leocare-components/src/lib/button/button.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -4502,7 +4523,7 @@
                 "status": "low"
             },
             {
-                "filePath": "projects/ngx-leocare-ui/src/lib/button/button.stories.ts",
+                "filePath": "projects/lib-leocare-components/src/lib/button/button.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -4512,7 +4533,7 @@
                 "status": "low"
             },
             {
-                "filePath": "projects/ngx-leocare-ui/src/lib/icon/icon.component.ts",
+                "filePath": "projects/lib-leocare-components/src/lib/icon/icon.component.ts",
                 "type": "component",
                 "linktype": "component",
                 "name": "IconComponent",
@@ -4521,7 +4542,7 @@
                 "status": "low"
             },
             {
-                "filePath": "projects/ngx-leocare-ui/src/lib/icon/icon.config.ts",
+                "filePath": "projects/lib-leocare-components/src/lib/icon/icon.config.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -4531,7 +4552,7 @@
                 "status": "low"
             },
             {
-                "filePath": "projects/ngx-leocare-ui/src/lib/icon/icon.config.ts",
+                "filePath": "projects/lib-leocare-components/src/lib/icon/icon.config.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -4541,7 +4562,7 @@
                 "status": "low"
             },
             {
-                "filePath": "projects/ngx-leocare-ui/src/lib/icon/icon.stories.ts",
+                "filePath": "projects/lib-leocare-components/src/lib/icon/icon.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -4551,7 +4572,7 @@
                 "status": "low"
             },
             {
-                "filePath": "projects/ngx-leocare-ui/src/lib/icon/icon.stories.ts",
+                "filePath": "projects/lib-leocare-components/src/lib/icon/icon.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -4561,7 +4582,7 @@
                 "status": "low"
             },
             {
-                "filePath": "projects/ngx-leocare-ui/src/lib/icon/icon.stories.ts",
+                "filePath": "projects/lib-leocare-components/src/lib/icon/icon.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -4571,7 +4592,7 @@
                 "status": "low"
             },
             {
-                "filePath": "projects/ngx-leocare-ui/src/lib/icon/icon.stories.ts",
+                "filePath": "projects/lib-leocare-components/src/lib/icon/icon.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -4581,7 +4602,7 @@
                 "status": "low"
             },
             {
-                "filePath": "projects/ngx-leocare-ui/src/lib/icon/icon.stories.ts",
+                "filePath": "projects/lib-leocare-components/src/lib/icon/icon.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -4591,7 +4612,7 @@
                 "status": "low"
             },
             {
-                "filePath": "projects/ngx-leocare-ui/src/lib/icon/icon.stories.ts",
+                "filePath": "projects/lib-leocare-components/src/lib/icon/icon.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -4601,7 +4622,7 @@
                 "status": "low"
             },
             {
-                "filePath": "projects/ngx-leocare-ui/src/lib/icon/icon.stories.ts",
+                "filePath": "projects/lib-leocare-components/src/lib/icon/icon.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -4611,7 +4632,7 @@
                 "status": "low"
             },
             {
-                "filePath": "projects/ngx-leocare-ui/src/lib/icon/icon.stories.ts",
+                "filePath": "projects/lib-leocare-components/src/lib/icon/icon.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -4621,7 +4642,7 @@
                 "status": "low"
             },
             {
-                "filePath": "projects/ngx-leocare-ui/src/lib/input/input.component.ts",
+                "filePath": "projects/lib-leocare-components/src/lib/input/input.component.ts",
                 "type": "component",
                 "linktype": "component",
                 "name": "InputComponent",
@@ -4630,7 +4651,7 @@
                 "status": "low"
             },
             {
-                "filePath": "projects/ngx-leocare-ui/src/lib/input/input.stories.ts",
+                "filePath": "projects/lib-leocare-components/src/lib/input/input.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -4640,7 +4661,7 @@
                 "status": "low"
             },
             {
-                "filePath": "projects/ngx-leocare-ui/src/lib/input/input.stories.ts",
+                "filePath": "projects/lib-leocare-components/src/lib/input/input.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -4650,7 +4671,7 @@
                 "status": "low"
             },
             {
-                "filePath": "projects/ngx-leocare-ui/src/lib/input/input.stories.ts",
+                "filePath": "projects/lib-leocare-components/src/lib/input/input.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -4660,7 +4681,7 @@
                 "status": "low"
             },
             {
-                "filePath": "projects/ngx-leocare-ui/src/lib/input/input.stories.ts",
+                "filePath": "projects/lib-leocare-components/src/lib/input/input.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -4670,7 +4691,7 @@
                 "status": "low"
             },
             {
-                "filePath": "projects/ngx-leocare-ui/src/lib/input/input.stories.ts",
+                "filePath": "projects/lib-leocare-components/src/lib/input/input.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -4680,7 +4701,7 @@
                 "status": "low"
             },
             {
-                "filePath": "projects/ngx-leocare-ui/src/lib/input/input.stories.ts",
+                "filePath": "projects/lib-leocare-components/src/lib/input/input.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -4690,7 +4711,7 @@
                 "status": "low"
             },
             {
-                "filePath": "projects/ngx-leocare-ui/src/lib/popup/popup.component.ts",
+                "filePath": "projects/lib-leocare-components/src/lib/popup/popup.component.ts",
                 "type": "component",
                 "linktype": "component",
                 "name": "PopupComponent",
@@ -4699,7 +4720,7 @@
                 "status": "low"
             },
             {
-                "filePath": "projects/ngx-leocare-ui/src/lib/popup/popup.stories.ts",
+                "filePath": "projects/lib-leocare-components/src/lib/popup/popup.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -4709,7 +4730,7 @@
                 "status": "low"
             },
             {
-                "filePath": "projects/ngx-leocare-ui/src/lib/popup/popup.stories.ts",
+                "filePath": "projects/lib-leocare-components/src/lib/popup/popup.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -4719,7 +4740,7 @@
                 "status": "low"
             },
             {
-                "filePath": "projects/ngx-leocare-ui/src/lib/popup/popup.stories.ts",
+                "filePath": "projects/lib-leocare-components/src/lib/popup/popup.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -4729,7 +4750,7 @@
                 "status": "low"
             },
             {
-                "filePath": "projects/ngx-leocare-ui/src/lib/text/text.component.ts",
+                "filePath": "projects/lib-leocare-components/src/lib/text/text.component.ts",
                 "type": "component",
                 "linktype": "component",
                 "name": "TextComponent",
@@ -4738,7 +4759,7 @@
                 "status": "low"
             },
             {
-                "filePath": "projects/ngx-leocare-ui/src/lib/text/text.config.ts",
+                "filePath": "projects/lib-leocare-components/src/lib/text/text.config.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -4748,7 +4769,7 @@
                 "status": "low"
             },
             {
-                "filePath": "projects/ngx-leocare-ui/src/lib/text/text.config.ts",
+                "filePath": "projects/lib-leocare-components/src/lib/text/text.config.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -4758,7 +4779,7 @@
                 "status": "low"
             },
             {
-                "filePath": "projects/ngx-leocare-ui/src/lib/text/text.config.ts",
+                "filePath": "projects/lib-leocare-components/src/lib/text/text.config.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -4768,7 +4789,7 @@
                 "status": "low"
             },
             {
-                "filePath": "projects/ngx-leocare-ui/src/lib/text/text.config.ts",
+                "filePath": "projects/lib-leocare-components/src/lib/text/text.config.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -4778,7 +4799,7 @@
                 "status": "low"
             },
             {
-                "filePath": "projects/ngx-leocare-ui/src/lib/text/text.stories.ts",
+                "filePath": "projects/lib-leocare-components/src/lib/text/text.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -4788,7 +4809,7 @@
                 "status": "low"
             },
             {
-                "filePath": "projects/ngx-leocare-ui/src/lib/text/text.stories.ts",
+                "filePath": "projects/lib-leocare-components/src/lib/text/text.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -4798,7 +4819,7 @@
                 "status": "low"
             },
             {
-                "filePath": "projects/ngx-leocare-ui/src/lib/title/title.component.ts",
+                "filePath": "projects/lib-leocare-components/src/lib/title/title.component.ts",
                 "type": "component",
                 "linktype": "component",
                 "name": "TitleComponent",
@@ -4807,7 +4828,7 @@
                 "status": "low"
             },
             {
-                "filePath": "projects/ngx-leocare-ui/src/lib/title/title.config.ts",
+                "filePath": "projects/lib-leocare-components/src/lib/title/title.config.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -4817,7 +4838,7 @@
                 "status": "low"
             },
             {
-                "filePath": "projects/ngx-leocare-ui/src/lib/title/title.config.ts",
+                "filePath": "projects/lib-leocare-components/src/lib/title/title.config.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -4827,7 +4848,7 @@
                 "status": "low"
             },
             {
-                "filePath": "projects/ngx-leocare-ui/src/lib/title/title.config.ts",
+                "filePath": "projects/lib-leocare-components/src/lib/title/title.config.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -4837,7 +4858,7 @@
                 "status": "low"
             },
             {
-                "filePath": "projects/ngx-leocare-ui/src/lib/title/title.config.ts",
+                "filePath": "projects/lib-leocare-components/src/lib/title/title.config.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -4847,7 +4868,7 @@
                 "status": "low"
             },
             {
-                "filePath": "projects/ngx-leocare-ui/src/lib/title/title.stories.ts",
+                "filePath": "projects/lib-leocare-components/src/lib/title/title.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -4857,7 +4878,7 @@
                 "status": "low"
             },
             {
-                "filePath": "projects/ngx-leocare-ui/src/lib/title/title.stories.ts",
+                "filePath": "projects/lib-leocare-components/src/lib/title/title.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -4867,7 +4888,7 @@
                 "status": "low"
             },
             {
-                "filePath": "projects/ngx-leocare-ui/src/lib/title/title.stories.ts",
+                "filePath": "projects/lib-leocare-components/src/lib/title/title.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -4877,7 +4898,7 @@
                 "status": "low"
             },
             {
-                "filePath": "projects/ngx-leocare-ui/src/lib/title/title.stories.ts",
+                "filePath": "projects/lib-leocare-components/src/lib/title/title.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -4887,7 +4908,7 @@
                 "status": "low"
             },
             {
-                "filePath": "projects/ngx-leocare-ui/src/lib/title/title.stories.ts",
+                "filePath": "projects/lib-leocare-components/src/lib/title/title.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
